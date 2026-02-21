@@ -35,8 +35,8 @@ export default function Hero() {
           src={image} // イメージ全部表示して
           alt={`Hero Image ${index + 1}`}
           className={`absolute inset-0 w-full h-full object-cover
-transition-opacity duration-1000 ease-in-out
-${index === currentImageIndex ? "opacity-100" : "opacity-0"}`}
+          transition-opacity duration-1000 ease-in-out
+          ${index === currentImageIndex ? "opacity-100" : "opacity-0"}`}
         />
       ))}
     </div>
