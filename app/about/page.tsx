@@ -1,15 +1,11 @@
-import Header from '../../components/Header';
-import Schedule from '../../components/details/Schedule'; // 先ほどのスケジュールを別ファイル化想定
-import Footer from '../../components/Footer';
+import Schedule from "../../components/details/Schedule"; // 先ほどのスケジュールを別ファイル化想定
+import Footer from "../../components/Footer";
 
 export default function About() {
   return (
     <div className=" pt-50 min-h-screen text-slate-800">
-      <Header title="" />
-
       {/* メインコンテンツ */}
       <main className="max-w-5xl mx-auto py-12 px-6">
-
         {/* コンセプトセクション */}
         <section className="mb-20 text-center">
           <h2 className="text-3xl font-bold mb-6 text-slate-900">
@@ -24,7 +20,9 @@ export default function About() {
 
         {/* 選ばれる3つの理由 */}
         <section className="mb-20">
-          <h3 className="text-2xl font-bold mb-10 text-center">当店の3つの特徴</h3>
+          <h3 className="text-2xl font-bold mb-10 text-center">
+            当店の3つの特徴
+          </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
               <div className="text-blue-600 text-4xl mb-4 font-bold">01</div>
@@ -52,12 +50,16 @@ export default function About() {
 
         {/* スケジュール・店舗概要 */}
         <section className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
-          <h3 className="text-2xl font-bold mb-8 text-center">店舗情報・アクセス</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">
+            店舗情報・アクセス
+          </h3>
 
           <div className="space-y-6 max-w-3xl mx-auto">
             <div className="flex flex-col md:flex-row border-b border-slate-100 pb-4">
               <dt className="w-32 font-bold text-slate-500">所在地</dt>
-              <dd className="flex-1 text-slate-700">〒000-0000 ○○県○○市○○町 1-2-3</dd>
+              <dd className="flex-1 text-slate-700">
+                〒000-0000 ○○県○○市○○町 1-2-3
+              </dd>
             </div>
             <div className="flex flex-col md:flex-row border-b border-slate-100 pb-4">
               <dt className="w-32 font-bold text-slate-500">電話番号</dt>
@@ -65,17 +67,15 @@ export default function About() {
             </div>
 
             <div className="pt-4">
-              <dt className="font-bold text-slate-500 mb-4 text-center">受付スケジュール</dt>
+              <dt className="font-bold text-slate-500 mb-4 text-center">
+                受付スケジュール
+              </dt>
               <Schedule />
             </div>
           </div>
         </section>
-
-
       </main>
       <Footer />
-
-
     </div>
   );
 }
