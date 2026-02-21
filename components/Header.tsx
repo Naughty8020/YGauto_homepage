@@ -4,7 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const toggleMenu = () => {
@@ -13,9 +13,34 @@ export default function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      } else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        setIsVisible(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
     <header
-      className={`fixed top-0 left-0 w-full flex items-center pe-2 md:pe-6 pt-0 mt-0 z-[100]`}
+      className={`fixed top-0 left-0 w-full flex items-center pe-2 md:pe-6 pt-0 mt-0 z-[100] ${isVisible ? "" : "hidden"}`}
     >
       <div className="w-full h-4 lg:h-7 bg-white  absolute top-0 left-0"></div>
 
