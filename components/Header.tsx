@@ -63,7 +63,7 @@ export default function Header() {
         </div>
       </div>
 
-      <nav className="hidden ml-auto md:flex space-x-9  bg-sky-600 px-20 py-4 mt-10 rounded-full shadow  z-50">
+      <nav className="hidden ml-auto md:flex space-x-9  bg-black px-20 py-4 mt-10 rounded-full shadow  z-50">
         <Link href="/" className="text-white text-3xl hover:text-gray-200">
           Home
         </Link>
