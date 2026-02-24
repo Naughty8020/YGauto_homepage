@@ -4,14 +4,12 @@ import Image from 'next/image';
 
 export default function Details() {
   const companyInfo = [
-    { label: "会社名", value: "ファインディ株式会社 / Findy Inc." },
-    { label: "設立", value: "2014年2月" },
-    { label: "従業員数", value: "478名(2026年1月時点）" },
-    { label: "所在地", value: "〒141-0032 東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー 5階" },
-    { label: "資本金", value: "19億9,692万円 ※資本金：1億円(2026年1月時点）" },
-    { label: "事業許可", value: "有料職業紹介事業許可書 13-ユ-308478" },
-    { label: "認証", value: "情報セキュリティ認証 ISMS ISO27001" },
-    { label: "アクセス", value: "JR山手線 大崎駅より徒歩5分" },
+    { label: "会社名", value: "YGauto" },
+    { label: "設立", value: "2025年10月" },
+    { label: "所在地", value: "〒141-0032 滋賀県野洲市比留田134" },
+    { label: "定休日", value: "日曜日" },
+    { label: "営業時間", value: "午前9時30分〜 午後6時00分" },
+    { label: "電話番号", value: "077-575-4089" },
   ];
 
   return (
@@ -21,21 +19,14 @@ export default function Details() {
       </p>
 
       {/* 曲線背景コンテナ */}
-      <div className="relative w-full h-auto min-h-[1500px] bg-sky-600 [clip-path:ellipse(150%_100%_at_50%_100%)] md:[clip-path:ellipse(120%_100%_at_50%_100%)] lg:[clip-path:ellipse(110%_100%_at_50%_100%)]    z-10 pb-32">
+      <div className="relative w-full h-auto min-h-[1500px] bg-gray-100 [clip-path:ellipse(150%_100%_at_50%_100%)] md:[clip-path:ellipse(120%_100%_at_50%_100%)] lg:[clip-path:ellipse(110%_100%_at_50%_100%)]    z-10 pb-32">
 
         <div className="relative z-20 flex flex-col items-center pt-10 md:pt-20 px-4">
 
           {/* ロゴ・ヘッダーエリア */}
           <div className="flex items-center justify-center mb-20 mt-20 gap-3 lg:gap-7 z-50">
-            <Image
-              src="/earth.png"
-              alt="Logo"
-              width={60}
-              height={60}
-              className="h-10 w-10 lg:h-25 lg:w-25"
-            />
-            <Image
-              src="/icon2.png"
+                        <Image
+              src="/YGauto.jpg"
               alt="Sample Company"
               width={180}
               height={45}
@@ -56,10 +47,10 @@ export default function Details() {
               <dl className="divide-y divide-slate-100">
                 {companyInfo.map((item, index) => (
                   <div key={index} className="flex flex-col md:flex-row py-5">
-                    <dt className="md:w-1/3 font-bold text-slate-500 text-sm md:text-base mb-1 md:mb-0">
+                    <dt className="md:w-1/3 font-bold text-slate-500 text-sm md:text-lg mb-1 md:mb-0">
                       {item.label}
                     </dt>
-                    <dd className="md:w-2/3 text-slate-800 leading-relaxed">
+                    <dd className="md:w-2/3 text-slate-800 md:text-lg leading-relaxed">
                       {item.value}
                     </dd>
                   </div>
