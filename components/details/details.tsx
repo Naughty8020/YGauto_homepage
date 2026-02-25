@@ -14,10 +14,9 @@ export default function Details() {
 
   return (
     <div className="min-h-screen ">
-      <p className="text-center text-6xl md:text-9xl md:mb-3 ">
-        🚒
-      </p>
-
+      <p className="text-center text-6xl md:text-9xl md:mb-3">
+  🏎️
+</p>
       {/* 曲線背景コンテナ */}
       <div className="relative w-full h-auto min-h-[1500px] bg-gray-100 [clip-path:ellipse(150%_100%_at_50%_100%)] md:[clip-path:ellipse(120%_100%_at_50%_100%)] lg:[clip-path:ellipse(110%_100%_at_50%_100%)]    z-10 pb-32">
 
@@ -26,7 +25,7 @@ export default function Details() {
           {/* ロゴ・ヘッダーエリア */}
           <div className="flex items-center justify-center mb-20 mt-20 gap-3 lg:gap-7 z-50">
                         <Image
-              src="/YGauto.jpg"
+              src="/Image1.png"
               alt="Sample Company"
               width={180}
               height={45}
