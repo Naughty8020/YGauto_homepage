@@ -18,7 +18,7 @@ export const SERVICES: Service[] = [
     slug: "web-design",
     title: "Webデザイン",
     subTitle: "魅力を伝え、成果を生み出すデジタル体験",
-    image: "/unsplash/campaign-creators-e6n7uoEnYbA-unsplash.jpg",
+    image: "/unsplash/Work.jpg",
     description:
       "企業の魅力やブランド価値を最大限に引き出す、完全オーダーメイドのWebデザインを提供します。単に見た目が美しいだけでなく、訪問者が迷わず目的の情報にたどり着ける優れたUI/UXを緻密に設計。さらに、最新のフロントエンド技術を活用することで、リッチなアニメーションと高速なページ読み込みを両立させ、離脱率を大幅に改善します。あらゆるデバイスで完璧に表示されるレスポンシブデザインを標準搭載し、貴社のビジネス成長を加速させます。",
     merits: [
@@ -59,7 +59,7 @@ export const SERVICES: Service[] = [
     slug: "app-dev",
     title: "アプリ開発",
     subTitle: "顧客との接点を深める、次世代のモバイル体験",
-    image: "/unsplash/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
+    image: "/unsplash/maintenance.jpg",
     description:
       "ユーザーの日常に溶け込み、ビジネスの顧客接点を劇的に強化する高品質なモバイルアプリケーションを開発します。iOSおよびAndroidの双方に対応するクロスプラットフォーム開発や、高度な技術要件にも対応。App Storeへの申請サポートからリリース後の保守まで、アプリビジネスの成功をトータルでバックアップします。",
     merits: [
@@ -100,7 +100,7 @@ export const SERVICES: Service[] = [
     slug: "seo",
     title: "SEO対策",
     subTitle: "検索エンジンを味方につける、持続可能な集客戦略",
-    image: "/unsplash/k-mitch-hodge-Esi7nknKxmw-unsplash.jpg",
+    image: "/unsplash/tireReplacement1.jpg",
     description:
       "検索エンジンからのオーガニック流入を最大化し、広告費に依存しない持続可能な集客チャネルを構築します。最新のアルゴリズムに準拠したホワイトハットSEOを徹底し、内部対策・コンテンツSEO・外部対策の3本柱で総合的にアプローチ。中長期的な売上向上に貢献します。",
     merits: [
@@ -141,7 +141,7 @@ export const SERVICES: Service[] = [
     slug: "sns-marketing",
     title: "SNS運用・マーケティング",
     subTitle: "ファンを増やし、ブランドの「声」を届ける",
-    image: "/unsplash/social-media-strategy.jpg",
+    image: "/unsplash/oil.jpg",
     description:
       "Instagram、X(Twitter)、TikTokなどの主要SNSを活用し、ブランドの認知拡大とファン形成を支援します。単なる投稿代行ではなく、ターゲット分析に基づいた戦略立案から、目を引くクリエイティブ制作、フォロワーとのコミュニケーション管理までを一貫して担当。バズ（拡散）を狙うだけでなく、ブランドの世界観を正しく伝え、ビジネスゴール（来店・購入）へ繋げるSNS運用を実現します。",
     merits: [
@@ -182,7 +182,7 @@ export const SERVICES: Service[] = [
     slug: "system-maintenance",
     title: "システム開発・保守",
     subTitle: "ビジネスを止めない、盤石な基盤と進化",
-    image: "/unsplash/server-system.jpg",
+    image: "/unsplash/engine.jpg",
     description:
       "複雑な業務フローを効率化する社内システムや、スケーラブルなWebサービスの基盤構築を行います。開発して終わりではなく、OSやライブラリのアップデート、セキュリティパッチの適用、パフォーマンス監視など、リリース後の運用・保守を徹底重視。トラブルを未然に防ぐ予防保守と、ビジネスの変化に合わせた柔軟な機能拡張で、貴社のDX（デジタルトランスフォーメーション）を強力に支え続けます。",
     merits: [
