@@ -40,23 +40,22 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full flex items-center pe-2 md:pe-6 pt-0 mt-0 z-[100] ${isVisible ? "" : "hidden"}`}
+      className={`fixed top-0 left-0 w-full flex items-center pe-2 md:pe-6 pt-0 mt-0 z-[100] `}
     >
-      <div className="w-full h-4 lg:h-7 bg-white  absolute top-0 left-0"></div>
 
-      <div className="flex items-center bg-white ps-2 pe-7 pt-4 pb-2 lg:px-6 lg:py-7    rounded-br-4xl gap-2 md:gap-3 lg:gap-4 z-50">
+      <div className="flex items-center  ps-2 pe-7 pt-4 w-150 pb-2 lg:px-6 lg:pt-4  lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-50">
         <div className="font-shippori   text-3xl md:text-4xl lg:text-5xl font-bold text-black z-50">
           <Image
             src="/Image1.png"
             alt="Sample Company"
-            width={200}
+            width={300}
             height={50}
-            className="w-25 h-10 lg:w-110 lg:h-30 inline-block "
+            className="w-25 h-10 lg:w-130 lg:h-30 inline-block "
           />
         </div>
       </div>
 
-      <nav className="hidden ml-auto md:flex space-x-9 bg-black bg-b px-20 py-4 mt-10 rounded-full shadow  z-50">
+      <nav className="hidden ml-auto md:flex space-x-9 bg-black bg-b px-20 py-4 rounded-full shadow  z-50">
         <Link href="/" className="text-white text-3xl hover:text-gray-200">
           Home
         </Link>

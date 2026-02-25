@@ -3,7 +3,7 @@ import Prise from "../../components/details/Prise";
 
 export default function About() {
   return (
-    <div className="pt-24 min-h-screen text-slate-800 bg-slate-50/50">
+    <div className="pt-40 min-h-screen text-slate-800 bg-slate-50/50">
       {/* メインコンテンツ */}
       <main className="max-w-5xl mx-auto py-12 px-6">
         
