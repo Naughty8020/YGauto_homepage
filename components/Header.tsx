@@ -45,16 +45,9 @@ export default function Header() {
       <div className="w-full h-4 lg:h-7 bg-white  absolute top-0 left-0"></div>
 
       <div className="flex items-center bg-white ps-2 pe-7 pt-4 pb-2 lg:px-6 lg:py-7    rounded-br-4xl gap-2 md:gap-3 lg:gap-4 z-50">
-        <Image
-          src="/earth.png" // Next.jsでは"/"から始まるパスを使用
-          alt="Logo"
-          width={70} // デフォルトの幅（h-8と同じサイズ）
-          height={70} // デフォルトの高さ（w-8と同じサイズ）
-          className="h-8 w-8 md:h-10 md:w-10 lg:h-30 lg:w-30"
-        />
         <div className="font-shippori   text-3xl md:text-4xl lg:text-5xl font-bold text-black z-50">
           <Image
-            src="/icon2.png"
+            src="/Image1.png"
             alt="Sample Company"
             width={200}
             height={50}
@@ -63,7 +56,7 @@ export default function Header() {
         </div>
       </div>
 
-      <nav className="hidden ml-auto md:flex space-x-9  bg-black px-20 py-4 mt-10 rounded-full shadow  z-50">
+      <nav className="hidden ml-auto md:flex space-x-9 bg-black bg-b px-20 py-4 mt-10 rounded-full shadow  z-50">
         <Link href="/" className="text-white text-3xl hover:text-gray-200">
           Home
         </Link>
