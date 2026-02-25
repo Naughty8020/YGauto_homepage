@@ -1,4 +1,5 @@
 import Schedule from "../../components/details/Schedule";
+import Prise from "../../components/details/Prise";
 
 export default function About() {
   return (
@@ -39,6 +40,10 @@ export default function About() {
             ))}
           </div>
         </section>
+           <div className="mt-8">
+            <Prise />
+            </div>
+
 
         {/* スケジュール・店舗概要 */}
         <section className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-200">
@@ -59,7 +64,7 @@ export default function About() {
                 <dd className="flex-1 text-slate-700 font-medium">012-345-6789</dd>
               </div>
             </dl>
-
+           
             <div className="mt-12">
               <h4 className="font-bold text-slate-500 mb-6 text-center text-sm uppercase tracking-widest">
                 受付スケジュール

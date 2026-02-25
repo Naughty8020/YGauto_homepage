@@ -3,8 +3,8 @@ export default function Schedule() {
 
   return (
     <div className="w-full max-w-4xl mx-auto mt-10 px-4"> {/* 左右に余白を追加 */}
-      <div className="overflow-x-auto border border-slate-300 rounded-lg"> {/* 角丸と枠線で囲む */}
-        <table className="w-full border-collapse text-center min-w-[600px]"> {/* 最小幅を設定して潰れを防ぐ */}
+      <div className="overflow-x-auto border border-slate-300 rounded-lg">
+        <table className="w-full border-collapse text-center min-w-[600px]">
           <thead>
             <tr className="bg-slate-50 border-b border-slate-300">
               <th className="py-4 px-4 font-bold text-slate-700 whitespace-nowrap">診療時間</th>
