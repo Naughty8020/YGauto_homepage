@@ -24,13 +24,13 @@ export default function Details() {
 
           {/* ロゴ・ヘッダーエリア */}
           <div className="flex items-center justify-center mb-20 mt-20 gap-3 lg:gap-7 z-50">
-                        <Image
-              src="/Image1.png"
-              alt="Sample Company"
-              width={180}
-              height={45}
-              className="w-32 h-auto lg:w-100"
-            />
+                      <Image
+            src="/Image1.png"
+            alt="Sample Company"
+            width={300}
+            height={50}
+            className="w-25 h-10 lg:w-130 lg:h-40 inline-block "
+          />
           </div>
 
           {/* 全てを包むメインカード */}

@@ -50,7 +50,7 @@ export default function Header() {
             alt="Sample Company"
             width={300}
             height={50}
-            className="w-25 h-10 lg:w-130 lg:h-30 inline-block "
+            className="w-25 h-10 lg:w-130 lg:h-35 inline-block "
           />
         </div>
       </div>
