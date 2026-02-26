@@ -18,7 +18,7 @@ export default function Details() {
   🏎️
 </p>
       {/* 曲線背景コンテナ */}
-      <div className="relative w-full h-auto min-h-[1500px] bg-gray-100 [clip-path:ellipse(150%_100%_at_50%_100%)] md:[clip-path:ellipse(120%_100%_at_50%_100%)] lg:[clip-path:ellipse(110%_100%_at_50%_100%)]    z-10 pb-32">
+      <div className="relative w-full h-auto min-h-[1500px] bg-black [clip-path:ellipse(150%_100%_at_50%_100%)] md:[clip-path:ellipse(120%_100%_at_50%_100%)] lg:[clip-path:ellipse(110%_100%_at_50%_100%)]    z-10 pb-32">
 
         <div className="relative z-20 flex flex-col items-center pt-10 md:pt-20 px-4">
 
