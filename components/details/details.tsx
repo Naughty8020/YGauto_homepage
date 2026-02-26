@@ -17,12 +17,10 @@ export default function Details() {
       <p className="text-center text-6xl md:text-9xl md:mb-3">
   🏎️
 </p>
-      {/* 曲線背景コンテナ */}
       <div className="relative w-full h-auto min-h-[1500px] bg-black [clip-path:ellipse(150%_100%_at_50%_100%)] md:[clip-path:ellipse(120%_100%_at_50%_100%)] lg:[clip-path:ellipse(110%_100%_at_50%_100%)]    z-10 pb-32">
 
         <div className="relative z-20 flex flex-col items-center pt-10 md:pt-20 px-4">
 
-          {/* ロゴ・ヘッダーエリア */}
           <div className="flex items-center justify-center mb-20 mt-20 gap-3 lg:gap-7 z-50">
                       <Image
             src="/Image1.png"
@@ -33,10 +31,8 @@ export default function Details() {
           />
           </div>
 
-          {/* 全てを包むメインカード */}
           <div className="w-full max-w-4xl bg-white rounded-[2rem] shadow-2xl overflow-hidden">
 
-            {/* 上部：会社概要 */}
             <div className="p-8 md:p-12">
               <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-10 flex items-center">
                 <span className="w-2 h-8 bg-sky-500 rounded-full mr-4"></span>
@@ -59,7 +55,6 @@ export default function Details() {
 
 
 
-            {/* 下部：地図・アクセス */}
             <div className="p-8 md:p-12">
               <h3 className="text-xl font-bold text-slate-800 mb-6">アクセス</h3>
               <Map />
@@ -69,7 +64,6 @@ export default function Details() {
             </div>
 
           </div>
-          {/* カード終了 */}
 
         </div>
       </div>
