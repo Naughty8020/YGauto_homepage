@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <main className="bg-[#F7F6F3] py-14 md:py-24 w-full min-h-screen">
+    <main className="bg-[#F7F6F3] py-14 md:py-24 lg:pt-50 w-full min-h-screen">
       <article className="w-full max-w-[1060px] mx-auto px-5 md:px-10">
         {/* ===== HEADER ===== */}
         <header className="mb-16 md:mb-24">
@@ -17,7 +17,7 @@ const page = () => {
 
           {/* タイトル + 説明を横並び */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-[#DDDDD8]">
-            <h1 className="text-[2.8rem] md:text-[4.2rem] font-extrabold text-gray-950 leading-[1.05] tracking-tight">
+            <h1 className="text-[2.8rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.05] tracking-tight">
               サービス内容
             </h1>
             <p className="text-sm text-gray-500 leading-[1.9] max-w-xs font-light md:pb-1">
