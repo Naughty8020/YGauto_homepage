@@ -24,207 +24,19 @@ export default async function ServiceDetailPage({
 
   return (
     <main className="bg-[#F7F6F3] py-14 md:py-24 w-full min-h-screen">
-      {/* フォント読み込み */}
-      {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Syne:wght@700;800&display=swap');
-
-        body { font-family: 'Noto Sans JP', sans-serif; }
-
-        .font-syne { font-family: 'Syne', sans-serif; }
-
-        /* セクション見出し EN ラベル */
-        .en-label {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          font-family: 'Syne', sans-serif;
-          font-size: 0.68rem;
-          font-weight: 800;
-          letter-spacing: 0.2em;
-          text-transform: uppercase;
-          color: #2563EB;
-        }
-        .en-label::before {
-          content: '';
-          display: block;
-          width: 28px;
-          height: 1.5px;
-          background: #2563EB;
-          flex-shrink: 0;
-        }
-
-        /* メリットカード */
-        .merit-card {
-          background: #fff;
-          border-radius: 20px;
-          padding: 36px 28px 32px;
-          border: 1px solid #EAEAE7;
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          overflow: hidden;
-          transition: box-shadow 0.3s, transform 0.3s;
-        }
-        .merit-card:hover {
-          box-shadow: 0 16px 48px rgba(0,0,0,0.08);
-          transform: translateY(-4px);
-        }
-        .merit-card-index {
-          font-family: 'Syne', sans-serif;
-          font-size: 4.5rem;
-          font-weight: 800;
-          line-height: 1;
-          color: #EEF2FF;
-          letter-spacing: -0.04em;
-          margin-bottom: 20px;
-          user-select: none;
-        }
-        .merit-card-title {
-          font-size: 1.05rem;
-          font-weight: 700;
-          color: #111;
-          margin-bottom: 10px;
-          line-height: 1.55;
-        }
-        .merit-card-desc {
-          font-size: 0.84rem;
-          color: #6B7280;
-          line-height: 1.9;
-          flex: 1;
-        }
-        /* カード上部アクセントライン */
-        .merit-card::after {
-          content: '';
-          position: absolute;
-          top: 0; left: 0; right: 0;
-          height: 2px;
-          background: linear-gradient(90deg, #2563EB 0%, #93C5FD 100%);
-          transform: scaleX(0);
-          transform-origin: left;
-          transition: transform 0.35s ease;
-        }
-        .merit-card:hover::after { transform: scaleX(1); }
-
-        /* 特徴セクション 奇数行は左テキスト、偶数行は右テキスト */
-        .feature-item { display: flex; gap: 56px; align-items: center; }
-        .feature-item.reverse { flex-direction: row-reverse; }
-        @media (max-width: 767px) {
-          .feature-item, .feature-item.reverse { flex-direction: column; gap: 28px; }
-        }
-
-        /* 特徴画像 */
-        .feature-img-wrap {
-          flex: 1;
-          border-radius: 20px;
-          overflow: hidden;
-          position: relative;
-        }
-        .feature-img-wrap img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
-          transition: transform 0.7s ease;
-          display: block;
-        }
-        .feature-img-wrap:hover img { transform: scale(1.04); }
-
-        /* Detail カード */
-        .detail-card {
-          background: #fff;
-          border-radius: 20px;
-          padding: 28px;
-          border: 1px solid #EAEAE7;
-          display: flex;
-          gap: 20px;
-          align-items: flex-start;
-        }
-        .detail-img {
-          width: 80px;
-          height: 80px;
-          border-radius: 14px;
-          overflow: hidden;
-          flex-shrink: 0;
-          background: #F0F4FF;
-        }
-        .detail-img img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 0.5s;
-        }
-        .detail-card:hover .detail-img img { transform: scale(1.08); }
-
-        /* 他サービスカード */
-        .service-other-card {
-          display: flex;
-          gap: 20px;
-          align-items: center;
-          padding: 20px;
-          border-radius: 20px;
-          background: #fff;
-          border: 1px solid #EAEAE7;
-          text-decoration: none;
-          transition: box-shadow 0.25s, border-color 0.25s, transform 0.25s;
-        }
-        .service-other-card:hover {
-          box-shadow: 0 12px 40px rgba(37, 99, 235, 0.1);
-          border-color: #BFDBFE;
-          transform: translateY(-3px);
-        }
-        .service-other-img {
-          width: 96px;
-          height: 96px;
-          border-radius: 14px;
-          overflow: hidden;
-          flex-shrink: 0;
-        }
-        .service-other-img img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 0.6s;
-        }
-        .service-other-card:hover .service-other-img img { transform: scale(1.07); }
-        .service-other-arrow {
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-          font-family: 'Syne', sans-serif;
-          font-size: 0.72rem;
-          font-weight: 800;
-          letter-spacing: 0.12em;
-          text-transform: uppercase;
-          color: #2563EB;
-          margin-top: 10px;
-        }
-        .service-other-arrow svg {
-          transition: transform 0.25s;
-        }
-        .service-other-card:hover .service-other-arrow svg {
-          transform: translateX(4px);
-        }
-
-        /* ヒーロー画像オーバーレイ */
-        .hero-img-overlay {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.38) 100%);
-          pointer-events: none;
-        }
-      `}</style>
-
       <article className="w-full max-w-[1060px] mx-auto px-5 md:px-10">
         {/* ===== HERO ===== */}
         <header className="mb-20 md:mb-28">
           {/* サービスラベル */}
-          <div className="mb-7">
-            <span className="en-label">Service Detail</span>
+          <div className="flex items-center gap-2.5 mb-7">
+            <span className="block w-7 h-px bg-blue-600 shrink-0" />
+            <span className="text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-blue-600">
+              Service Detail
+            </span>
           </div>
 
           {/* タイトル */}
-          <h1 className="font-syne text-[2.6rem] md:text-[4rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight mb-10">
+          <h1 className="text-[2.6rem] md:text-[4rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight mb-10">
             {service?.title || "サービスタイトル"}
           </h1>
 
@@ -235,32 +47,46 @@ export default async function ServiceDetailPage({
               alt={service?.title || "サービス画像"}
               className="w-full h-full object-cover object-center"
             />
-            <div className="hero-img-overlay" />
+            {/* オーバーレイ */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
           </div>
         </header>
 
         <div className="space-y-24 md:space-y-32">
           {/* ===== MERITS ===== */}
           <section>
-            {/* 区切り線 */}
-            <div className="border-t border-[#DDDDD8] pt-12 mb-10 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-              <div>
-                <div className="mb-3">
-                  <span className="en-label">Merit</span>
-                </div>
-                <h2 className="font-syne text-[2rem] md:text-[2.6rem] font-extrabold text-gray-950 tracking-tight leading-tight">
-                  メリット
-                </h2>
+            <div className="border-t border-[#DDDDD8] pt-12 mb-10">
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="block w-7 h-px bg-blue-600 shrink-0" />
+                <span className="text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-blue-600">
+                  Merit
+                </span>
               </div>
+              <h2 className="text-[2rem] md:text-[2.6rem] font-extrabold text-gray-950 tracking-tight leading-tight">
+                メリット
+              </h2>
             </div>
 
             {/* カードグリッド */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
               {service.merits.map((merit, index) => (
-                <div key={merit.title} className="merit-card">
-                  <div className="merit-card-index">0{index + 1}</div>
-                  <h3 className="merit-card-title">{merit.title}</h3>
-                  <p className="merit-card-desc">{merit.description}</p>
+                <div
+                  key={merit.title}
+                  className="group relative bg-white rounded-[20px] px-7 pt-9 pb-8 border border-[#EAEAE7] flex flex-col overflow-hidden hover:shadow-[0_16px_48px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300"
+                >
+                  {/* ホバー時に上部に伸びるアクセントライン */}
+                  <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-300 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-[350ms] ease-out" />
+
+                  {/* 番号 */}
+                  <span className="text-[4.5rem] font-extrabold leading-none text-[#EEF2FF] tracking-[-0.04em] mb-5 select-none">
+                    0{index + 1}
+                  </span>
+                  <h3 className="text-[1.05rem] font-bold text-gray-900 mb-2.5 leading-[1.55]">
+                    {merit.title}
+                  </h3>
+                  <p className="text-[0.84rem] text-gray-500 leading-[1.9] flex-1">
+                    {merit.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -276,10 +102,13 @@ export default async function ServiceDetailPage({
           {/* ===== FEATURES ===== */}
           <section>
             <div className="border-t border-[#DDDDD8] pt-12 mb-16">
-              <div className="mb-3">
-                <span className="en-label">Feature</span>
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="block w-7 h-px bg-blue-600 shrink-0" />
+                <span className="text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-blue-600">
+                  Feature
+                </span>
               </div>
-              <h2 className="font-syne text-[2rem] md:text-[2.6rem] font-extrabold text-gray-950 tracking-tight leading-tight">
+              <h2 className="text-[2rem] md:text-[2.6rem] font-extrabold text-gray-950 tracking-tight leading-tight">
                 特徴
               </h2>
             </div>
@@ -288,11 +117,13 @@ export default async function ServiceDetailPage({
               {service.feathers.map((feature, i) => (
                 <div
                   key={feature.title}
-                  className={`feature-item${i % 2 !== 0 ? " reverse" : ""}`}
+                  className={`flex flex-col gap-7 items-center md:gap-14 ${
+                    i % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
+                  }`}
                 >
                   {/* テキスト */}
-                  <div className="flex-1 flex flex-col justify-center">
-                    <span className="font-syne text-[4.5rem] font-extrabold leading-none text-[#ECEEF4] tracking-tight select-none mb-1">
+                  <div className="flex-1 w-full flex flex-col justify-center">
+                    <span className="text-[4.5rem] font-extrabold leading-none text-[#ECEEF4] tracking-tight select-none mb-1">
                       0{i + 1}
                     </span>
                     <h3 className="text-[1.35rem] md:text-[1.65rem] font-bold text-gray-900 mb-4 leading-snug">
@@ -304,11 +135,12 @@ export default async function ServiceDetailPage({
                   </div>
 
                   {/* 画像 */}
-                  <div
-                    className="feature-img-wrap flex-1"
-                    style={{ height: "clamp(220px, 28vw, 360px)" }}
-                  >
-                    <img src={feature.image} alt={feature.title} />
+                  <div className="group flex-1 w-full rounded-[20px] overflow-hidden h-[220px] md:h-[360px]">
+                    <img
+                      src={feature.image}
+                      alt={feature.title}
+                      className="w-full h-full object-cover object-center group-hover:scale-[1.04] transition-transform duration-700 ease-in-out"
+                    />
                   </div>
                 </div>
               ))}
@@ -319,19 +151,29 @@ export default async function ServiceDetailPage({
           {service.detail && service.detail.length > 0 && (
             <section>
               <div className="border-t border-[#DDDDD8] pt-12 mb-12">
-                <div className="mb-3">
-                  <span className="en-label">Detail</span>
+                <div className="flex items-center gap-2.5 mb-3">
+                  <span className="block w-7 h-px bg-blue-600 shrink-0" />
+                  <span className="text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-blue-600">
+                    Detail
+                  </span>
                 </div>
-                <h2 className="font-syne text-[2rem] md:text-[2.6rem] font-extrabold text-gray-950 tracking-tight leading-tight">
+                <h2 className="text-[2rem] md:text-[2.6rem] font-extrabold text-gray-950 tracking-tight leading-tight">
                   詳細
                 </h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {service.detail.map((detail) => (
-                  <div key={detail.title} className="detail-card">
-                    <div className="detail-img">
-                      <img src={detail.image} alt={detail.title} />
+                  <div
+                    key={detail.title}
+                    className="group bg-white rounded-[20px] p-7 border border-[#EAEAE7] flex gap-5 items-start"
+                  >
+                    <div className="w-20 h-20 rounded-[14px] overflow-hidden shrink-0 bg-[#F0F4FF]">
+                      <img
+                        src={detail.image}
+                        alt={detail.title}
+                        className="w-full h-full object-cover group-hover:scale-[1.08] transition-transform duration-500"
+                      />
                     </div>
                     <div className="flex flex-col justify-center flex-1">
                       <h3 className="text-base font-bold text-gray-900 mb-2 leading-snug">
@@ -350,7 +192,7 @@ export default async function ServiceDetailPage({
           {/* ===== OTHER SERVICES ===== */}
           <section className="pb-4">
             <div className="border-t border-[#DDDDD8] pt-12 mb-12">
-              <h2 className="font-syne text-[2rem] md:text-[2.6rem] font-extrabold text-gray-950 tracking-tight leading-tight">
+              <h2 className="text-[2rem] md:text-[2.6rem] font-extrabold text-gray-950 tracking-tight leading-tight">
                 他のサービスを見る
               </h2>
             </div>
@@ -361,10 +203,14 @@ export default async function ServiceDetailPage({
                   <Link
                     href={`/services/${item.slug}`}
                     key={item.title}
-                    className="service-other-card"
+                    className="group flex gap-5 items-center p-5 rounded-[20px] bg-white border border-[#EAEAE7] hover:shadow-[0_12px_40px_rgba(37,99,235,0.1)] hover:border-blue-200 hover:-translate-y-0.5 transition-all duration-300"
                   >
-                    <div className="service-other-img">
-                      <img src={item.image} alt={item.title} />
+                    <div className="w-24 h-24 rounded-[14px] overflow-hidden shrink-0">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-[1.07] transition-transform duration-500"
+                      />
                     </div>
                     <div className="flex flex-col flex-1 min-w-0">
                       {item.subTitle && (
@@ -372,16 +218,17 @@ export default async function ServiceDetailPage({
                           {item.subTitle}
                         </span>
                       )}
-                      <h3 className="text-base md:text-lg font-bold text-gray-900 leading-snug mb-0">
+                      <h3 className="text-base md:text-lg font-bold text-gray-900 leading-snug">
                         {item.title}
                       </h3>
-                      <span className="service-other-arrow">
+                      <span className="inline-flex items-center gap-1.5 mt-2.5 text-[0.72rem] font-extrabold tracking-[0.12em] uppercase text-blue-600">
                         詳しく見る
                         <svg
                           width="13"
                           height="13"
                           viewBox="0 0 13 13"
                           fill="none"
+                          className="group-hover:translate-x-1 transition-transform duration-250"
                         >
                           <path
                             d="M1 6.5h11M7.5 1.5l5 5-5 5"
