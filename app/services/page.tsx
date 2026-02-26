@@ -5,9 +5,7 @@ const page = () => {
   return (
     <main className="bg-[#F7F6F3] py-14 md:py-24 w-full min-h-screen">
       <article className="w-full max-w-[1060px] mx-auto px-5 md:px-10">
-        {/* ===== HEADER ===== */}
         <header className="mb-16 md:mb-24">
-          {/* ENラベル */}
           <div className="flex items-center gap-3 mb-6">
             <span className="block w-7 h-px bg-blue-600 shrink-0" />
             <span className="text-[0.65rem] font-extrabold tracking-[0.25em] uppercase text-blue-600">
@@ -15,7 +13,6 @@ const page = () => {
             </span>
           </div>
 
-          {/* タイトル + 説明を横並び */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-[#DDDDD8]">
             <h1 className="text-[2.8rem] md:text-[4.2rem] font-extrabold text-gray-950 leading-[1.05] tracking-tight">
               サービス内容
@@ -28,7 +25,6 @@ const page = () => {
           </div>
         </header>
 
-        {/* ===== HERO IMAGE ===== */}
         <div className="w-full h-[240px] md:h-[460px] rounded-2xl overflow-hidden relative mb-16 md:mb-24">
           <img
             src="/unsplash/campaign-creators-e6n7uoEnYbA-unsplash.jpg"
@@ -38,7 +34,6 @@ const page = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
         </div>
 
-        {/* ===== INTRO TEXT ===== */}
         <div className="mb-16 md:mb-20 max-w-2xl">
           <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-5">
             お客様の心に寄り添った
@@ -55,9 +50,7 @@ const page = () => {
           </p>
         </div>
 
-        {/* ===== SERVICE CARDS ===== */}
         <section>
-          {/* セクションヘッダー */}
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-10 pb-8 border-b border-[#DDDDD8]">
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -77,7 +70,6 @@ const page = () => {
             </p>
           </div>
 
-          {/* カードグリッド */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {SERVICES.map((item, i) => (
               <Link
@@ -85,7 +77,6 @@ const page = () => {
                 key={item.slug}
                 className="group relative flex flex-col overflow-hidden rounded-2xl bg-white border border-[#EAEAE7] hover:shadow-[0_16px_48px_rgba(37,99,235,0.1)] hover:border-blue-200 hover:-translate-y-1 transition-all duration-300"
               >
-                {/* 画像エリア */}
                 <div className="w-full h-44 overflow-hidden">
                   <img
                     src={item.image}
@@ -94,10 +85,8 @@ const page = () => {
                   />
                 </div>
 
-                {/* テキストエリア */}
                 <div className="flex items-start justify-between gap-4 px-6 py-5">
                   <div className="flex flex-col min-w-0">
-                    {/* インデックス */}
                     <span className="text-[0.65rem] font-extrabold tracking-[0.15em] text-gray-300 mb-1">
                       {String(i + 1).padStart(2, "0")}
                     </span>
@@ -129,7 +118,6 @@ const page = () => {
                     </span>
                   </div>
 
-                  {/* 矢印アイコン（右上） */}
                   <div className="shrink-0 w-9 h-9 rounded-full border border-[#EAEAE7] group-hover:border-blue-600 group-hover:bg-blue-600 flex items-center justify-center transition-all duration-300 mt-0.5">
                     <svg
                       width="13"
