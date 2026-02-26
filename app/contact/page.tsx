@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <section className=" mt-50 py-16 lg:py-26">
+      <section className=" lg:pt-50 py-16">
         <div className="bg-gray-400  py-8 lg:py-16 px-20 mx-auto max-w-3xl rounded-lg">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
             Contact Us
