@@ -2,10 +2,6 @@ import { SERVICES } from "@/constants/services";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-// Next.jsのImageコンポーネントを使用する場合はnext.config.jsの設定が必要なため、
-// 今回は一時的に標準のimgタグでスタイリングしています。
-// import Image from "next/image";
-
 export async function generateStaticParams() {
   return SERVICES.map((service) => ({
     slug: service.slug,
@@ -23,11 +19,11 @@ export default async function ServiceDetailPage({
   if (!service) notFound();
 
   return (
-    <main className="bg-[#F7F6F3] py-14 md:py-24 w-full min-h-screen">
+    <main className="bg-[#F7F6F3] py-14 md:py-24 lg:pt-50 w-full min-h-screen">
       <article className="w-full max-w-[1060px] mx-auto px-5 md:px-10">
-        {/* ===== HERO ===== */}
+     
         <header className="mb-20 md:mb-28">
-          {/* サービスラベル */}
+   
           <div className="flex items-center gap-2.5 mb-7">
             <span className="block w-7 h-px bg-blue-600 shrink-0" />
             <span className="text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-blue-600">
@@ -35,25 +31,21 @@ export default async function ServiceDetailPage({
             </span>
           </div>
 
-          {/* タイトル */}
-          <h1 className="text-[2.6rem] md:text-[4rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight mb-10">
+          <h1 className="text-[2.6rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight mb-10">
             {service?.title || "サービスタイトル"}
           </h1>
 
-          {/* ヒーロー画像 */}
           <div className="w-full h-[260px] md:h-[480px] rounded-3xl overflow-hidden shadow-lg relative">
             <img
               src={service?.image}
               alt={service?.title || "サービス画像"}
               className="w-full h-full object-cover object-center"
             />
-            {/* オーバーレイ */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
           </div>
         </header>
 
         <div className="space-y-24 md:space-y-32">
-          {/* ===== MERITS ===== */}
           <section>
             <div className="border-t border-[#DDDDD8] pt-12 mb-10">
               <div className="flex items-center gap-2.5 mb-3">
@@ -62,23 +54,20 @@ export default async function ServiceDetailPage({
                   Merit
                 </span>
               </div>
-              <h2 className="text-[2rem] md:text-[2.6rem] font-extrabold text-gray-950 tracking-tight leading-tight">
+              <h2 className="text-[2rem] md:text-[2rem] font-extrabold text-gray-950 tracking-tight leading-tight">
                 メリット
               </h2>
             </div>
 
-            {/* カードグリッド */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
               {service.merits.map((merit, index) => (
                 <div
                   key={merit.title}
                   className="group relative bg-white rounded-[20px] px-7 pt-9 pb-8 border border-[#EAEAE7] flex flex-col overflow-hidden hover:shadow-[0_16px_48px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300"
                 >
-                  {/* ホバー時に上部に伸びるアクセントライン */}
                   <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-300 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-[350ms] ease-out" />
 
-                  {/* 番号 */}
-                  <span className="text-[4.5rem] font-extrabold leading-none text-[#EEF2FF] tracking-[-0.04em] mb-5 select-none">
+                  <span className="text-[4.5rem] font-extrabold leading-none text-blue-400 tracking-[-0.04em] mb-5 select-none">
                     0{index + 1}
                   </span>
                   <h3 className="text-[1.05rem] font-bold text-gray-900 mb-2.5 leading-[1.55]">
@@ -91,7 +80,6 @@ export default async function ServiceDetailPage({
               ))}
             </div>
 
-            {/* 説明文 */}
             <div className="bg-white rounded-2xl border border-[#EAEAE7] px-8 py-7">
               <p className="text-sm md:text-base text-gray-600 leading-[2] font-light">
                 {service.meritDescription}
@@ -99,7 +87,6 @@ export default async function ServiceDetailPage({
             </div>
           </section>
 
-          {/* ===== FEATURES ===== */}
           <section>
             <div className="border-t border-[#DDDDD8] pt-12 mb-16">
               <div className="flex items-center gap-2.5 mb-3">
@@ -108,7 +95,7 @@ export default async function ServiceDetailPage({
                   Feature
                 </span>
               </div>
-              <h2 className="text-[2rem] md:text-[2.6rem] font-extrabold text-gray-950 tracking-tight leading-tight">
+              <h2 className="text-[2rem] md:text-[2rem] font-extrabold text-gray-950 tracking-tight leading-tight">
                 特徴
               </h2>
             </div>
@@ -121,9 +108,8 @@ export default async function ServiceDetailPage({
                     i % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
                   }`}
                 >
-                  {/* テキスト */}
                   <div className="flex-1 w-full flex flex-col justify-center">
-                    <span className="text-[4.5rem] font-extrabold leading-none text-[#ECEEF4] tracking-tight select-none mb-1">
+                    <span className="text-[4.5rem] font-extrabold leading-none text-blue-400 tracking-tight select-none mb-1">
                       0{i + 1}
                     </span>
                     <h3 className="text-[1.35rem] md:text-[1.65rem] font-bold text-gray-900 mb-4 leading-snug">
@@ -134,7 +120,6 @@ export default async function ServiceDetailPage({
                     </p>
                   </div>
 
-                  {/* 画像 */}
                   <div className="group flex-1 w-full rounded-[20px] overflow-hidden h-[220px] md:h-[360px]">
                     <img
                       src={feature.image}
@@ -147,7 +132,6 @@ export default async function ServiceDetailPage({
             </div>
           </section>
 
-          {/* ===== DETAIL ===== */}
           {service.detail && service.detail.length > 0 && (
             <section>
               <div className="border-t border-[#DDDDD8] pt-12 mb-12">
@@ -189,7 +173,6 @@ export default async function ServiceDetailPage({
             </section>
           )}
 
-          {/* ===== OTHER SERVICES ===== */}
           <section className="pb-4">
             <div className="border-t border-[#DDDDD8] pt-12 mb-12">
               <h2 className="text-[2rem] md:text-[2.6rem] font-extrabold text-gray-950 tracking-tight leading-tight">
