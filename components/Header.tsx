@@ -43,19 +43,16 @@ export default function Header() {
         ${isVisible ? "translate-y-0" : "-translate-y-full"}
       `}
     >
-      <div className="z-50 shrink-0">
-        <Image
-          src="/Image1.png"
-          alt="Sample Company"
-          width={300}
-          height={50}
-          className="
-            h-7 w-auto
-            sm:h-8
-            md:h-9
-            lg:h-12
-          "
-        />
+      <div className="flex items-center  ps-2 pe-7 pt-4 w-150 pb-2 lg:px-6 lg:pt-4  lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-50">
+        <div className="font-shippori   text-3xl md:text-4xl lg:text-5xl font-bold text-black z-50">
+          <Image
+            src="/Image1.png"
+            alt="Sample Company"
+            width={300}
+            height={50}
+            className="w-25 h-10 lg:w-130 lg:h-35 inline-block "
+          />
+        </div>
       </div>
 
       <nav className="hidden md:flex items-center gap-5 lg:gap-8 bg-black px-8 py-3 lg:px-12 lg:py-4 rounded-full shadow z-50">
@@ -73,7 +70,7 @@ export default function Header() {
         </Link>
         <Link
           href="/services"
-          className="text-white text-sm lg:text-base font-medium hover:text-gray-300 transition-colors duration-200"
+          className="text-white text-3xl hover:text-gray-200"
         >
           Services
         </Link>

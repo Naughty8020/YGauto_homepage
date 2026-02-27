@@ -19,7 +19,6 @@ export default function ServicesSection() {
             className={`flex flex-col md:flex-row ${index % 2 === 1 ? 'md:flex-row-reverse' : ''
               } items-center gap-10 lg:gap-20`}
           >
-            {/* 画像セクション */}
             <div className="w-full md:w-1/2">
               <div className="relative aspect-[4/3] w-full">
                 <Image
@@ -32,7 +31,6 @@ export default function ServicesSection() {
               </div>
             </div>
 
-            {/* サービス内容セクション */}
             <div className="w-full md:w-1/2">
               <h2 className="font-shippori font-bold text-2xl lg:text-4xl mb-6 border-b-2 border-gray-100 pb-2">
                 {service.title}
