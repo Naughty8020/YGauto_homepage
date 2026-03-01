@@ -21,7 +21,7 @@ const Contact = () => {
             </p>
           </div>
         </header>
-        <section className=" lg:pt-10 py-16">
+        <section className=" ">
           <div className="bg-gray-400  py-8 lg:py-16 px-20 mx-auto max-w-3xl rounded-lg">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
               Contact Us
