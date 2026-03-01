@@ -43,7 +43,7 @@ export default function Header() {
   const linkClass = (path: string) =>
     `text-3xl transition ${
       pathname === path
-        ? "text-yellow-400 font-bold"
+        ? "text-blue-400 font-bold"
         : "text-white hover:text-gray-300"
     }`;
 
