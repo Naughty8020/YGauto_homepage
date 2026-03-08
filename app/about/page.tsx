@@ -28,14 +28,21 @@ export default function About() {
         {/* コンセプトセクション */}
         <section className="mb-20 text-center">
           <h2 className="text-3xl font-bold mb-6 text-slate-900">
-            愛車と長く、どこまでも元気に。
+            代表挨拶 
           </h2>
           <p className="text-lg leading-relaxed max-w-2xl mx-auto text-slate-600">
-            私たちは、単なる修理工場ではありません。
+            このたびはYGautoホームページをご覧いただきありがとうございます。 
             <br />
-            お客様一人ひとりのカーライフに寄り添い、安全・快適な走りを支えるパートナーでありたいと考えています。
+            当店ではお車を通じてお客様一人ひとりと向き合い、個人店ならではの 
             <br />
-            最新の設備と、確かな技術力で、あなたの愛車をベストコンディションに導きます。
+            お付き合いができればと思っております。 
+            <br />
+            また、初めてご来店される方、車のことがあまり詳しくない方でも
+            <br />
+            親身にご対応させて 頂きますので、
+            どんな小さなことでも一度ご相談ください。 
+
+
           </p>
         </section>
 
@@ -62,21 +69,21 @@ export default function About() {
                 text: "祝日のある週は木曜も営業するなど、お客様の利便性を第一に考えた運営を行っています。",
               },
             ].map((feature) => (
-              <div
-                key={feature.id}
-                className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-blue-600 text-4xl mb-4 font-bold opacity-20">
-                  {feature.id}
+                <div
+                  key={feature.id}
+                  className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
+                >
+                  <div className="text-blue-600 text-4xl mb-4 font-bold opacity-20">
+                    {feature.id}
+                  </div>
+                  <h4 className="text-xl font-bold mb-3 text-slate-800">
+                    {feature.title}
+                  </h4>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {feature.text}
+                  </p>
                 </div>
-                <h4 className="text-xl font-bold mb-3 text-slate-800">
-                  {feature.title}
-                </h4>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  {feature.text}
-                </p>
-              </div>
-            ))}
+              ))}
           </div>
         </section>
         <div className="mt-8">
