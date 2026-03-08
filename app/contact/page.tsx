@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Contact() {
   return (
     <div className="pt-40 min-h-screen text-slate-800 bg-slate-50/50">
@@ -15,89 +17,69 @@ export default function Contact() {
               お問い合わせ
             </h1>
             <p className="text-sm text-gray-500 leading-[1.9] max-w-xs font-light md:pb-1">
-              『困った』の前に 、まずはご相談ください。
+              お急ぎの方も、まずは一度お電話ください。
               <br className="hidden md:block" />
-              あなたの『知りたい』に、すぐにお答えします。
+              専門スタッフが丁寧に対応させていただきます。
             </p>
           </div>
         </header>
 
-        {/* --- 電話お問い合わせセクション（スタイル調整版） --- */}
-        <div className="max-w-3xl mx-auto mb-20 text-center">
-          <div className="inline-flex flex-col items-center">
-            <p className="text-[0.7rem] font-bold tracking-widest text-blue-600 mb-4 bg-blue-50 px-4 py-1 rounded-full">
-              お電話でのお問い合わせ
-            </p>
-            <a 
-              href="tel:000-0000-0000" 
-              className="text-4xl md:text-6xl font-extrabold tracking-tighter text-gray-900 hover:text-blue-600 transition-colors duration-300"
-            >
-              000-0000-0000
-            </a>
-            <p className="mt-4 text-xs font-medium text-gray-400">
-              受付時間：平日 9:00 〜 18:00（土日祝を除く）
-            </p>
-          </div>
-        </div>
-
-        {/* --- フォームセクション（スタイル調整版） --- */}
-        <section className="max-w-3xl mx-auto">
-          <div className="bg-white p-8 md:p-16 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] border border-[#EEEEEE]">
-            <div className="mb-12 text-center">
-              <h2 className="text-xl font-extrabold text-gray-900 mb-2">メールフォーム</h2>
-              <div className="w-8 h-1 bg-blue-600 mx-auto"></div>
+        <section className="max-w-4xl mx-auto mt-20 mb-32">
+          <div className="bg-white rounded-3xl p-8 md:p-20 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.08)] border border-white text-center">
+            <div className="mb-10">
+              <span className="text-blue-600 font-bold tracking-[0.2em] text-xs py-2 px-5 bg-blue-50 rounded-full">
+                CALL US ANYTIME
+              </span>
+              <h2 className="text-xl md:text-2xl font-bold text-gray-900 mt-6">
+                お電話でのお問い合わせ・ご相談
+              </h2>
             </div>
 
-            <form action="#" className="space-y-10">
-              <div className="relative">
-                <label htmlFor="email" className="text-[0.7rem] font-bold uppercase tracking-wider text-gray-400 mb-2 block">
-                  Mail Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-blue-600 transition-colors placeholder:text-gray-200"
-                  placeholder="example@mail.com"
-                  required
-                />
-              </div>
+            <div className="mb-12">
+              <a
+                href="tel:000-0000-0000"
+                className="group inline-block"
+              >
+                <span className="text-4xl md:text-7xl font-black tracking-tighter text-gray-950 group-hover:text-blue-600 transition-colors duration-300">
+                  000-0000-0000
+                </span>
+                <div className="h-1.5 w-0 group-hover:w-full bg-blue-600 transition-all duration-500 mx-auto mt-2 rounded-full" />
+              </a>
+            </div>
 
-              <div className="relative">
-                <label htmlFor="subject" className="text-[0.7rem] font-bold uppercase tracking-wider text-gray-400 mb-2 block">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-blue-600 transition-colors placeholder:text-gray-200"
-                  placeholder="ご用件を選択または入力してください"
-                  required
-                />
-              </div>
+            <div className="space-y-4 mb-12">
+              <p className="text-gray-600 font-medium">
+                受付時間：平日 9:00 〜 18:00（土日祝を除く）
+              </p>
+              <p className="text-sm text-gray-400">
+                ※番号をお確かめのうえ、おかけ間違いのないようお願いいたします。
+              </p>
+            </div>
 
-              <div className="relative">
-                <label htmlFor="message" className="text-[0.7rem] font-bold uppercase tracking-wider text-gray-400 mb-2 block">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-blue-600 transition-colors placeholder:text-gray-200 resize-none"
-                  placeholder="お問い合わせ内容"
-                ></textarea>
-              </div>
-
-              <div className="pt-4">
-                <button
-                  type="submit"
-                  className="group relative inline-flex items-center justify-center w-full md:w-auto px-12 py-4 text-xs font-extrabold tracking-[0.2em] text-white bg-gray-950 overflow-hidden transition-all duration-300 hover:bg-blue-600"
-                >
-                  <span className="relative z-10">SEND MESSAGE</span>
-                </button>
-              </div>
-            </form>
+            <div className="flex justify-center">
+              <a
+                href="tel:000-0000-0000"
+                className="flex items-center gap-4 bg-blue-600 text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-gray-950 transition-all duration-300 shadow-lg shadow-blue-200"
+              >
+                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                  <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM19 12h2c0-4.8-3.9-9-8.7-9v2c3.7 0 6.7 3 6.7 7zm-4 0h2c0-2.8-2.2-5-4.7-5v2c1.5 0 2.7 1.2 2.7 3z"/>
+                </svg>
+                今すぐ電話をかける
+              </a>
+            </div>
           </div>
         </section>
+
+        <footer className="text-center pb-20">
+          <p className="text-gray-400 text-sm mb-4">
+            メールでのお問い合わせをご希望の方はこちら
+          </p>
+        <Link 
+          href="/contact/form" // 飛ばしたい先のパス（例: app/contact/form/page.tsx なら "/contact/form"）
+          className="inline-block text-gray-600 font-bold border-b border-gray-300 hover:text-blue-600 hover:border-blue-600 transition-all pb-1 cursor-pointer"
+        >
+          お問い合わせフォームへ
+        </Link>        </footer>
       </main>
     </div>
   );
