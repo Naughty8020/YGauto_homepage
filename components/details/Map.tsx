@@ -1,11 +1,6 @@
 export default function Map() {
-  // 埋め込み用のURL
-  const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303808788!2d139.764936111397!3d35.68123620073535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x4430224344514c5a!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp";
+  const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.9643979779016!2d136.02219517555383!3d35.1075998727779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60017755f53a5eb1%3A0x7d65cfe495b310b0!2sYG%20auto!5e0!3m2!1sen!2sjp!4v1773384259006!5m2!1sen!2sjp";
   return (
-    /* w-1/2  : width: 50%
-       h-[450px] : height: 450px (カスタム値)
-       mx-auto : 左右中央寄せ (margin-left/right: auto)
-    */
     <div className=" w-60%  md:w-full h-[200px] md:h-[500px] md:mt-3 md:mt-10 mx-auto">
       <iframe
         title="google-map"

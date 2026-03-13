@@ -56,11 +56,8 @@ export default function Details() {
 
 
             <div className="p-8 md:p-12">
-              <h3 className="text-xl font-bold text-slate-800 mb-6">アクセス</h3>
+              <h3 className="text-xl font-bold text-slate-800 ">アクセス</h3>
               <Map />
-              <p className="mt-4 text-sm text-slate-500 text-center font-medium">
-                JR山手線 大崎駅より徒歩5分（アートヴィレッジ大崎セントラルタワー内）
-              </p>
             </div>
 
           </div>
