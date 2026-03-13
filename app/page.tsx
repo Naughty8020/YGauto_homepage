@@ -7,7 +7,6 @@ import DetailSection from "../components/details/details";
 export default function Home() {
   return (
     <>
-      <Hero />
       <AboutSection />
       <ServicesSection />
       <DetailSection />
