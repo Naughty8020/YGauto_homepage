@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <main className="bg-[#F7F6F3] py-14 md:py-24 lg:pt-50 w-full min-h-screen">
+    <main className=" py-14 md:py-24 lg:pt-50 w-full min-h-screen">
       <article className="w-full max-w-[1060px] mx-auto px-5 md:px-10">
         {/* ===== HEADER ===== */}
         <header className="mb-16 md:mb-24">
