@@ -75,7 +75,7 @@ export default function Header() {
           Services
         </Link>
         <Link href="/contact" className={linkClass("/contact")}>
-          お問合わせ
+          Contact
         </Link>
       </nav>
 
