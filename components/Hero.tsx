@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 const images = [
-  "Gemini1.png",
   "unsplash/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
-  "unsplash/k-mitch-hodge-Esi7nknKxmw-unsplash.jpg",
+  "Gemini4.png",
+  "Gemini3.png",
 ];
 
 export default function Hero() {
@@ -35,8 +35,8 @@ export default function Hero() {
           src={image} // イメージ全部表示して
           alt={`Hero Image ${index + 1}`}
           className={`absolute inset-0 w-full h-full object-cover
-          transition-opacity duration-1000 ease-in-out
-          ${index === currentImageIndex ? "opacity-100" : "opacity-0"}`}
+transition-opacity duration-1000 ease-in-out
+${index === currentImageIndex ? "opacity-100" : "opacity-0"}`}
         />
       ))}
     </div>
