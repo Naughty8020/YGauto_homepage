@@ -64,7 +64,7 @@ export default function Header() {
       </div>
 
       {/* PCメニュー */}
-      <nav className="hidden ml-auto md:flex space-x-9 bg-black px-20 py-4 rounded-full shadow z-50">
+      <nav className="hidden ml-auto md:flex space-x-9 border-6 border-[#fcfcfc]  bg-black px-20 py-4 rounded-full shadow z-50">
         <Link href="/" className={linkClass("/")}>
           Home
         </Link>
