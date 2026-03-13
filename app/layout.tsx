@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Shippori_Antique_B1 } from "next/font/google"; // 1.
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +45,7 @@ export default function RootLayout({
           antialiased
         `}
       >
+        <ParticlesBackground />
         <Header />
         {children}
         <Footer />
