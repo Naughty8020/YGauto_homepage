@@ -71,7 +71,7 @@ export default function About() {
                   key={feature.id}
                   className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
                 >
-                  <div className="text-blue-600 text-4xl mb-4 font-bold opacity-20">
+                  <div className="text-blue-400 text-4xl mb-4 font-bold ">
                     {feature.id}
                   </div>
                   <h4 className="text-xl font-bold mb-3 text-slate-800">
