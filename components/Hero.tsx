@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 const images = [
-  "unsplash/campaign-creators-e6n7uoEnYbA-unsplash.jpg",
+  "Gemini1.png",
   "unsplash/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
   "unsplash/k-mitch-hodge-Esi7nknKxmw-unsplash.jpg",
 ];
