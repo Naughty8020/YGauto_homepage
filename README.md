@@ -1,6 +1,6 @@
 # 🛞 YG auto ホームページ
   
-[YG autoのホームページを開く🌐](https://armaerfootball.com/)
+[YG autoのホームページを開く🌐](https://ygautohomepage.vercel.app/)
 
 ---
 
