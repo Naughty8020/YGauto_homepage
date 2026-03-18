@@ -49,7 +49,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full flex items-center pe-2 md:pe-6 pt-0 mt-0 z-[100] ${
+      className={`fixed top-0 left-0 w-full flex items-center pe-5 md:pe-6 pt-0 mt-0 z-[100] ${
         isVisible ? "" : "hidden"
       }`}
     >
@@ -59,7 +59,7 @@ export default function Header() {
           alt="Sample Company"
           width={300}
           height={50}
-          className="w-25 h-10 lg:w-130 lg:h-35 inline-block"
+          className="w-45 h-18 lg:w-130 lg:h-35 inline-block"
         />
       </div>
 
@@ -81,7 +81,7 @@ export default function Header() {
 
       {/* ハンバーガー */}
       <button
-        className="md:ml-10 mt-6 p-2 z-50 rounded-lg bg-black hover:bg-gray-200 transition md:hidden ml-auto"
+        className="md:ml-10 p-2 z-50 rounded-lg bg-black hover:bg-gray-200 transition md:hidden ml-auto"
         onClick={toggleMenu}
       >
         {isOpen ? (
