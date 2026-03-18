@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <section className="mt-16 md:mt-24 lg:mt-32 py-10 md:py-16 px-4 sm:px-6 lg:px-8">
+    <section className="mt-16 md:mt-24 lg:mt-45 py-10 md:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="font-shippori text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-6">
           私たちについて
