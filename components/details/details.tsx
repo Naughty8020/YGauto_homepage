@@ -18,24 +18,24 @@ export default function Details() {
         🏎️
       </p>
 
-      <div className="relative w-full h-auto min-h-[600px] bg-black [clip-path:ellipse(150%_100%_at_50%_100%)] md:[clip-path:ellipse(120%_100%_at_50%_100%)] lg:[clip-path:ellipse(110%_100%_at_50%_100%)] z-10 pb-10 md:pb-16">
+      <div className="relative w-full h-auto min-h-[600px] bg-black [clip-path:ellipse(180%_100%_at_50%_100%)] md:[clip-path:ellipse(100%_100%_at_50%_100%)] lg:[clip-path:ellipse(110%_100%_at_50%_100%)] z-10 pb-10 md:pb-16">
 
         <div className="relative z-20 flex flex-col items-center pt-6 md:pt-16 px-4">
 
-          <div className="flex items-center justify-center my-6 mb-6 gap-3 lg:gap-7 z-50">
+          <div className="flex items-center justify-center my-4 gap-3 lg:gap-7 z-50">
             <Image
               src="/Image1.png"
               alt="Sample Company"
               width={300}
               height={50}
-              className="w-40 h-15 lg:w-130 lg:h-40 inline-block"
+              className="w-25 h-10 lg:w-130 lg:h-40 inline-block"
             />
           </div>
 
           <div className="w-full max-w-2xl bg-white rounded-[2rem] shadow-2xl overflow-hidden">
 
             <div className="p-3 md:p-6">
-              <h2 className="text-2xl md:text-3xl ml-3 mt-3 font-bold text-slate-800 mb-6 flex items-center">
+              <h2 className="text-2xl md:text-3xl ml-3 font-bold text-slate-800 mb-6 flex items-center">
                 <span className="w-2 h-8 bg-sky-500 rounded-full mr-4"></span>
                 会社概要
               </h2>
