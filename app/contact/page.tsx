@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div className="pt-40 min-h-screen text-slate-800 bg-slate-50/50">
+    <div className="pt-28 md:pt-40 min-h-screen text-slate-800 bg-slate-50/50">
       <main className="max-w-5xl mx-auto py-12 px-6">
         <header className="mb-16">
           <div className="flex items-center gap-3 mb-6">
@@ -13,7 +13,7 @@ export default function Contact() {
           </div>
 
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-[#DDDDD8]">
-            <h1 className="text-[2.8rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.05] tracking-tight">
+            <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.05] tracking-tight">
               お問い合わせ
             </h1>
             <p className="text-sm text-gray-500 leading-[1.9] max-w-xs font-light md:pb-1">
@@ -24,7 +24,7 @@ export default function Contact() {
           </div>
         </header>
 
-        <section className="max-w-4xl mx-auto mt-20 mb-32">
+        <section className="max-w-4xl mx-auto mt-20 mb-10 md:mb-32">
           <div className="bg-white rounded-3xl p-8 md:p-20 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.08)] border border-white text-center">
             <div className="mb-10">
               <span className="text-blue-600 font-bold tracking-[0.2em] text-xs py-2 px-5 bg-blue-50 rounded-full">
@@ -37,7 +37,7 @@ export default function Contact() {
 
             <div className="mb-12">
               <a href="tel:000-0000-0000" className="group inline-block">
-                <span className="text-4xl md:text-7xl font-black tracking-tighter text-gray-950 group-hover:text-blue-600 transition-colors duration-300">
+                <span className="text-3xl md:text-7xl font-black tracking-tighter text-gray-950 group-hover:text-blue-600 transition-colors duration-300">
                   000-0000-0000
                 </span>
                 <div className="h-1.5 w-0 group-hover:w-full bg-blue-600 transition-all duration-500 mx-auto mt-2 rounded-full" />
