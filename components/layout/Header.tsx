@@ -94,23 +94,25 @@ export default function Header() {
       {/* スマホメニュー */}
       <nav
         className={`
-          flex flex-col absolute top-0 right-0 bg-black text-white w-full h-screen justify-center items-center space-y-6
-          transition-all duration-500 ease-in-out
-          ${isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-5"}
-        `}
+    flex flex-col absolute top-0 right-0 bg-black text-white w-full h-screen justify-center items-center
+    transition-all duration-500 ease-in-out
+    ${isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-5"}
+  `}
       >
-        <Link href="/" className={linkClass("/")}>
-          Home
-        </Link>
-        <Link href="/about" className={linkClass("/about")}>
-          About
-        </Link>
-        <Link href="/services" className={linkClass("/services")}>
-          Services
-        </Link>
-        <Link href="/contact" className={linkClass("/contact")}>
-          Contact
-        </Link>
+        <div className="flex flex-col items-center gap-10" onClick={toggleMenu}>
+          <Link href="/" className={linkClass("/")}>
+            Home
+          </Link>
+          <Link href="/about" className={linkClass("/about")}>
+            About
+          </Link>
+          <Link href="/services" className={linkClass("/services")}>
+            Services
+          </Link>
+          <Link href="/contact" className={linkClass("/contact")}>
+            Contact
+          </Link>
+        </div>
       </nav>
     </header>
   );
