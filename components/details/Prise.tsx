@@ -1,39 +1,86 @@
-  export default function Prise() {
-    return (
-      <section className="mb-20">
-  <h3 className="text-2xl font-bold mb-10 text-center text-slate-900">
-    料金の目安
-  </h3>
+// src/components/details/Prise.tsx
 
-  <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-    {[
-      { title: "オイル交換", price: "¥3,000〜", desc: "車種・使用オイルにより異なります。" },
-      { title: "タイヤ交換（1本）", price: "¥1,500〜", desc: "バランス調整込み。" },
-      { title: "車検（基本料金）", price: "¥45,000〜", desc: "法定費用・部品代は別途。" },
-      { title: "バッテリー交換", price: "¥6,000〜", desc: "バッテリー代＋工賃込み。" },
-    ].map((item, i) => (
-      <div
-        key={i}
-        className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
-      >
-        <div className="flex items-center justify-between mb-2">
-          <h4 className="text-lg font-bold text-slate-800">
-            {item.title}
+import React from 'react';
+
+// アイテムごとの型定義
+export type PriceItem = {
+  label: string;
+  price: string;
+  unit: string;
+  note?: string; // 工賃などの補足（任意）
+};
+
+// カテゴリーごとの型定義
+export type PriceCategory = {
+  category: string;
+  items: PriceItem[];
+};
+
+export default function Prise() {
+  // 定義した型を適用
+  const priceCategories: PriceCategory[] = [
+    {
+      category: "エンジンオイル交換",
+      items: [
+        { label: "国産車（1Lあたり）", price: "1,000〜", unit: "円", note: "工賃 500円〜" },
+        { label: "外国車（1Lあたり）", price: "2,500〜", unit: "円", note: "工賃 1,000円〜" },
+      ],
+    },
+    {
+      category: "タイヤシーズン交換",
+      items: [
+        { label: "軽自動車", price: "2,000", unit: "円" },
+        { label: "普通車", price: "3,000", unit: "円" },
+      ],
+    },
+    {
+      category: "手洗い洗車",
+      items: [
+        { label: "軽自動車", price: "2,000", unit: "円" },
+        { label: "普通車", price: "3,000", unit: "円" },
+      ],
+    },
+    {
+      category: "コーティング施工",
+      items: [
+        { label: "軽自動車", price: "45,000〜", unit: "円" },
+        { label: "普通車", price: "68,000〜", unit: "円" },
+      ],
+    },
+  ];
+
+  return (
+    <div className="w-full divide-y divide-slate-100">
+      {priceCategories.map((group, idx) => (
+        <div key={idx} className="p-6 md:p-8">
+          <h4 className="text-lg font-bold text-slate-900 mb-5 flex items-center">
+            <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2.5" />
+            {group.category}
           </h4>
-          <span className="text-blue-600 font-bold text-lg">
-            {item.price}
-          </span>
+          <div className="space-y-4">
+            {group.items.map((item, i) => (
+              <div key={i} className="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                <div className="flex items-center gap-3">
+                  <span className="text-slate-700 font-medium">{item.label}</span>
+                  {item.note && (
+                    <span className="text-[0.7rem] bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full font-bold">
+                      {item.note}
+                    </span>
+                  )}
+                </div>
+                <div className="flex items-baseline gap-1 border-b border-dotted border-slate-200 flex-1 md:border-none md:justify-end">
+                  <span className="text-2xl font-extrabold text-slate-900 tracking-tight">
+                    {item.price}
+                  </span>
+                  <span className="text-xs font-bold text-slate-400 uppercase">
+                    {item.unit}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <p className="text-sm text-slate-600">
-          {item.desc}
-        </p>
-      </div>
-    ))}
-  </div>
-
-  <p className="text-center text-xs text-slate-500 mt-6">
-    ※ 上記は目安価格です。車種・状態により料金が変動する場合があります。
-  </p>
-</section>
-    );
-  }
+      ))}
+    </div>
+  );
+}

@@ -7,7 +7,7 @@ export default function Schedule() {
         <table className="w-full border-collapse text-center min-w-[600px]">
           <thead>
             <tr className="bg-slate-50 border-b border-slate-300">
-              <th className="py-4 px-4 font-bold text-slate-700 whitespace-nowrap">診療時間</th>
+              <th className="py-4 px-4 font-bold text-slate-700 whitespace-nowrap">営業時間</th>
               {days.map((day) => (
                 <th key={day} className={`py-4 px-2 border-l border-slate-300 ${day === "日祝" ? "text-red-500" : "text-slate-700"}`}>
                   {day}

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Shippori_Antique_B1 } from "next/font/google"; // 1. フォントをインポート
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,8 +23,8 @@ const shipporiAntique = Shippori_Antique_B1({
 });
 
 export const metadata: Metadata = {
-  title: "学校管理システム", // サイト名に合わせて変更
-  description: "魅力を伝え、成果を生み出すデジタル体験",
+  title: "YG auto",
+  description: "滋賀県野洲市の自動車販売・整備店。国家資格整備士が在籍し、販売から整備、車検、レッカーまで全て自社で完結。お客様のカーライフを全力でサポートします。",
 };
 
 export default function RootLayout({
@@ -44,6 +45,7 @@ export default function RootLayout({
           antialiased
         `}
       >
+        <ParticlesBackground />
         <Header />
         {children}
         <Footer />

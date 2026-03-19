@@ -1,27 +1,39 @@
+# 🛞 YG auto ホームページ
+  
+[YG autoのホームページを開く🌐](https://ygautohomepage.vercel.app/)
 
-import node module pakage 
+---
+
+## 🔩 技術スタック  
+  
+Frontend: React / Next.js (TypeScript) 🚀
+
+Styling: Tailwind CSS 🎨
+
+Deployment: Vercel ▲
+
+Package Manager: npm 📦
+
+   
+---
+   
+
+## セットアップ
+開発環境の起動
+
 ```bash
-npm i
-```
+# 依存関係のインストール
+npm install
 
-## run
-
-```bash
+# ローカルサーバーの起動
 npm run dev
-# or
-bun dev
 ```
 
-## development rules
 
-#### ・各ファイルの行数は88行以内
-#### ・UIとロジックのファイルは切り出す
-#### ・型を定義する
-#### ・関数は名前付きエクスポートで書く
-#### ・命名規則は他のファイルと型式を揃える
-#### ・コミットメッセージは[操作名(場所):やったこと]
-#### ・差分が大きくならないようにコミットする
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ライセンス
+
+© 2026 YG auto. All rights reserved.
 
 
