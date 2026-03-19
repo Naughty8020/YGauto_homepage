@@ -1,97 +1,4 @@
-<<<<<<< HEAD
-const Contact = () => {
-  return (
-    <div className="pt-40 min-h-screen text-slate-800 bg-slate-50/50">
-      <main className="max-w-5xl mx-auto py-12 px-6">
-        <header className="mb-16 md:mb-24">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="block w-7 h-px bg-blue-600 shrink-0" />
-            <span className="text-[0.65rem] font-extrabold tracking-[0.25em] uppercase text-blue-600">
-              CONTACT
-            </span>
-          </div>
-
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-[#DDDDD8]">
-            <h1 className="text-[2.8rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.05] tracking-tight">
-              お問い合わせ
-            </h1>
-            <p className="text-sm text-gray-500 leading-[1.9] max-w-xs font-light md:pb-1">
-              『困った』の前に 、まずはご相談ください。
-              <br className="hidden md:block" />
-              あなたの『知りたい』に、すぐにお答えします。
-            </p>
-          </div>
-        </header>
-        <section className=" lg:pt-10 py-16">
-          <div className="bg-gray-400  py-8 lg:py-16 px-20 mx-auto max-w-3xl rounded-lg">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-              Contact Us
-            </h2>
-            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-              Got a technical issue? Want to send feedback about a beta feature?
-              Need details about our Business plan? Let us know.
-            </p>
-            <form action="#" className="space-y-8">
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  Your email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="name@flowbite.com"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="subject"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="Let us know how we can help you"
-                  required
-                />
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="message"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-                >
-                  Your message
-                </label>
-                <textarea
-                  id="message"
-                  rows={6}
-                  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                  placeholder="Leave a comment..."
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-              >
-                Send message
-              </button>
-            </form>
-          </div>
-        </section>
-      </main>
-    </div>
-  );
-};
-=======
-import Link from 'next/link';
->>>>>>> 85d5588d65853c6eb3efbb80625fc8dc316176df
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -129,10 +36,7 @@ export default function Contact() {
             </div>
 
             <div className="mb-12">
-              <a
-                href="tel:000-0000-0000"
-                className="group inline-block"
-              >
+              <a href="tel:000-0000-0000" className="group inline-block">
                 <span className="text-4xl md:text-7xl font-black tracking-tighter text-gray-950 group-hover:text-blue-600 transition-colors duration-300">
                   000-0000-0000
                 </span>
@@ -155,7 +59,7 @@ export default function Contact() {
                 className="flex items-center gap-4 bg-blue-600 text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-gray-950 transition-all duration-300 shadow-lg shadow-blue-200"
               >
                 <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                  <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM19 12h2c0-4.8-3.9-9-8.7-9v2c3.7 0 6.7 3 6.7 7zm-4 0h2c0-2.8-2.2-5-4.7-5v2c1.5 0 2.7 1.2 2.7 3z"/>
+                  <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM19 12h2c0-4.8-3.9-9-8.7-9v2c3.7 0 6.7 3 6.7 7zm-4 0h2c0-2.8-2.2-5-4.7-5v2c1.5 0 2.7 1.2 2.7 3z" />
                 </svg>
                 今すぐ電話をかける
               </a>
@@ -167,12 +71,13 @@ export default function Contact() {
           <p className="text-gray-400 text-sm mb-4">
             メールでのお問い合わせをご希望の方はこちら
           </p>
-        <Link 
-          href="/contact/form" // 飛ばしたい先のパス（例: app/contact/form/page.tsx なら "/contact/form"）
-          className="inline-block text-gray-600 font-bold border-b border-gray-300 hover:text-blue-600 hover:border-blue-600 transition-all pb-1 cursor-pointer"
-        >
-          お問い合わせフォームへ
-        </Link>        </footer>
+          <Link
+            href="/contact/form" // 飛ばしたい先のパス（例: app/contact/form/page.tsx なら "/contact/form"）
+            className="inline-block text-gray-600 font-bold border-b border-gray-300 hover:text-blue-600 hover:border-blue-600 transition-all pb-1 cursor-pointer"
+          >
+            お問い合わせフォームへ
+          </Link>{" "}
+        </footer>
       </main>
     </div>
   );
