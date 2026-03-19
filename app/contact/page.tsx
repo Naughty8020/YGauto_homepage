@@ -24,13 +24,13 @@ export default function Contact() {
           </div>
         </header>
 
-        <section className="max-w-4xl mx-auto mt-20 mb-10 md:mb-32">
-          <div className="bg-white rounded-3xl p-8 md:p-20 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.08)] border border-white text-center">
+        <section className="max-w-4xl mx-auto  md:mt-20 mb-10 md:mb-32">
+          <div className="bg-we rounded-3xl p-8 md:p-20 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.08)] border border-white text-center">
             <div className="mb-10">
               <span className="text-blue-600 font-bold tracking-[0.2em] text-xs py-2 px-5 bg-blue-50 rounded-full">
                 CALL US ANYTIME
               </span>
-              <h2 className="text-xl md:text-2xl font-bold text-gray-900 mt-6">
+              <h2 className="text-base md:text-2xl font-bold text-gray-900 mt-6">
                 お電話でのお問い合わせ・ご相談
               </h2>
             </div>
