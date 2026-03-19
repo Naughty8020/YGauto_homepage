@@ -3,21 +3,21 @@ import Prise from "../../components/details/Prise";
 
 export default function About() {
   return (
-    <div className="pt-40 min-h-screen text-slate-800 bg-slate-50/50">
-      <main className="max-w-5xl mx-auto py-12 px-6">
-        <header className="mb-16 md:mb-24">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="block w-7 h-px bg-blue-600 shrink-0" />
-            <span className="text-[0.65rem] font-extrabold tracking-[0.25em] uppercase text-blue-600">
+    <div className="pt-28 md:pt-40 min-h-screen text-slate-800 bg-slate-50/50">
+      <main className="max-w-5xl mx-auto py-8 md:py-12 px-4 md:px-6">
+        <header className="mb-10 md:mb-24">
+          <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+            <span className="block w-5 md:w-7 h-px bg-blue-600 shrink-0" />
+            <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.2em] md:tracking-[0.25em] uppercase text-blue-600">
               ABOUT
             </span>
           </div>
 
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-[#DDDDD8]">
-            <h1 className="text-[2.8rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.05] tracking-tight">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3 md:gap-6 pb-8 md:pb-12 border-b border-[#DDDDD8]">
+            <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight">
               会社案内
             </h1>
-            <p className="text-sm text-gray-500 leading-[1.9] max-w-xs font-light md:pb-1">
+            <p className="text-xs md:text-sm text-gray-500 leading-[1.8] md:leading-[1.9] max-w-xs font-light md:pb-1">
               お客様の生活スタイルに寄り添った、
               <br className="hidden md:block" />
               最適なサービスをご提供します。
@@ -26,9 +26,11 @@ export default function About() {
         </header>
 
         {/* コンセプトセクション */}
-        <section className="mb-20 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-slate-900">代表挨拶</h2>
-          <p className="text-lg leading-relaxed max-w-2xl mx-auto text-slate-600">
+        <section className="mb-12 md:mb-20 text-center">
+          <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-6 text-slate-900">
+            代表挨拶
+          </h2>
+          <p className="text-sm md:text-lg leading-relaxed max-w-2xl mx-auto text-slate-600">
             私たちは、単なる修理工場ではありません。
             <br />
             お客様一人ひとりのカーライフに寄り添い、安全・快適な走りを支えるパートナーでありたいと考えています。
@@ -38,11 +40,11 @@ export default function About() {
         </section>
 
         {/* 特徴セクション */}
-        <section className="mb-20">
-          <h3 className="text-2xl font-bold mb-10 text-center text-slate-900">
+        <section className="mb-12 md:mb-20">
+          <h3 className="text-lg md:text-2xl font-bold mb-6 md:mb-10 text-center text-slate-900">
             当店の3つの強み
           </h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
             {[
               {
                 id: "01",
@@ -62,56 +64,59 @@ export default function About() {
             ].map((feature) => (
               <div
                 key={feature.id}
-                className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
+                className="bg-white px-5 py-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow flex gap-4 md:block"
               >
-                <div className="text-blue-600 text-4xl mb-4 font-bold opacity-20">
+                <div className="text-blue-600 text-3xl md:text-4xl font-bold opacity-20 shrink-0 md:mb-4 leading-none pt-0.5">
                   {feature.id}
                 </div>
-                <h4 className="text-xl font-bold mb-3 text-slate-800">
-                  {feature.title}
-                </h4>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  {feature.text}
-                </p>
+                <div>
+                  <h4 className="text-base md:text-xl font-bold mb-1.5 md:mb-3 text-slate-800">
+                    {feature.title}
+                  </h4>
+                  <p className="text-slate-600 text-xs md:text-sm leading-relaxed">
+                    {feature.text}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </section>
-        <div className="mt-8">
+
+        <div className="mt-6 md:mt-8">
           <Prise />
         </div>
 
         {/* スケジュール・店舗概要 */}
-        <section className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-200">
-          <h3 className="text-2xl font-bold mb-10 text-center text-slate-900">
+        <section className="bg-white p-5 md:p-12 rounded-2xl md:rounded-3xl shadow-sm border border-slate-200 mt-10 md:mt-0">
+          <h3 className="text-lg md:text-2xl font-bold mb-6 md:mb-10 text-center text-slate-900">
             店舗情報・アクセス
           </h3>
 
           <div className="max-w-3xl mx-auto">
-            <dl className="space-y-6">
-              <div className="flex flex-col md:flex-row border-b border-slate-100 pb-4">
-                <dt className="w-full md:w-32 font-bold text-slate-500 mb-1 md:mb-0">
+            <dl className="space-y-4 md:space-y-6">
+              <div className="flex flex-col md:flex-row border-b border-slate-100 pb-3 md:pb-4">
+                <dt className="w-full md:w-32 font-bold text-slate-500 text-sm mb-0.5 md:mb-0">
                   所在地
                 </dt>
-                <dd className="flex-1 text-slate-700 font-medium">
+                <dd className="flex-1 text-slate-700 font-medium text-sm md:text-base">
                   〒520-2300 滋賀県野洲市（以下詳細な住所を入力してください）
                 </dd>
               </div>
-              <div className="flex flex-col md:flex-row border-b border-slate-100 pb-4">
-                <dt className="w-full md:w-32 font-bold text-slate-500 mb-1 md:mb-0">
+              <div className="flex flex-col md:flex-row border-b border-slate-100 pb-3 md:pb-4">
+                <dt className="w-full md:w-32 font-bold text-slate-500 text-sm mb-0.5 md:mb-0">
                   電話番号
                 </dt>
-                <dd className="flex-1 text-slate-700 font-medium">
+                <dd className="flex-1 text-slate-700 font-medium text-sm md:text-base">
                   012-345-6789
                 </dd>
               </div>
             </dl>
 
-            <div className="mt-12">
-              <h4 className="font-bold text-slate-500 mb-6 text-center text-sm uppercase tracking-widest">
+            <div className="mt-8 md:mt-12">
+              <h4 className="font-bold text-slate-500 mb-4 md:mb-6 text-center text-xs md:text-sm uppercase tracking-widest">
                 営業スケジュール
               </h4>
-              <div className="bg-slate-50 rounded-2xl p-4 md:p-6">
+              <div className="bg-slate-50 rounded-xl md:rounded-2xl p-3 md:p-6">
                 <Schedule />
               </div>
             </div>
