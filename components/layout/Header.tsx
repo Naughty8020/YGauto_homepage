@@ -59,7 +59,7 @@ export default function Header() {
           alt="Sample Company"
           width={300}
           height={50}
-          className="w-55 h-18 lg:w-130 lg:h-35 inline-block"
+          className="w-45 h-18 lg:w-130 lg:h-35 inline-block"
         />
       </div>
 
@@ -91,7 +91,7 @@ export default function Header() {
         )}
       </button>
 
-      {/* SPメニュー */}
+      {/* スマホメニュー */}
       <nav
         className={`
           flex flex-col absolute top-0 right-0 bg-black text-white w-full h-screen justify-center items-center space-y-6
