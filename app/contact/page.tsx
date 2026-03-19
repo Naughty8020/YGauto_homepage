@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import Link from 'next/link';
-=======
 import Link from "next/link";
->>>>>>> 1867ccb (fix(servises):change letter and place)
 
 export default function Contact() {
   return (
