@@ -22,6 +22,8 @@ export default function Header() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
+      if (isOpen) return;
+
       if (currentScrollY < 10) {
         setIsVisible(true);
       } else if (currentScrollY < lastScrollY) {
@@ -38,7 +40,7 @@ export default function Header() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY, isOpen]);
 
   const linkClass = (path: string) =>
     `text-3xl transition ${
@@ -53,7 +55,7 @@ export default function Header() {
         isVisible ? "" : "hidden"
       }`}
     >
-      <div className="flex items-center ps-2 pe-7 pt-4 w-150 pb-2 lg:px-6 lg:pt-4 lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-50">
+      <div className="flex items-center ps-2 pe-7 pt-4 w-50 pb-2 lg:px-6 lg:pt-4 lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-40">
         <Image
           src="/Image1.png"
           alt="Sample Company"
@@ -96,7 +98,7 @@ export default function Header() {
         className={`
     flex flex-col absolute top-0 right-0 bg-black text-white w-full h-screen justify-center items-center
     transition-all duration-500 ease-in-out
-    ${isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-5"}
+    ${isOpen ? "opacity-100 visible translate-y-0 pointer-events-auto" : "opacity-0 invisible -translate-y-5 pointer-events-none"}
   `}
       >
         <div className="flex flex-col items-center gap-10" onClick={toggleMenu}>
