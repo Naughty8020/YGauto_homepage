@@ -21,8 +21,8 @@ export default function ServicesSection() {
               index % 2 === 1 ? 'md:flex-row-reverse' : ''
             } items-center gap-6 md:gap-10 lg:gap-16`}
           >
-            <div className="w-full md:w-1/2">
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm">
+            <div className="w-full md:w-1/3">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
                 <Image
                   src={service.image}
                   alt={service.title}
