@@ -22,7 +22,7 @@ export default function ServicesSection() {
             } items-center gap-6 md:gap-10 lg:gap-16`}
           >
             <div className="w-full md:w-1/3">
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-4xl">
                 <Image
                   src={service.image}
                   alt={service.title}
