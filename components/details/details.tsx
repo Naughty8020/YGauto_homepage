@@ -14,7 +14,7 @@ export default function Details() {
 
   return (
     <div className="min-h-screen">
-      <p className="text-center text-6xl md:text-9xl md:mb-3">
+      <p className="text-center text-6xl md:text-9xl">
         🏎️
       </p>
 
