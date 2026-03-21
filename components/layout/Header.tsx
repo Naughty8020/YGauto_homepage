@@ -55,7 +55,7 @@ export default function Header() {
         isVisible ? "" : "hidden"
       }`}
     >
-      <div className="flex items-center ps-2 pe-7 pt-4 w-50 pb-2 lg:px-6 lg:pt-4 lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-40">
+      <div className="flex items-center ps-2 pe-7 pt-4 w-100 pb-2 lg:px-6 lg:pt-4 lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-40">
         <Image
           src="/Image1.png"
           alt="Sample Company"
