@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="pt-28 md:pt-40 min-h-screen text-slate-800 bg-slate-50/50">
+    <div className="pt-28 md:pt-40 min-h-screen text-slate-800 bg-slate-50/50 font-shippori">
       <main className="max-w-5xl mx-auto py-8 md:py-12 px-4 md:px-6">
         {/* ===== HEADER ===== */}
         <header className="mb-10 md:mb-24">
@@ -110,7 +110,7 @@ const page = () => {
 
                   {/* タイトル行：スマホ=縦積み、PC=横並び */}
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-3 gap-1.5">
-                    <h3 className="text-sm md:text-xl font-bold text-slate-900 leading-snug">
+                    <h3 className="text-sm md:text-xl font-medium text-slate-900 leading-snug">
                       {item.title}
                     </h3>
                     <span className="inline-flex items-center gap-1 md:gap-2 text-[0.65rem] md:text-[0.8rem] font-extrabold tracking-[0.1em] uppercase text-blue-600 whitespace-nowrap md:shrink-0">

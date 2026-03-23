@@ -19,11 +19,9 @@ export default async function ServiceDetailPage({
   if (!service) notFound();
 
   return (
-    <main className=" py-14 md:py-24 lg:pt-50 w-full min-h-screen">
+    <main className=" py-14 md:py-24 lg:pt-50 w-full min-h-screen font-shippori">
       <article className="w-full max-w-[1060px] mx-auto px-5 md:px-10">
-     
         <header className="mb-20 md:mb-28">
-   
           <div className="flex items-center gap-2.5 mb-7">
             <span className="block w-7 h-px bg-blue-600 shrink-0" />
             <span className="text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-blue-600">
@@ -67,10 +65,12 @@ export default async function ServiceDetailPage({
                 >
                   <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-300 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-[350ms] ease-out" />
 
-                  <span className="text-[4.5rem] font-extrabold leading-none text-blue-400 tracking-[-0.04em] mb-5 select-none">
+                  {/* 右上に数字を配置 */}
+                  <span className="absolute top-5 right-6 text-[4.5rem] font-extrabold leading-none text-blue-400 tracking-[-0.04em] select-none opacity-20">
                     0{index + 1}
                   </span>
-                  <h3 className="text-[1.05rem] font-bold text-gray-900 mb-2.5 leading-[1.55]">
+
+                  <h3 className="text-[1.05rem] font-bold text-gray-900 mb-2.5 leading-[1.55] mt-2">
                     {merit.title}
                   </h3>
                   <p className="text-[0.84rem] text-gray-500 leading-[1.9] flex-1">
@@ -109,9 +109,6 @@ export default async function ServiceDetailPage({
                   }`}
                 >
                   <div className="flex-1 w-full flex flex-col justify-center">
-                    <span className="text-[4.5rem] font-extrabold leading-none text-blue-400 tracking-tight select-none mb-1">
-                      0{i + 1}
-                    </span>
                     <h3 className="text-[1.35rem] md:text-[1.65rem] font-bold text-gray-900 mb-4 leading-snug">
                       {feature.title}
                     </h3>
