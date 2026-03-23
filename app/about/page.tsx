@@ -89,7 +89,7 @@ export default function About() {
         </div>
 
         {/* 店舗情報 */}
-        <section className="bg-white p-5 md:p-12 rounded-2xl md:rounded-3xl shadow-sm border border-slate-200 mt-10 md:mt-0">
+        <section className="bg-white p-5 md:p-12 rounded-2xl md:rounded-3xl shadow-sm border border-slate-200 mt-10 md:mt-10">
           <h3 className="text-lg md:text-2xl font-bold mb-6 md:mb-10 text-center text-slate-900">
             店舗情報・アクセス
           </h3>
@@ -101,7 +101,7 @@ export default function About() {
                   所在地
                 </dt>
                 <dd className="flex-1 text-slate-700 font-medium text-sm md:text-base">
-                  〒520-2300 滋賀県野洲市（以下詳細な住所を入力してください）
+                  〒520-2300 滋賀県野洲市野洲市比留田134
                 </dd>
               </div>
 
@@ -110,7 +110,7 @@ export default function About() {
                   電話番号
                 </dt>
                 <dd className="flex-1 text-slate-700 font-medium text-sm md:text-base">
-                  012-345-6789
+                  077-575-4089
                 </dd>
               </div>
             </dl>
