@@ -53,14 +53,14 @@ export default function Schedule() {
         </table>
       </div>
 
-      <div className="mt-3 sm:mt-4 text-left text-[10px] sm:text-sm text-slate-600 leading-relaxed px-1">
-        <p className="flex items-start">
-          <span className="mr-1 text-red-500">※</span>
-          <span>
-            祝日のある週の場合は、定休日の木曜日も休まず営業・振替受付けいたします。
-          </span>
-        </p>
-      </div>
+      {/* <div className="mt-3 sm:mt-4 text-left text-[10px] sm:text-sm text-slate-600 leading-relaxed px-1"> */}
+      {/*   <p className="flex items-start"> */}
+      {/*     <span className="mr-1 text-red-500">※</span> */}
+      {/*     <span> */}
+      {/*       祝日のある週の場合は、定休日の木曜日も休まず営業・振替受付けいたします。 */}
+      {/*     </span> */}
+      {/*   </p> */}
+      {/* </div> */}
     </div>
   );
 }
