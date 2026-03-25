@@ -96,25 +96,58 @@ export default function Header() {
       {/* スマホメニュー */}
       <nav
         className={`
-    flex flex-col absolute top-0 right-0 bg-black text-white w-full h-screen justify-center items-center
-    transition-all duration-500 ease-in-out
-    ${isOpen ? "opacity-100 visible translate-y-0 pointer-events-auto" : "opacity-0 invisible -translate-y-5 pointer-events-none"}
-  `}
+          flex flex-col absolute top-0 right-0 w-full h-screen
+          bg-black/95 backdrop-blur-xl
+          justify-center items-center
+          transition-all duration-500 ease-in-out
+          ${
+            isOpen
+              ? "opacity-100 visible translate-y-0 pointer-events-auto"
+              : "opacity-0 invisible -translate-y-5 pointer-events-none"
+          }
+        `}
       >
-        <div className="flex flex-col items-center gap-10" onClick={toggleMenu}>
-          <Link href="/" className={linkClass("/")}>
-            Home
-          </Link>
-          <Link href="/about" className={linkClass("/about")}>
-            About
-          </Link>
-          <Link href="/services" className={linkClass("/services")}>
-            Services
-          </Link>
-          <Link href="/contact" className={linkClass("/contact")}>
-            Contact
-          </Link>
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-blue-500/10 blur-3xl" />
+          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-white/5 blur-2xl" />
         </div>
+
+        <div
+          className="relative z-10 flex flex-col items-center gap-0 w-full px-8"
+          onClick={toggleMenu}
+        >
+          {[
+            { href: "/", label: "Home" },
+            { href: "/about", label: "About" },
+            { href: "/services", label: "Services" },
+            { href: "/contact", label: "Contact" },
+          ].map(({ href, label }, i) => (
+            <Link
+              key={href}
+              href={href}
+              className={`
+                group relative w-full text-center py-6
+                text-4xl font-light tracking-widest uppercase
+                border-b border-white/10 last:border-b-0
+                transition-all duration-300
+                ${
+                  pathname === href
+                    ? "text-blue-400"
+                    : "text-white/80 hover:text-white"
+                }
+              `}
+              style={{ transitionDelay: isOpen ? `${i * 60}ms` : "0ms" }}
+            >
+              <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-px bg-blue-400 group-hover:w-8 transition-all duration-300" />
+              <span className="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-px bg-blue-400 group-hover:w-8 transition-all duration-300" />
+              {label}
+            </Link>
+          ))}
+        </div>
+
+        <p className="absolute bottom-10 text-white/20 text-xs tracking-[0.3em] uppercase">
+          © {new Date().getFullYear()} YG AUTO
+        </p>
       </nav>
     </header>
   );
