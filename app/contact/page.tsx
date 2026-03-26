@@ -38,7 +38,7 @@ export default function Contact() {
             <div className="mb-12">
               <a href="tel:000-0000-0000" className="group inline-block">
                 <span className="text-3xl md:text-7xl font-black tracking-tighter text-gray-950 group-hover:text-blue-600 transition-colors duration-300">
-                  000-0000-0000
+                  077-575-4089
                 </span>
                 <div className="h-1.5 w-0 group-hover:w-full bg-blue-600 transition-all duration-500 mx-auto mt-2 rounded-full" />
               </a>
@@ -46,7 +46,7 @@ export default function Contact() {
 
             <div className="space-y-4 mb-12">
               <p className="text-gray-600 font-medium">
-                受付時間：平日 9:00 〜 18:00（土日祝を除く）
+                受付時間：平日 9:00 〜 18:00（日祝を除く）
               </p>
               <p className="text-sm text-gray-400">
                 ※番号をお確かめのうえ、おかけ間違いのないようお願いいたします。
@@ -56,7 +56,7 @@ export default function Contact() {
             <div className="flex justify-center">
               <a
                 href="tel:000-0000-0000"
-                className="flex items-center gap-4 bg-blue-600 text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-gray-950 transition-all duration-300 shadow-lg shadow-blue-200"
+                className="flex items-center gap-4 bg-blue-600 text-white px-10 py-5 rounded-full font-bold text-sm md:text-lg hover:bg-gray-950 transition-all duration-300 shadow-lg shadow-blue-200"
               >
                 <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
                   <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM19 12h2c0-4.8-3.9-9-8.7-9v2c3.7 0 6.7 3 6.7 7zm-4 0h2c0-2.8-2.2-5-4.7-5v2c1.5 0 2.7 1.2 2.7 3z" />
