@@ -63,7 +63,7 @@ export default function Header() {
           alt="Sample Company"
           width={300}
           height={50}
-          className="w-45 h-18 lg:w-130 lg:h-35 inline-block bg-white rounded-xl"
+          className="w-45 h-18 lg:w-130 lg:h-35 inline-block rounded-xl"
         />
       </div>
 
