@@ -51,7 +51,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full flex items-center pe-5 md:pe-6 pt-0 mt-0 z-[100]
+      className={`fixed top-0 left-0 w-full flex items-center pe-5 md:pe-6 pt-0 mt-0 z-[100] bg-black/95 backdrop-blur-xl
         transition-all duration-500 ease-in-out
         ${isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}
        
@@ -63,7 +63,7 @@ export default function Header() {
           alt="Sample Company"
           width={300}
           height={50}
-          className="w-45 h-18 lg:w-130 lg:h-35 inline-block rounded-xl"
+          className="w-45 h-18 lg:w-120 lg:h-30 inline-block rounded-xl"
         />
       </div>
 
@@ -85,7 +85,7 @@ export default function Header() {
 
       {/* ハンバーガー */}
       <button
-        className="md:ml-10 p-2 z-50 rounded-lg bg-black hover:bg-gray-200 transition md:hidden ml-auto"
+        className="md:ml-10 p-2 z-50 rounded-lg bg-black hover:bg-gray-200 border-2 border-white transition md:hidden ml-auto"
         onClick={toggleMenu}
       >
         {isOpen ? (
