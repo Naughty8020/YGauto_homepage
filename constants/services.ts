@@ -18,7 +18,7 @@ export const SERVICES: Service[] = [
     slug: "sales", 
     title: "車両販売",
     subTitle: "国産・輸入車、新車から厳選中古車まで",
-    image: "/unsplash/Work.jpg",
+    image: "/CarKey.jpg",
     description:
       "滋賀県野洲市を拠点に、国産車・輸入車問わず幅広いラインナップを取り揃えております。新車販売はもちろん、中古車は大手オークションから良質な車両のみを厳選して仕入れ。自社修理工場で国家二級整備士が点検・整備を徹底した上で、お客様のご要望に沿った理想の一台をご提供します。ローンの申し込みも可能です。",
     merits: [
@@ -59,7 +59,7 @@ export const SERVICES: Service[] = [
     slug: "purchase", 
     title: "買取",
     subTitle: "不動車・事故車もOK。高価買取を実現",
-    image: "/unsplash/tireReplacement1.jpg",
+    image: "/handshake.jpg",
     description:
       "乗らなくなったお車や、乗り換え時の下取りもお任せください。自社でオークション会場まで搬送し、中間経費を徹底的に削減することで高価買取を実現。不動車や事故車についても誠実に対応いたします。査定はもちろん無料。お客様のご都合に合わせ、野洲市周辺の出張査定も承っております。",
     merits: [
@@ -100,7 +100,7 @@ export const SERVICES: Service[] = [
     slug: "inspection", 
     title: "車検・整備",
     subTitle: "国家二級整備士による安心・安全なメンテナンス",
-    image: "/unsplash/maintenance.jpg",
+    image: "/tireReplacement.jpg",
     description:
       "自社修理工場を完備し、経験豊富な国家二級整備士が点検・整備を一貫して行います。車検見積もりは無料。点検内容や必要な整備については、お客様に分かりやすく丁寧にご説明することを大切にしています。最新の設備でお車の状態を正確に把握し、安心・安全な走行を支えます。",
     merits: [
@@ -141,7 +141,7 @@ export const SERVICES: Service[] = [
     slug: "coating", 
     title: "コーティング・フィルム",
     subTitle: "徹底した下処理で、新車のような輝きを",
-    image: "/unsplash/engine.jpg",
+    image: "/coating.jpg",
     description:
       "ボディーおよびフロントガラスのコーティング、カーフィルム施工を承ります。車両販売時だけでなく、コーティングのみでのご予約も可能です。下処理から徹底的にこだわり、ボディを磨き上げることで新車のような光沢を復元。施工後は汚れが落ちやすくなり、日頃のお手入れが格段に楽になります。",
     merits: [
@@ -182,7 +182,7 @@ export const SERVICES: Service[] = [
     slug: "roadservice", 
     title: "レッカー・ロードサービス",
     subTitle: "急なトラブル、バッテリー上がり、事故対応に迅速出動",
-    image: "/unsplash/bonnet.jpg",
+    image: "/wrecker.jpg",
     description:
       "バッテリー上がりや異音、チェックランプ点灯、万が一の事故など、急なトラブルの際はすぐにご連絡ください。不安な状況でも迅速に駆けつけ、適切なサポートをいたします。レッカー出動が必要な場合も自社で対応。滋賀県野洲市から、お客様の安心のために全力でサポートいたします。",
     merits: [
