@@ -14,7 +14,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3 md:gap-6 pb-8 md:pb-12 border-b border-[#DDDDD8]">
-            <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight">
+            <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight ">
               会社案内
             </h1>
             <p className="text-xs md:text-sm text-gray-500 leading-[1.8] md:leading-[1.9] max-w-xs font-light md:pb-1">
