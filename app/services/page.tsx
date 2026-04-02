@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="pt-28 md:pt-40 min-h-screen text-slate-800 bg-slate-50/50 font-shippori">
+    <div className="pt-28 md:pt-40 min-h-screen text-slate-800 bg-slate-50/50 ">
       <main className="max-w-5xl mx-auto py-8 md:py-12 px-4 md:px-6">
         {/* ===== HEADER ===== */}
         <header className="mb-10 md:mb-24">
