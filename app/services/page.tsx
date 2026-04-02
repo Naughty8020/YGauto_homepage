@@ -86,7 +86,7 @@ const page = () => {
                 className="group relative flex flex-row md:flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-200 hover:-translate-y-1 transition-all duration-300"
               >
                 {/* 画像エリア：スマホ=左側固定幅、PC=上部全幅 */}
-                <div className="w-28 shrink-0 md:w-full md:h-44 overflow-hidden">
+                <div className="w-28 h-28 shrink-0 md:w-full md:h-44 overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.title}
