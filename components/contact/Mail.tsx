@@ -1,4 +1,15 @@
+"use client";
+
 export default function Mail() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    console.log(e);
+    const formData = new FormData(e.currentTarget);
+
+    console.log(formData.get("email"));
+  };
+
   return (
     <section className="max-w-3xl mx-auto">
       <div className="bg-white p-8 md:p-16 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] border border-[#EEEEEE]">
@@ -7,7 +18,24 @@ export default function Mail() {
           <div className="w-8 h-1 bg-blue-600 mx-auto"></div>
         </div>
 
-        <form action="#" className="space-y-10">
+        <form onSubmit={handleSubmit} className="space-y-10">
+          <div className="relative">
+            <label
+              htmlFor="email"
+              className="text-[0.7rem] font-bold uppercase tracking-wider text-gray-400 mb-2 block"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="username"
+              className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-blue-600 transition-colors placeholder:text-gray-200"
+              placeholder="田中 太郎"
+              required
+            />
+          </div>
+
           <div className="relative">
             <label
               htmlFor="email"
@@ -18,6 +46,7 @@ export default function Mail() {
             <input
               type="email"
               id="email"
+              name="email"
               className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-blue-600 transition-colors placeholder:text-gray-200"
               placeholder="example@mail.com"
               required
@@ -34,6 +63,7 @@ export default function Mail() {
             <input
               type="text"
               id="subject"
+              name="subject"
               className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-blue-600 transition-colors placeholder:text-gray-200"
               placeholder="ご用件を選択または入力してください"
               required
@@ -49,6 +79,7 @@ export default function Mail() {
             </label>
             <textarea
               id="message"
+              name="message"
               rows={4}
               className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-blue-600 transition-colors placeholder:text-gray-200 resize-none"
               placeholder="お問い合わせ内容"
