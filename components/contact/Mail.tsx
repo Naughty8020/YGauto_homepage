@@ -1,13 +1,28 @@
 "use client";
 
 export default function Mail() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    console.log(e);
     const formData = new FormData(e.currentTarget);
+    const data = {
+      username: formData.get("username") as string,
+      email: formData.get("email") as string,
+      subject: formData.get("subject") as string,
+      message: formData.get("message") as string,
+    };
 
-    console.log(formData.get("email"));
+    const res = await fetch("http://localhost:3000/api/resend", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      alert("送信しました！");
+    } else {
+      alert("送信に失敗しました。");
+    }
   };
 
   return (

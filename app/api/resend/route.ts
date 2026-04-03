@@ -3,18 +3,24 @@ import { NextResponse } from "next/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+console.log(process.env.RESEND_API_KEY);
+
+export async function GET() {
+  return "HELLO";
+}
+
 export async function POST(req: Request) {
-  const { name, email, phone, message } = await req.json();
+  const { username, email, subject, message } = await req.json();
 
   try {
     await resend.emails.send({
       from: "onboarding@resend.dev",
       to: process.env.MAIN_RECEIVE_ADDRESS!,
-      subject: `【お問い合わせ】${name}様より`,
+      subject: `【お問い合わせ】${username}様より`,
       html: `
-        <p><strong>名前：</strong>${name}</p>
+        <p><strong>名前：</strong>${username}</p>
         <p><strong>メール：</strong>${email}</p>
-        <p><strong>電話：</strong>${phone ?? "未入力"}</p>
+        <p><strong>項目：</strong>${subject ?? "未入力"}</p>
         <p><strong>内容：</strong><br/>${message}</p>
       `,
     });
