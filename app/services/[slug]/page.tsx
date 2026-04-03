@@ -19,7 +19,7 @@ export default async function ServiceDetailPage({
   if (!service) notFound();
 
   return (
-    <main className="pt-28 md:pt-40 pb-10 sm:pb-14 md:pb-24 min-h-screen text-slate-800 bg-slate-50/50 font-shippori">
+    <main className="pt-28 md:pt-40 pb-10 sm:pb-14 md:pb-24 min-h-screen text-slate-800 bg-slate-50/50">
       <article className="w-full max-w-[1060px] mx-auto px-4 sm:px-6 md:px-10">
         {/* ── Header ── */}
         <header className="mb-14 sm:mb-20 md:mb-28">

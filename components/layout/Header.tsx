@@ -57,7 +57,7 @@ export default function Header() {
        
       `}
     >
-      <div className="flex items-center ps-2 pe-7 pt-4 w-100 pb-2 lg:px-6 lg:pt-4 lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-40">
+      <div className="flex items-center ps-2 pe-7 pt-4 w-60 pb-2 lg:px-6 lg:pt-4 lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-40">
         <Image
           src="/Image1.png"
           alt="Sample Company"
@@ -115,7 +115,7 @@ export default function Header() {
         </div>
 
         <div
-          className="relative z-10 flex flex-col items-center gap-0 w-full px-8"
+          className="relative z-10 flex flex-col items-center gap-0 w-full px-8 mt-10"
           onClick={toggleMenu}
         >
           {[
@@ -129,7 +129,7 @@ export default function Header() {
               href={href}
               className={`
                 group relative w-full text-center py-6
-                text-4xl font-light tracking-widest uppercase
+                text-2xl font-light tracking-widest uppercase
                 border-b border-white/10 last:border-b-0
                 transition-all duration-300
                 ${
