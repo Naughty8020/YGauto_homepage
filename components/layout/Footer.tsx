@@ -22,7 +22,7 @@ export default function Footer() {
               <Twitter size={24} /> {/* スマホ考慮で少し大きく */}
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/p/DTZbFwkEcIH/"
               className="text-gray-600 hover:text-pink-500 transition-colors p-1"
             >
               <Instagram size={24} />
