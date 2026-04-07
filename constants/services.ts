@@ -18,7 +18,7 @@ export const SERVICES: Service[] = [
     slug: "sales", 
     title: "車両販売",
     subTitle: "国産・輸入車、新車から厳選中古車まで",
-    image: "/unsplash/Work.jpg",
+    image: "/CarKey.jpg",
     description:
       "滋賀県野洲市を拠点に、国産車・輸入車問わず幅広いラインナップを取り揃えております。新車販売はもちろん、中古車は大手オークションから良質な車両のみを厳選して仕入れ。自社修理工場で国家二級整備士が点検・整備を徹底した上で、お客様のご要望に沿った理想の一台をご提供します。ローンの申し込みも可能です。",
     merits: [
@@ -41,17 +41,17 @@ export const SERVICES: Service[] = [
       {
         title: "ローン申し込み対応",
         description: "各種オートローンを取り扱っております。月々のお支払い計画もご相談ください。",
-        image: "/unsplash/campaign-creators-e6n7uoEnYbA-unsplash.jpg",
+        image: "/contract4.jpg",
       },
       {
         title: "自社工場での納車前点検",
         description: "経験豊富な整備士が、エンジンから細部まで厳格にチェックしてからお渡しします。",
-        image: "/unsplash/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
+        image: "/Inspection.jpg",
       },
       {
         title: "輸入車・国産車対応",
         description: "メーカーを問わず、お客様のライフスタイルに最適な一台をご提案いたします。",
-        image: "/unsplash/k-mitch-hodge-Esi7nknKxmw-unsplash.jpg",
+        image: "/sale.jpg",
       },
     ],
   },
@@ -59,7 +59,7 @@ export const SERVICES: Service[] = [
     slug: "purchase", 
     title: "買取",
     subTitle: "不動車・事故車もOK。高価買取を実現",
-    image: "/unsplash/tireReplacement1.jpg",
+    image: "/handshake.jpg",
     description:
       "乗らなくなったお車や、乗り換え時の下取りもお任せください。自社でオークション会場まで搬送し、中間経費を徹底的に削減することで高価買取を実現。不動車や事故車についても誠実に対応いたします。査定はもちろん無料。お客様のご都合に合わせ、野洲市周辺の出張査定も承っております。",
     merits: [
@@ -82,17 +82,17 @@ export const SERVICES: Service[] = [
       {
         title: "スピード査定",
         description: "お待たせすることなく、その場で迅速に査定。透明性の高い価格提示を徹底します。",
-        image: "/unsplash/campaign-creators-e6n7uoEnYbA-unsplash.jpg",
+        image: "/contract2.jpg",
       },
       {
         title: "手続き代行",
         description: "名義変更などの面倒な書類手続きも、私たちが責任を持って代行いたします。",
-        image: "/unsplash/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
+        image: "/contract.jpg",
       },
       {
         title: "下取りも歓迎",
         description: "次のお車への乗り換え時、下取りとして査定することでさらにお得な提案が可能です。",
-        image: "/unsplash/k-mitch-hodge-Esi7nknKxmw-unsplash.jpg",
+        image: "/contract5.jpg",
       },
     ],
   },
@@ -100,7 +100,7 @@ export const SERVICES: Service[] = [
     slug: "inspection", 
     title: "車検・整備",
     subTitle: "国家二級整備士による安心・安全なメンテナンス",
-    image: "/unsplash/maintenance.jpg",
+    image: "/tireReplacement.jpg",
     description:
       "自社修理工場を完備し、経験豊富な国家二級整備士が点検・整備を一貫して行います。車検見積もりは無料。点検内容や必要な整備については、お客様に分かりやすく丁寧にご説明することを大切にしています。最新の設備でお車の状態を正確に把握し、安心・安全な走行を支えます。",
     merits: [
@@ -123,17 +123,17 @@ export const SERVICES: Service[] = [
       {
         title: "日常のメンテナンス",
         description: "オイル交換やタイヤ交換など、些細なことでもお気軽にお立ち寄りください。",
-        image: "/unsplash/campaign-creators-e6n7uoEnYbA-unsplash.jpg",
+        image: "/oil.jpg",
       },
       {
         title: "精密な点検",
         description: "目視だけでなく、専用の診断機器等を用いて見えない部分の不調もチェックします。",
-        image: "/unsplash/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
+        image: "/Maintenance.jpg",
       },
       {
         title: "丁寧な解説",
         description: "お車の現状を写真等でお見せし、納得いただいた上で整備を開始します。",
-        image: "/unsplash/k-mitch-hodge-Esi7nknKxmw-unsplash.jpg",
+        image: "/tireReplacement2.jpg",
       },
     ],
   },
@@ -141,7 +141,7 @@ export const SERVICES: Service[] = [
     slug: "coating", 
     title: "コーティング・フィルム",
     subTitle: "徹底した下処理で、新車のような輝きを",
-    image: "/unsplash/engine.jpg",
+    image: "/coating.jpg",
     description:
       "ボディーおよびフロントガラスのコーティング、カーフィルム施工を承ります。車両販売時だけでなく、コーティングのみでのご予約も可能です。下処理から徹底的にこだわり、ボディを磨き上げることで新車のような光沢を復元。施工後は汚れが落ちやすくなり、日頃のお手入れが格段に楽になります。",
     merits: [
@@ -164,17 +164,17 @@ export const SERVICES: Service[] = [
       {
         title: "カーフィルム施工",
         description: "断熱・UVカット効果で車内を快適に。プライバシー保護にも最適です。",
-        image: "/unsplash/cloud-infrastructure.jpg",
+        image: "/coating.jpg",
       },
       {
         title: "コーティングのみOK",
         description: "今の愛車をもっと綺麗にしたいという方、コーティング単体でのご依頼も大歓迎です。",
-        image: "/unsplash/security-shield.jpg",
+        image: "/coating2.jpg",
       },
       {
         title: "アフターケアアドバイス",
         description: "施工後の輝きを維持するための、正しい洗車方法なども丁寧にお教えします。",
-        image: "/unsplash/refactoring.jpg",
+        image: "/contract6.jpg",
       },
     ],
   },
@@ -182,7 +182,7 @@ export const SERVICES: Service[] = [
     slug: "roadservice", 
     title: "レッカー・ロードサービス",
     subTitle: "急なトラブル、バッテリー上がり、事故対応に迅速出動",
-    image: "/unsplash/bonnet.jpg",
+    image: "/wrecker.jpg",
     description:
       "バッテリー上がりや異音、チェックランプ点灯、万が一の事故など、急なトラブルの際はすぐにご連絡ください。不安な状況でも迅速に駆けつけ、適切なサポートをいたします。レッカー出動が必要な場合も自社で対応。滋賀県野洲市から、お客様の安心のために全力でサポートいたします。",
     merits: [
@@ -205,17 +205,17 @@ export const SERVICES: Service[] = [
       {
         title: "トラブル相談",
         description: "異音や警告灯など「これって大丈夫？」という不安にもプロが対応します。",
-        image: "/unsplash/cloud-infrastructure.jpg",
+        image: "/call.jpg",
       },
       {
         title: "レッカー搬送",
         description: "自社車両により、現場から修理工場まで安全にお車をお運びします。",
-        image: "/unsplash/security-shield.jpg",
+        image: "/wrecker2.jpg",
       },
       {
         title: "安心の窓口",
         description: "パニックになりがちな緊急時も、丁寧な聞き取りで状況を整理しサポートします。",
-        image: "/unsplash/refactoring.jpg",
+        image: "/contract3.jpg",
       },
     ],
   }
