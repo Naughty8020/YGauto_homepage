@@ -41,17 +41,17 @@ export const SERVICES: Service[] = [
       {
         title: "ローン申し込み対応",
         description: "各種オートローンを取り扱っております。月々のお支払い計画もご相談ください。",
-        image: "/unsplash/campaign-creators-e6n7uoEnYbA-unsplash.jpg",
+        image: "/contract4.jpg",
       },
       {
         title: "自社工場での納車前点検",
         description: "経験豊富な整備士が、エンジンから細部まで厳格にチェックしてからお渡しします。",
-        image: "/unsplash/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
+        image: "/Inspection.jpg",
       },
       {
         title: "輸入車・国産車対応",
         description: "メーカーを問わず、お客様のライフスタイルに最適な一台をご提案いたします。",
-        image: "/unsplash/k-mitch-hodge-Esi7nknKxmw-unsplash.jpg",
+        image: "/sale.jpg",
       },
     ],
   },
@@ -82,17 +82,17 @@ export const SERVICES: Service[] = [
       {
         title: "スピード査定",
         description: "お待たせすることなく、その場で迅速に査定。透明性の高い価格提示を徹底します。",
-        image: "/unsplash/campaign-creators-e6n7uoEnYbA-unsplash.jpg",
+        image: "/contract2.jpg",
       },
       {
         title: "手続き代行",
         description: "名義変更などの面倒な書類手続きも、私たちが責任を持って代行いたします。",
-        image: "/unsplash/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
+        image: "/contract.jpg",
       },
       {
         title: "下取りも歓迎",
         description: "次のお車への乗り換え時、下取りとして査定することでさらにお得な提案が可能です。",
-        image: "/unsplash/k-mitch-hodge-Esi7nknKxmw-unsplash.jpg",
+        image: "/contract5.jpg",
       },
     ],
   },
@@ -123,17 +123,17 @@ export const SERVICES: Service[] = [
       {
         title: "日常のメンテナンス",
         description: "オイル交換やタイヤ交換など、些細なことでもお気軽にお立ち寄りください。",
-        image: "/unsplash/campaign-creators-e6n7uoEnYbA-unsplash.jpg",
+        image: "/oil.jpg",
       },
       {
         title: "精密な点検",
         description: "目視だけでなく、専用の診断機器等を用いて見えない部分の不調もチェックします。",
-        image: "/unsplash/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
+        image: "/Maintenance.jpg",
       },
       {
         title: "丁寧な解説",
         description: "お車の現状を写真等でお見せし、納得いただいた上で整備を開始します。",
-        image: "/unsplash/k-mitch-hodge-Esi7nknKxmw-unsplash.jpg",
+        image: "/tireReplacement2.jpg",
       },
     ],
   },
@@ -164,17 +164,17 @@ export const SERVICES: Service[] = [
       {
         title: "カーフィルム施工",
         description: "断熱・UVカット効果で車内を快適に。プライバシー保護にも最適です。",
-        image: "/unsplash/cloud-infrastructure.jpg",
+        image: "/coating.jpg",
       },
       {
         title: "コーティングのみOK",
         description: "今の愛車をもっと綺麗にしたいという方、コーティング単体でのご依頼も大歓迎です。",
-        image: "/unsplash/security-shield.jpg",
+        image: "/coating2.jpg",
       },
       {
         title: "アフターケアアドバイス",
         description: "施工後の輝きを維持するための、正しい洗車方法なども丁寧にお教えします。",
-        image: "/unsplash/refactoring.jpg",
+        image: "/contract6.jpg",
       },
     ],
   },
@@ -205,17 +205,17 @@ export const SERVICES: Service[] = [
       {
         title: "トラブル相談",
         description: "異音や警告灯など「これって大丈夫？」という不安にもプロが対応します。",
-        image: "/unsplash/cloud-infrastructure.jpg",
+        image: "/call.jpg",
       },
       {
         title: "レッカー搬送",
         description: "自社車両により、現場から修理工場まで安全にお車をお運びします。",
-        image: "/unsplash/security-shield.jpg",
+        image: "/wrecker2.jpg",
       },
       {
         title: "安心の窓口",
         description: "パニックになりがちな緊急時も、丁寧な聞き取りで状況を整理しサポートします。",
-        image: "/unsplash/refactoring.jpg",
+        image: "/contract3.jpg",
       },
     ],
   }
