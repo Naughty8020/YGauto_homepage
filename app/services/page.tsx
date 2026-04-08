@@ -1,5 +1,6 @@
 import { SERVICES } from "@/constants/services";
 import Link from "next/link";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -28,16 +29,14 @@ const page = () => {
           </div>
         </header>
 
-        {/* ===== HERO IMAGE ===== */}
-        <div className="w-full h-[180px] md:h-[460px] rounded-2xl overflow-hidden relative mb-10 md:mb-24">
-          <img
-            src="/unsplash/campaign-creators-e6n7uoEnYbA-unsplash.jpg"
-            alt="サービス画像"
-            className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
-        </div>
-
+<div className="w-full h-[180px] md:h-[340px] rounded-2xl overflow-hidden relative mb-10 md:mb-24">
+  <Image
+    src="/Image1.png"
+    alt="サービス画像"
+    fill
+    className="object-cover object-center"
+  />
+</div>
         {/* ===== INTRO TEXT ===== */}
         <div className="mb-10 md:mb-20 max-w-2xl">
           <h2 className="text-lg md:text-2xl font-bold text-slate-900 leading-snug mb-3 md:mb-5">
