@@ -58,7 +58,7 @@ export default function Header() {
       `}
     >
       {/* ロゴ部分の親要素の幅を w-60 から w-auto (または w-fit) に変更して、ロゴが大きくなれるようにしました */}
-      <div className="flex items-center ps-2 pe-7 pt-4 w-auto pb-2 lg:px-6 lg:pt-4 lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-40 flex-shrink-0">
+      <div className="flex items-center ps-2 pe-4 pt-2 w-auto pb-1 lg:px-6 lg:pt-4 lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-40 flex-shrink-0">
         <Image
           src="/Image1.png"
           alt="Sample Company"
@@ -66,7 +66,7 @@ export default function Header() {
           width={500} 
           height={125}
       
-          className="w-64 h-24 lg:w-[350px] lg:h-30 inline-block rounded-xl object-contain"
+          className="w-48 h-16 md:w-64 md:h-24 lg:w-[350px] lg:h-30 inline-block rounded-xl object-contain"
           priority         
           />
       </div>
@@ -89,13 +89,13 @@ export default function Header() {
 
       {/* ハンバーガー */}
       <button
-        className="md:ml-10 p-2 z-50 rounded-lg bg-black hover:bg-gray-200 border-2 border-white transition md:hidden ml-auto flex-shrink-0"
+        className="md:ml-10 p-1.5 md:p-2 z-50 rounded-lg bg-black hover:bg-gray-200 border-2 border-white transition md:hidden ml-auto flex-shrink-0"
         onClick={toggleMenu}
       >
         {isOpen ? (
-          <CloseIcon className="w-10 h-10 text-white" />
+          <CloseIcon className="w-7 h-7 md:w-10 md:h-10 text-white" />
         ) : (
-          <MenuIcon className="w-10 h-10 text-white" />
+          <MenuIcon className="w-7 h-7 md:w-10 md:h-10 text-white" />
         )}
       </button>
 
