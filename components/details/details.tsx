@@ -1,5 +1,4 @@
 import Map from '../details/Map';
-import Schedule from '../details/Schedule';
 import Image from 'next/image';
 
 export default function Details() {
@@ -13,41 +12,45 @@ export default function Details() {
   ];
 
   return (
-    <div className="min-h-screen">
-      <p className="text-center text-5xl sm:text-6xl md:text-9xl">
-        🏎️
-      </p>
-
-      <div className="relative w-full min-h-[320px] sm:min-h-[600px] bg-black [clip-path:ellipse(180%_100%_at_50%_100%)] md:[clip-path:ellipse(100%_100%_at_50%_100%)] lg:[clip-path:ellipse(110%_100%_at_50%_100%)] z-10 pb-4 sm:pb-10 md:pb-16">
-
-        <div className="relative z-20 flex flex-col items-center pt-1 sm:pt-6 md:pt-16 px-6 sm:px-8">
-
-          <div className="flex items-center justify-center my-1 sm:my-4 gap-2 sm:gap-3 lg:gap-7 z-50">
-            <Image
-              src="/Image1.png"
-              alt="Sample Company"
-              width={300}
-              height={50}
-              className="w-30 h-13 sm:w-25 sm:h-10 lg:w-130 lg:h-40 mt-8 mb-3 inline-block"
-            />
+    <section className="bg-slate-50 border-y border-slate-200">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16">
+        <div className="mb-8 md:mb-12">
+          <div className="flex items-center gap-2 md:gap-3 mb-4">
+            <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
+            <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.25em] uppercase text-sub-600">
+              Company Details
+            </span>
           </div>
 
-          {/* カード */}
-          <div className="w-full max-w-sm sm:max-w-xl md:max-w-2xl bg-white rounded-lg sm:rounded-[2rem] shadow-lg sm:shadow-2xl overflow-hidden">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 pb-6 md:pb-8 border-b border-slate-300">
+            <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight text-slate-900">
+              会社概要・アクセス
+            </h2>
+            <div className="w-full md:w-auto md:pb-1">
+              <Image
+                src="/Image1.png"
+                alt="YGauto"
+                width={300}
+                height={50}
+                className="w-44 md:w-56 h-auto object-contain"
+              />
+            </div>
+          </div>
+        </div>
 
-            <div className="p-2 sm:p-6">
-              <h2 className="text-sm sm:text-2xl md:text-3xl ml-2 sm:ml-3 font-bold text-slate-800 mb-2 sm:mb-6 flex items-center">
-                <span className="w-1 h-4 sm:w-2 sm:h-8 bg-sub-500 rounded-full mr-2 sm:mr-4"></span>
-                会社概要
-              </h2>
-
+        <div className="bg-white border border-slate-300">
+          <div className="grid md:grid-cols-5">
+            <div className="md:col-span-2 border-b md:border-b-0 md:border-r border-slate-200 p-4 sm:p-6 md:p-8">
+              <h3 className="text-sm md:text-base font-bold tracking-widest uppercase text-slate-700 mb-4 md:mb-6">
+                Company Info
+              </h3>
               <dl className="divide-y divide-slate-100">
                 {companyInfo.map((item, index) => (
-                  <div key={index} className="flex flex-col md:flex-row py-0.5 sm:py-1">
-                    <dt className="md:w-1/3 ml-2 sm:ml-5 font-bold text-slate-500 text-[10px] sm:text-sm md:text-lg mb-0 md:mb-0">
+                  <div key={index} className="py-2.5 md:py-3">
+                    <dt className="text-[11px] md:text-xs font-bold tracking-wide text-slate-500 mb-1">
                       {item.label}
                     </dt>
-                    <dd className="md:w-2/3 ml-2 sm:ml-7 text-slate-800 text-[10px] sm:text-sm md:text-lg leading-tight">
+                    <dd className="text-xs md:text-sm text-slate-800 leading-relaxed">
                       {item.value}
                     </dd>
                   </div>
@@ -55,17 +58,15 @@ export default function Details() {
               </dl>
             </div>
 
-            <div className="p-2 sm:p-6">
-              <h3 className="text-xs sm:text-xl font-bold text-slate-800 mb-1 sm:mb-4">
-                アクセス
+            <div className="md:col-span-3 p-4 sm:p-6 md:p-8">
+              <h3 className="text-sm md:text-base font-bold tracking-widest uppercase text-slate-700 mb-4 md:mb-6">
+                Access
               </h3>
               <Map />
             </div>
-
           </div>
-
         </div>
       </div>
-    </div>
+    </section>
   );
 }
