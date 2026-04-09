@@ -25,7 +25,7 @@ export default async function ServiceDetailPage({
         <header className="mb-20 md:mb-32">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-8 mb-10 md:mb-16">
             <div>
-              <span className="block text-[0.6rem] sm:text-[0.65rem] font-light tracking-[0.4em] uppercase text-gray-400 mb-6 md:mb-8">
+              <span className="block text-[0.6rem] sm:text-[0.65rem] font-light tracking-[0.4em] uppercase text-sub-500 mb-6 md:mb-8">
                 SERVICE DETAIL
               </span>
               <h1 className="text-3xl sm:text-4xl md:text-6xl font-light tracking-[0.1em] md:tracking-[0.2em] uppercase leading-tight">
@@ -55,7 +55,7 @@ export default async function ServiceDetailPage({
           <section>
             <div className="flex flex-col md:flex-row gap-8 md:gap-24 mb-16 md:mb-20 border-t border-black/10 pt-10 md:pt-12">
               <div className="md:w-1/4 shrink-0">
-                <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-gray-400">
+                <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
                   MERIT
                 </h2>
               </div>
@@ -72,8 +72,8 @@ export default async function ServiceDetailPage({
                 <div key={merit.title} className="flex flex-col group">
                   {/* アコーディオン風ではなく、数字とタイトルを上下でしっかり分ける */}
                   <div className="flex flex-col mb-4 md:mb-6 border-b border-black/10 pb-6 md:pb-8 relative overflow-hidden">
-                    <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-black group-hover:w-full transition-all duration-700 ease-out" />
-                    <span className="text-4xl sm:text-5xl font-light tracking-tighter text-gray-300 mb-4">
+                    <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-sub-500 group-hover:w-full transition-all duration-700 ease-out" />
+                    <span className="text-4xl sm:text-5xl font-light tracking-tighter text-sub-400 mb-4">
                       0{index + 1}
                     </span>
                     <h3 className="text-sm sm:text-base font-medium tracking-widest text-gray-900 leading-relaxed">
@@ -92,7 +92,7 @@ export default async function ServiceDetailPage({
           {service.feathers && service.feathers.length > 0 && (
             <section>
               <div className="border-t border-black/10 pt-10 md:pt-12 mb-16 md:mb-24">
-                <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-gray-400">
+                <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
                   FEATURES
                 </h2>
               </div>
@@ -115,7 +115,7 @@ export default async function ServiceDetailPage({
                     </div>
 
                     <div className="flex-1 w-full flex flex-col justify-center">
-                      <span className="text-[0.6rem] md:text-[0.65rem] font-light tracking-[0.4em] text-gray-400 mb-6 md:mb-8 block">
+                      <span className="text-[0.6rem] md:text-[0.65rem] font-light tracking-[0.4em] text-sub-500 mb-6 md:mb-8 block">
                         FEATURE // {String(i + 1).padStart(2, '0')}
                       </span>
                       <h3 className="text-2xl sm:text-3xl md:text-4xl font-light tracking-wider mb-6 md:mb-8 leading-[1.4] text-gray-900">
@@ -135,7 +135,7 @@ export default async function ServiceDetailPage({
           {service.detail && service.detail.length > 0 && (
             <section>
               <div className="border-t border-black/10 pt-10 md:pt-12 mb-8 md:mb-12">
-                <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-gray-400">
+                <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
                   DETAILS
                 </h2>
               </div>
@@ -171,7 +171,7 @@ export default async function ServiceDetailPage({
           {/* ── Other Services ── */}
           <section className="pb-10">
             <div className="border-t border-black/10 pt-10 md:pt-12 mb-10 md:mb-16 flex items-center justify-between">
-              <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-gray-400">
+              <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
                 OTHER SERVICES
               </h2>
             </div>
@@ -193,7 +193,7 @@ export default async function ServiceDetailPage({
                     </div>
                     <div className="flex flex-col flex-1 pr-2">
                       {item.subTitle && (
-                        <span className="text-[0.5rem] md:text-[0.6rem] font-light text-gray-400 uppercase tracking-[0.2em] mb-1 md:mb-1.5">
+                        <span className="text-[0.5rem] md:text-[0.6rem] font-light text-sub-500 uppercase tracking-[0.2em] mb-1 md:mb-1.5">
                           {item.subTitle}
                         </span>
                       )}
@@ -201,7 +201,7 @@ export default async function ServiceDetailPage({
                         <h3 className="text-xs md:text-sm font-medium tracking-[0.1em] md:tracking-[0.15em] uppercase text-gray-900 truncate">
                           {item.title}
                         </h3>
-                        <span className="w-4 md:w-6 h-[1px] shrink-0 bg-black/30 group-hover:bg-black group-hover:w-6 md:group-hover:w-8 transition-all duration-500 ml-2" />
+                        <span className="w-4 md:w-6 h-[1px] shrink-0 bg-sub-300 group-hover:bg-sub-500 group-hover:w-6 md:group-hover:w-8 transition-all duration-500 ml-2" />
                       </div>
                     </div>
                   </Link>
