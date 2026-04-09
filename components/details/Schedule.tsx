@@ -24,22 +24,9 @@ export default function Schedule() {
           </thead>
 
           <tbody>
-            <tr className="border-b border-slate-300">
-              <td className="py-2 px-1 sm:py-4 sm:px-4 bg-slate-50 font-medium whitespace-nowrap w-28 sm:w-40">
-                9:30 - 12:30
-              </td>
-              <td className="py-2 border-l border-slate-300">●</td>
-              <td className="py-2 border-l border-slate-300">●</td>
-              <td className="py-2 border-l border-slate-300">●</td>
-              <td className="py-2 border-l border-slate-300">●</td>
-              <td className="py-2 border-l border-slate-300">●</td>
-              <td className="py-2 border-l border-slate-300">●</td>
-              <td className="py-2 border-l border-slate-300 text-slate-400">×</td>
-            </tr>
-
             <tr>
               <td className="py-2 px-1 sm:py-4 sm:px-4 bg-slate-50 font-medium whitespace-nowrap w-28 sm:w-40">
-                14:30 - 18:30
+                9:30 - 18:30
               </td>
               <td className="py-2 border-l border-slate-300">●</td>
               <td className="py-2 border-l border-slate-300">●</td>

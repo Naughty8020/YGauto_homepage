@@ -37,7 +37,7 @@ export default function Details() {
 
             <div className="p-2 sm:p-6">
               <h2 className="text-sm sm:text-2xl md:text-3xl ml-2 sm:ml-3 font-bold text-slate-800 mb-2 sm:mb-6 flex items-center">
-                <span className="w-1 h-4 sm:w-2 sm:h-8 bg-sky-500 rounded-full mr-2 sm:mr-4"></span>
+                <span className="w-1 h-4 sm:w-2 sm:h-8 bg-sub-500 rounded-full mr-2 sm:mr-4"></span>
                 会社概要
               </h2>
 

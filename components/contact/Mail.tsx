@@ -30,7 +30,7 @@ export default function Mail() {
       <div className="bg-white p-8 md:p-16 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] border border-[#EEEEEE]">
         <div className="mb-12 text-center">
           <h2 className="text-xl font-extrabold text-gray-900 mb-2">mail</h2>
-          <div className="w-8 h-1 bg-blue-600 mx-auto"></div>
+          <div className="w-8 h-1 bg-sub-600 mx-auto"></div>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-10">
@@ -45,7 +45,7 @@ export default function Mail() {
               type="text"
               id="name"
               name="username"
-              className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-blue-600 transition-colors placeholder:text-gray-200"
+              className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-sub-600 transition-colors placeholder:text-gray-200"
               placeholder="田中 太郎"
               required
             />
@@ -62,7 +62,7 @@ export default function Mail() {
               type="email"
               id="email"
               name="email"
-              className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-blue-600 transition-colors placeholder:text-gray-200"
+              className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-sub-600 transition-colors placeholder:text-gray-200"
               placeholder="example@mail.com"
               required
             />
@@ -79,7 +79,7 @@ export default function Mail() {
               type="text"
               id="subject"
               name="subject"
-              className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-blue-600 transition-colors placeholder:text-gray-200"
+              className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-sub-600 transition-colors placeholder:text-gray-200"
               placeholder="ご用件を選択または入力してください"
               required
             />
@@ -96,7 +96,7 @@ export default function Mail() {
               id="message"
               name="message"
               rows={4}
-              className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-blue-600 transition-colors placeholder:text-gray-200 resize-none"
+              className="w-full pb-2 bg-transparent border-b border-gray-200 text-gray-900 focus:outline-none focus:border-sub-600 transition-colors placeholder:text-gray-200 resize-none"
               placeholder="お問い合わせ内容"
             ></textarea>
           </div>
@@ -104,7 +104,7 @@ export default function Mail() {
           <div className="pt-4">
             <button
               type="submit"
-              className="group relative inline-flex items-center justify-center w-full md:w-auto px-12 py-4 text-xs font-extrabold tracking-[0.2em] text-white bg-gray-950 overflow-hidden transition-all duration-300 hover:bg-blue-600"
+              className="group relative inline-flex items-center justify-center w-full md:w-auto px-12 py-4 text-xs font-extrabold tracking-[0.2em] text-white bg-gray-950 overflow-hidden transition-all duration-300 hover:bg-sub-600"
             >
               <span className="relative z-10">SEND MESSAGE</span>
             </button>

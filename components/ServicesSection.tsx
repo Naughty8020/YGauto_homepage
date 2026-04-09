@@ -58,10 +58,10 @@ export default function ServicesSection() {
                 <div className="w-full md:w-1/2 lg:w-1/2 flex flex-col justify-center px-4 sm:px-0 lg:px-12">
                   {/* エレガントなナンバリングと罫線 */}
                   <div className="flex items-center gap-4 mb-6 md:mb-10">
-                    <span className="text-[10px] md:text-xs font-light tracking-[0.3em] text-gray-400">
+                    <span className="text-[10px] md:text-xs font-light tracking-[0.3em] text-sub-400">
                       NO. {number}
                     </span>
-                    <div className="h-[1px] bg-gray-200 flex-grow max-w-[80px] md:max-w-[120px] transition-all duration-[1s] group-hover:bg-black group-hover:max-w-[150px]"></div>
+                    <div className="h-[1px] bg-gray-200 flex-grow max-w-[80px] md:max-w-[120px] transition-all duration-[1s] group-hover:bg-sub-500 group-hover:max-w-[150px]"></div>
                   </div>
 
                   <h3 className="text-2xl md:text-3xl lg:text-4xl font-light tracking-widest text-black mb-6 md:mb-10">
@@ -75,7 +75,7 @@ export default function ServicesSection() {
                   <div className="flex justify-start">
                     <Link
                       href={`/services/${service.slug}`}
-                      className="group/btn inline-flex items-center gap-4 text-[10px] md:text-xs font-light tracking-[0.2em] text-black uppercase pb-3 border-b border-gray-200 hover:border-black transition-colors"
+                      className="group/btn inline-flex items-center gap-4 text-[10px] md:text-xs font-light tracking-[0.2em] text-sub-500 uppercase pb-3 border-b border-sub-200 hover:text-sub-700 hover:border-sub-700 transition-colors"
                     >
                       <span className="tracking-[0.3em]">Explore</span>
                       <ArrowForwardIosIcon 

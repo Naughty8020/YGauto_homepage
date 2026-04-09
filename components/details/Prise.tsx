@@ -54,7 +54,7 @@ export default function Prise() {
       {priceCategories.map((group, idx) => (
         <div key={idx} className="p-4 sm:p-6 md:p-8 w-full overflow-hidden">
           <h4 className="text-[1.05rem] md:text-lg font-bold text-slate-900 mb-4 md:mb-5 flex items-center">
-            <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 shrink-0" />
+            <span className="w-1.5 h-1.5 bg-sub-600 rounded-full mr-2 shrink-0" />
             <span className="truncate">{group.category}</span>
           </h4>
           <div className="space-y-5 md:space-y-4">
@@ -63,7 +63,7 @@ export default function Prise() {
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="text-sm md:text-base text-slate-700 font-medium">{item.label}</span>
                   {item.note && (
-                    <span className="text-[0.65rem] md:text-[0.7rem] bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full font-bold whitespace-nowrap">
+                    <span className="text-[0.65rem] md:text-[0.7rem] bg-sub-50 text-sub-600 px-2 py-0.5 rounded-full font-bold whitespace-nowrap">
                       {item.note}
                     </span>
                   )}

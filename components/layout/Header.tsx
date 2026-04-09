@@ -45,7 +45,7 @@ export default function Header() {
   const linkClass = (path: string) =>
     `text-3xl transition ${
       pathname === path
-        ? "text-blue-400 border-b-2 border-blue-400"
+        ? "text-sub-400 border-b-2 border-sub-400"
         : "text-white hover:text-gray-300"
     }`;
 
@@ -114,7 +114,7 @@ export default function Header() {
         `}
       >
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-blue-500/10 blur-3xl" />
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-sub-500/10 blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-white/5 blur-2xl" />
         </div>
 
@@ -138,14 +138,14 @@ export default function Header() {
                 transition-all duration-300
                 ${
                   pathname === href
-                    ? "text-blue-400"
+                    ? "text-sub-400"
                     : "text-white/80 hover:text-white"
                 }
               `}
               style={{ transitionDelay: isOpen ? `${i * 60}ms` : "0ms" }}
             >
-              <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-px bg-blue-400 group-hover:w-8 transition-all duration-300" />
-              <span className="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-px bg-blue-400 group-hover:w-8 transition-all duration-300" />
+              <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-px bg-sub-400 group-hover:w-8 transition-all duration-300" />
+              <span className="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-px bg-sub-400 group-hover:w-8 transition-all duration-300" />
               {label}
             </Link>
           ))}

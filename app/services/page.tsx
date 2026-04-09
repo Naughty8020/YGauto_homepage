@@ -10,8 +10,8 @@ const page = () => {
         <header className="mb-10 md:mb-24">
           {/* ENラベル */}
           <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
-            <span className="block w-5 md:w-7 h-px bg-blue-600 shrink-0" />
-            <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.2em] md:tracking-[0.25em] uppercase text-blue-600">
+            <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
+            <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.2em] md:tracking-[0.25em] uppercase text-sub-600">
               Services
             </span>
           </div>
@@ -65,8 +65,8 @@ const page = () => {
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 md:gap-3 mb-6 md:mb-10 pb-6 md:pb-8 border-b border-[#DDDDD8]">
             <div>
               <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-3">
-                <span className="block w-5 md:w-7 h-px bg-blue-600 shrink-0" />
-                <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.2em] md:tracking-[0.25em] uppercase text-blue-600">
+                <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
+                <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.2em] md:tracking-[0.25em] uppercase text-sub-600">
                   Our Services
                 </span>
               </div>
@@ -87,7 +87,7 @@ const page = () => {
               <Link
                 href={`/services/${item.slug}`}
                 key={item.slug}
-                className="group relative flex flex-row md:flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-200 hover:-translate-y-1 transition-all duration-300"
+                className="group relative flex flex-row md:flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-sub-200 hover:-translate-y-1 transition-all duration-300"
               >
                 {/* 画像エリア：スマホ=左側固定幅、PC=上部全幅 */}
                 <div className="w-28 h-28 shrink-0 md:w-full md:h-44 overflow-hidden">
@@ -117,7 +117,7 @@ const page = () => {
                     <h3 className="text-sm md:text-xl font-medium text-slate-900 leading-snug">
                       {item.title}
                     </h3>
-                    <span className="inline-flex items-center gap-1 md:gap-2 text-[0.65rem] md:text-[0.8rem] font-extrabold tracking-[0.1em] uppercase text-blue-600 whitespace-nowrap md:shrink-0">
+                    <span className="inline-flex items-center gap-1 md:gap-2 text-[0.65rem] md:text-[0.8rem] font-extrabold tracking-[0.1em] uppercase text-sub-600 whitespace-nowrap md:shrink-0">
                       詳しく見る
                       <svg
                         width="10"

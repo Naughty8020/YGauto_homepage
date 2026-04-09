@@ -8,8 +8,8 @@ export default function Contact() {
       <main className="max-w-5xl mx-auto py-12 px-6">
             <header className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <span className="block w-7 h-px bg-blue-600 shrink-0" />
-            <span className="text-[0.65rem] font-extrabold tracking-[0.25em] uppercase text-blue-600">
+            <span className="block w-7 h-px bg-sub-600 shrink-0" />
+            <span className="text-[0.65rem] font-extrabold tracking-[0.25em] uppercase text-sub-600">
               CONTACT
             </span>
           </div>

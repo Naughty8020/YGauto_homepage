@@ -7,8 +7,8 @@ export default function About() {
       <main className="max-w-5xl mx-auto py-8 md:py-12 px-4 md:px-6">
         <header className="mb-10 md:mb-24">
           <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
-            <span className="block w-5 md:w-7 h-px bg-blue-600 shrink-0" />
-            <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.2em] md:tracking-[0.25em] uppercase text-blue-600">
+            <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
+            <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.2em] md:tracking-[0.25em] uppercase text-sub-600">
               ABOUT
             </span>
           </div>
@@ -67,7 +67,7 @@ export default function About() {
                 key={feature.id}
                 className="bg-white px-5 py-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow flex gap-4 md:block"
               >
-                <div className="text-blue-600 text-3xl md:text-4xl font-bold opacity-20 shrink-0 md:mb-4 leading-none pt-0.5">
+                <div className="text-sub-600 text-3xl md:text-4xl font-bold opacity-20 shrink-0 md:mb-4 leading-none pt-0.5">
                   {feature.id}
                 </div>
                 <div>

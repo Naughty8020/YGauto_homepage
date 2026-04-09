@@ -29,7 +29,7 @@ export default function Footer() {
             </a>
             <a
               href="#"
-              className="text-gray-600 hover:text-blue-700 transition-colors p-1"
+              className="text-gray-600 hover:text-sub-700 transition-colors p-1"
             >
               <Facebook size={24} />
             </a>

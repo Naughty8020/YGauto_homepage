@@ -34,7 +34,7 @@ const ParticlesBackground = () => {
         },
         // ------------------
         background: {
-          color: { value: "#ffffff" },
+          color: { value: "#f9fafc" },
         },
         fpsLimit: 120,
         interactivity: {
@@ -49,7 +49,7 @@ const ParticlesBackground = () => {
           },
         },
         particles: {
-          color: { value: "#ffffff" },
+          color: { value: "#ecedea" },
           links: {
             color: "#7c7979",
             distance: 150,
