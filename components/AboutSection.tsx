@@ -2,7 +2,7 @@ export default function AboutSection() {
   return (
     <section className="mt-30 md:mt-24 lg:mt-45 py-10 md:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className=" text-3xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mb-6">
+        <h2 className=" text-3xl sm:text-3xl md:text-3xl lg:text-4xl font-bold lg:mt-5 mb-6">
           私たちについて
         </h2>
 
