@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <div className="pt-28 md:pt-40 min-h-screen text-slate-800 bg-slate-50/50 ">
+    <div className="pt-28 md:pt-40 min-h-screen text-slate-800 bg-slate-50 ">
       <main className="max-w-5xl mx-auto py-8 md:py-12 px-4 md:px-6">
         {/* ===== HEADER ===== */}
         <header className="mb-10 md:mb-13">
@@ -31,7 +31,7 @@ const page = () => {
 
         <div className="flex justify-center items-center w-full"> 
   
-  <div className="w-full max-w-3xl h-[180px] md:h-[300px] rounded-2xl overflow-hidden relative mb-10 md:mb-24 flex-shrink-0">
+  {/* <div className="w-full max-w-3xl h-[180px] md:h-[300px] rounded-none overflow-hidden relative mb-10 md:mb-24 flex-shrink-0">
     <Image
       src="/Image1.png"
       alt="サービス画像"
@@ -39,7 +39,7 @@ const page = () => {
       priority 
       className="object-cover object-center"
     />
-  </div>
+  </div> */}
 
 </div>
         {/* ===== INTRO TEXT ===== */}
@@ -87,7 +87,7 @@ const page = () => {
               <Link
                 href={`/services/${item.slug}`}
                 key={item.slug}
-                className="group relative flex flex-row md:flex-col overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-sub-200 hover:-translate-y-1 transition-all duration-300"
+                className="group relative flex flex-row md:flex-col overflow-hidden rounded-none bg-white border border-slate-200 hover:border-slate-300 transition-colors duration-300"
               >
                 {/* 画像エリア：スマホ=左側固定幅、PC=上部全幅 */}
                 <div className="w-28 h-28 shrink-0 md:w-full md:h-44 overflow-hidden">
