@@ -25,9 +25,7 @@ export default function ServicesSection() {
         </div>
 
         {/* 極めてミニマルで洗練されたハイエンド・レイアウト */}
-        <div className="flex flex-col gap-20 md:gap-40 mt-10
-a=pow(n,3)
-print(a) border-t border-gray-100 pt-16 ">
+        <div className="flex flex-col gap-20 md:gap-40  border-t border-gray-100 pt-10 ">
           {SERVICES.map((service: Service, index: number) => {
             const number = String(index + 1).padStart(2, "0");
             const isReverse = index % 2 === 1;
@@ -44,13 +42,13 @@ print(a) border-t border-gray-100 pt-16 ">
                 <div className="w-full md:w-1/2 lg:w-5/12 shrink-0">
                   <Link 
                     href={`/services/${service.slug}`} 
-                    className="block relative w-full aspect-[4/3] md:aspect-[16/10] lg:aspect-[4/3] overflow-hidden bg-[#f8f8f8]"
+                    className="block relative w-full aspect-[16/9] md:aspect-[16/10] lg:aspect-[4/3] overflow-hidden bg-[#f8f8f8]"
                   >
                     <Image
                       src={service.image}
                       alt={service.title}
                       fill
-                      className="object-cover transform scale-100 group-hover:scale-105 transition-transform duration-[2s] ease-[cubic-bezier(0.2,0.8,0.2,1)] filter grayscale-[0.3] md:grayscale group-hover:grayscale-0"
+                      className="object-cover transform scale-100 group-hover:scale-105 transition-transform duration-[2s] ease-[cubic-bezier(0.2,0.8,0.2,1)] md:grayscale group-hover:grayscale-0"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                     />
                   </Link>
