@@ -25,7 +25,9 @@ export default function ServicesSection() {
         </div>
 
         {/* 極めてミニマルで洗練されたハイエンド・レイアウト */}
-        <div className="flex flex-col gap-20 md:gap-40 mt-10 md:mt-24 border-t border-gray-100 pt-16 md:pt-24">
+        <div className="flex flex-col gap-20 md:gap-40 mt-10
+a=pow(n,3)
+print(a) border-t border-gray-100 pt-16 ">
           {SERVICES.map((service: Service, index: number) => {
             const number = String(index + 1).padStart(2, "0");
             const isReverse = index % 2 === 1;
