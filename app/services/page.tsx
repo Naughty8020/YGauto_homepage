@@ -7,7 +7,7 @@ const page = () => {
     <div className="pt-28 md:pt-40 min-h-screen text-slate-800 bg-slate-50/50 ">
       <main className="max-w-5xl mx-auto py-8 md:py-12 px-4 md:px-6">
         {/* ===== HEADER ===== */}
-        <header className="mb-10 md:mb-24">
+        <header className="mb-10 md:mb-13">
           {/* ENラベル */}
           <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
             <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
