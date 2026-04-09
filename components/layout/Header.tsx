@@ -54,21 +54,25 @@ export default function Header() {
       className={`fixed top-0 left-0 w-full flex items-center pe-5 md:pe-6 pt-0 mt-0 z-[100] bg-black/95 backdrop-blur-xl
         transition-all duration-500 ease-in-out
         ${isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}
-       
+        
       `}
     >
-      <div className="flex items-center ps-2 pe-7 pt-4 w-60 pb-2 lg:px-6 lg:pt-4 lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-40">
+      {/* ロゴ部分の親要素の幅を w-60 から w-auto (または w-fit) に変更して、ロゴが大きくなれるようにしました */}
+      <div className="flex items-center ps-2 pe-7 pt-4 w-auto pb-2 lg:px-6 lg:pt-4 lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-40 flex-shrink-0">
         <Image
           src="/Image1.png"
           alt="Sample Company"
-          width={300}
-          height={50}
-          className="w-45 h-18 lg:w-120 lg:h-30 inline-block rounded-xl"
-        />
+          // width/height は大きなサイズの比率に合わせて調整（例: 4:1）
+          width={500} 
+          height={125}
+      
+          className="w-64 h-24 lg:w-[350px] lg:h-30 inline-block rounded-xl object-contain"
+          priority         
+          />
       </div>
 
       {/* PCメニュー */}
-      <nav className="hidden ml-auto md:flex space-x-9 border-6 border-[#fcfcfc]  bg-black px-20 py-4 rounded-full shadow z-50">
+      <nav className="hidden ml-auto md:flex space-x-9 border-6 border-[#fcfcfc]  bg-black px-20 py-4 rounded-full shadow z-50 flex-shrink-0">
         <Link href="/" className={linkClass("/")}>
           Home
         </Link>
@@ -85,7 +89,7 @@ export default function Header() {
 
       {/* ハンバーガー */}
       <button
-        className="md:ml-10 p-2 z-50 rounded-lg bg-black hover:bg-gray-200 border-2 border-white transition md:hidden ml-auto"
+        className="md:ml-10 p-2 z-50 rounded-lg bg-black hover:bg-gray-200 border-2 border-white transition md:hidden ml-auto flex-shrink-0"
         onClick={toggleMenu}
       >
         {isOpen ? (
