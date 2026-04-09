@@ -23,8 +23,40 @@ const shipporiAntique = Shippori_Antique_B1({
 });
 
 export const metadata: Metadata = {
-  title: "YG auto",
-  description: "滋賀県野洲市の自動車販売・整備店。国家資格整備士が在籍し、販売から整備、車検、レッカーまで全て自社で完結。お客様のカーライフを全力でサポートします。",
+  title: {
+    template: "%s | YG auto",
+    default: "YG auto | 滋賀県野洲市の自動車販売・整備・車検",
+  },
+  description: "滋賀県野洲市の自動車販売・整備店「YG auto」。国家資格整備士が在籍し、販売から整備、車検、レッカー、板金塗装まで全て自社で完結。お客様のカーライフを全力でサポートします。",
+  keywords: ["滋賀県", "野洲市", "YG auto", "自動車販売", "整備", "車検", "レッカー", "中古車", "自動車修理"],
+  authors: [{ name: "YG auto" }],
+  openGraph: {
+    title: "YG auto | 滋賀県野洲市の自動車販売・整備・車検",
+    description: "滋賀県野洲市の自動車販売・整備店「YG auto」。国家資格整備士が在籍し、販売から整備、車検、レッカーまで全て自社で完結。お客様のカーライフを全力でサポートします。",
+    url: "https://yg-auto.com", // ※実際のドメインに合わせて変更してください
+    siteName: "YG auto",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "YG auto | 滋賀県野洲市の自動車販売・整備・車検",
+    description: "滋賀県野洲市の自動車販売・整備店「YG auto」。国家資格整備士が在籍し、販売から整備、車検、レッカー、板金塗装まで全て自社で完結。",
+  },
+  alternates: {
+    canonical: "https://yg-auto.com", // ※実際のドメインに合わせて変更してください
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
