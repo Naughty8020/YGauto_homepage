@@ -5,7 +5,7 @@ import { Service, SERVICES } from "@/constants/services";
 
 export default function ServicesSection() {
   return (
-    <section className="py-10 md:py-24 bg-white text-black overflow-hidden">
+    <section className="py-10 md:py-24  text-black overflow-hidden">
       <div className="max-w-[90rem] mx-auto px-5 sm:px-6 lg:px-12">
         {/* エレガントなタイトル領域 */}
         <div className="flex flex-col gap-4 md:gap-6 md:flex-row md:items-end justify-between mb-10 md:mb-20">
