@@ -29,13 +29,18 @@ const page = () => {
           </div>
         </header>
 
-<div className="w-full h-[180px] md:h-[340px] rounded-2xl overflow-hidden relative mb-10 md:mb-24">
-  <Image
-    src="/Image1.png"
-    alt="サービス画像"
-    fill
-    className="object-cover object-center"
-  />
+        <div className="flex justify-center items-center w-full"> 
+  
+  <div className="w-full max-w-3xl h-[180px] md:h-[300px] rounded-2xl overflow-hidden relative mb-10 md:mb-24 flex-shrink-0">
+    <Image
+      src="/Image1.png"
+      alt="サービス画像"
+      fill
+      priority 
+      className="object-cover object-center"
+    />
+  </div>
+
 </div>
         {/* ===== INTRO TEXT ===== */}
         <div className="mb-10 md:mb-20 max-w-2xl">
