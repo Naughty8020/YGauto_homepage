@@ -182,26 +182,26 @@ export default async function ServiceDetailPage({
                   <Link
                     href={`/services/${item.slug}`}
                     key={item.title}
-                    className="group block bg-gray-50 p-8 md:p-12 hover:bg-gray-100 transition-colors duration-500"
+                    className="group flex flex-row items-center gap-4 md:gap-6 bg-gray-50 p-4 md:p-6 hover:bg-gray-100 transition-colors duration-500"
                   >
-                    <div className="aspect-[16/9] w-full mb-8 md:mb-10 overflow-hidden bg-black/5">
+                    <div className="w-20 h-14 md:w-28 md:h-16 shrink-0 overflow-hidden bg-black/5">
                       <img
                         src={item.image}
                         alt={item.title}
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col flex-1 pr-2">
                       {item.subTitle && (
-                        <span className="text-[0.6rem] md:text-[0.65rem] font-light text-gray-400 uppercase tracking-[0.4em] mb-4">
+                        <span className="text-[0.5rem] md:text-[0.6rem] font-light text-gray-400 uppercase tracking-[0.2em] mb-1 md:mb-1.5">
                           {item.subTitle}
                         </span>
                       )}
                       <div className="flex items-center justify-between">
-                        <h3 className="text-[0.95rem] md:text-xl font-light tracking-[0.15em] md:tracking-[0.2em] uppercase text-gray-900">
+                        <h3 className="text-xs md:text-sm font-medium tracking-[0.1em] md:tracking-[0.15em] uppercase text-gray-900 truncate">
                           {item.title}
                         </h3>
-                        <span className="w-8 h-[1px] bg-black/30 group-hover:bg-black group-hover:w-16 transition-all duration-500" />
+                        <span className="w-4 md:w-6 h-[1px] shrink-0 bg-black/30 group-hover:bg-black group-hover:w-6 md:group-hover:w-8 transition-all duration-500 ml-2" />
                       </div>
                     </div>
                   </Link>
