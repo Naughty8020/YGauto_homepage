@@ -2,10 +2,10 @@
 
 body {
   background-color: #f2f2f2;
-  font-family: 'Shippori Antique B1';
 }
 
-
-.font-shippori {
-  font-family: 'Shippori Antique B1';
+@layer utilities {
+  .font-zen {
+    font-family: var(--font-zen-kaku);
+  }
 }
