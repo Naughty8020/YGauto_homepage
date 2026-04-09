@@ -39,7 +39,7 @@ export default async function ServiceDetailPage({
             )}
           </div>
 
-          <div className="w-full aspect-[4/3] sm:aspect-[21/9] md:aspect-[3/1] relative overflow-hidden bg-black/5 rounded-sm md:rounded-none">
+          <div className="w-full aspect-[16/9] sm:aspect-[21/9] md:aspect-[3/1] relative overflow-hidden bg-black/5 rounded-sm md:rounded-none">
             <img
               src={service?.image}
               alt={service?.title || "SERVICE IMAGE"}
@@ -106,7 +106,7 @@ export default async function ServiceDetailPage({
                       i % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
                     }`}
                   >
-                    <div className="flex-1 w-full relative overflow-hidden aspect-[4/3] sm:aspect-[16/9] md:aspect-[4/3] bg-black/5 group">
+                    <div className="flex-1 w-full relative overflow-hidden aspect-[16/9] sm:aspect-[16/9] md:aspect-[4/3] bg-black/5 group">
                       <img
                         src={feature.image}
                         alt={feature.title}
