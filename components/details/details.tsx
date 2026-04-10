@@ -22,11 +22,11 @@ export default function Details() {
             </span>
           </div>
 
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3 md:gap-4 pb-5 md:pb-8 border-b border-slate-300">
-            <h2 className="text-xl sm:text-2xl md:text-4xl font-extrabold tracking-tight text-slate-900">
+          <div className="flex flex-row items-end justify-between gap-3 md:gap-4 pb-5 md:pb-8 border-b border-slate-300">
+            <h2 className="text-lg sm:text-2xl md:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
               会社概要・アクセス
             </h2>
-            <div className="w-40 sm:w-48 md:w-auto md:pb-1">
+            <div className="w-32 sm:w-48 md:w-auto md:pb-1 shrink-0">
               <Image
                 src="/Image1.png"
                 alt="YGauto"
