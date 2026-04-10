@@ -93,13 +93,13 @@ export default function Header() {
 
       {/* ハンバーガー */}
       <button
-        className="md:ml-10 p-1.5 md:p-2 z-50 rounded-none bg-transparent hover:bg-white/10 border border-white/60 transition md:hidden ml-auto shrink-0"
+        className="md:ml-10 p-1.5 md:p-2 z-50 rounded-none bg-transparent hover:bg-black/10 border border-black/60 transition md:hidden ml-auto shrink-0"
         onClick={toggleMenu}
       >
         {isOpen ? (
-          <CloseIcon className="w-7 h-7 md:w-10 md:h-10 text-white" />
+          <CloseIcon className="w-7 h-7 md:w-10 md:h-10 text-black" />
         ) : (
-          <MenuIcon className="w-7 h-7 md:w-10 md:h-10 text-white" />
+          <MenuIcon className="w-7 h-7 md:w-10 md:h-10 text-black" />
         )}
       </button>
 
