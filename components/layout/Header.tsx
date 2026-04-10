@@ -114,24 +114,17 @@ export default function Header() {
       {/* スマホメニュー */}
       <nav
         className={`
-          flex flex-col absolute top-0 right-0 w-full h-screen
-          bg-slate-100/95 backdrop-blur-xl
-          justify-center items-center
-          transition-all duration-500 ease-in-out
+          flex flex-col absolute top-0 right-0 w-full h-screen bg-gray-300
+          transition-all duration-400 ease-out
           ${
             isOpen
               ? "opacity-100 visible translate-y-0 pointer-events-auto"
-              : "opacity-0 invisible -translate-y-5 pointer-events-none"
+              : "opacity-0 invisible -translate-y-2 pointer-events-none"
           }
         `}
       >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-sub-200/40 blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-slate-300/30 blur-2xl" />
-        </div>
-
         <div
-          className="relative z-10 flex flex-col items-center gap-0 w-full px-8 mt-10"
+          className="relative z-10 flex flex-col items-center gap-0 w-full px-6 pt-48"
           onClick={toggleMenu}
         >
           {[
@@ -144,26 +137,25 @@ export default function Header() {
               key={href}
               href={href}
               className={`
-                group relative w-full text-center py-6
-                text-2xl font-light tracking-widest uppercase
-                border-b border-slate-300/80 last:border-b-0
-                transition-all duration-300
+                group relative w-full max-w-xl py-5 text-center uppercase
+                text-base font-semibold tracking-[0.14em]
+                border-b border-black/10 first:border-t
+                transition-colors duration-300
                 ${
                   isActivePath(href)
-                    ? "text-sub-500"
-                    : "text-slate-700 hover:text-sub-600"
+                    ? "text-sub-600"
+                    : "text-slate-900 hover:text-sub-600"
                 }
               `}
               style={{ transitionDelay: isOpen ? `${i * 60}ms` : "0ms" }}
             >
-              <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-px bg-sub-500 group-hover:w-8 transition-all duration-300" />
-              <span className="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-px bg-sub-500 group-hover:w-8 transition-all duration-300" />
+              <span className="absolute left-0 bottom-0 h-px w-0 bg-sub-500 transition-all duration-300 group-hover:w-full" />
               {label}
             </Link>
           ))}
         </div>
 
-        <p className="absolute bottom-10 text-white/20 text-xs tracking-[0.3em] uppercase">
+        <p className="absolute bottom-10 left-1/2 -translate-x-1/2 text-black/40 text-[10px] tracking-[0.28em] uppercase">
           © {new Date().getFullYear()} YG AUTO
         </p>
       </nav>
