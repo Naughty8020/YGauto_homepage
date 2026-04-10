@@ -119,9 +119,8 @@ export default function About() {
               <h4 className="font-bold text-slate-500 mb-4 md:mb-6 text-center text-xs md:text-sm uppercase tracking-widest">
                 営業スケジュール
               </h4>
-              <div className=" rounded-none border border-slate-400 p-3 md:p-6">
+              
                 <Schedule />
-              </div>
             </div>
           </div>
         </section>
