@@ -1,55 +1,58 @@
-import { Facebook, Twitter, Instagram, Github } from "lucide-react";
+import { Instagram } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black py-8 w-full  md:py-12 border-t border-gray-100 relative">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6 md:gap-0">
-          {/* 1. コピーライト（スマホでは中央、PCでは左寄せ） */}
-          <div className="order-2 md:order-1 text-center md:text-left">
-            <p className="text-sm font-medium">
-              &copy; 2026 Your Company.{" "}
-              <span className="block md:inline">All rights reserved.</span>
-            </p>
-          </div>
+    <footer className="w-full border-t border-black/10 bg-white text-black py-10 md:py-14">
+      <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 md:px-12">
+        <div className="border border-black/10 px-5 py-6 sm:px-7 sm:py-7 md:px-8 md:py-8">
+          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div className="space-y-3 text-center md:text-left">
+              <div className="flex items-center justify-center gap-3 md:justify-start">
+                <span className="h-px w-8 bg-sub-500" />
+                <p className="text-xs tracking-[0.2em] uppercase text-sub-500">YG AUTO</p>
+              </div>
+              <p className="text-xs sm:text-sm text-gray-600">© 2026 YG AUTO. All rights reserved.</p>
+            </div>
 
-          {/* 2. SNSアイコンエリア（サイズを少し大きく、タップしやすく） */}
-          <div className="order-1 md:order-2 flex justify-center gap-8 md:gap-6">
-            <a
-              href="#"
-              className="text-gray-600 hover:text-sky-500 transition-colors p-1"
-            >
-              <Twitter size={24} /> {/* スマホ考慮で少し大きく */}
-            </a>
             <a
               href="https://www.instagram.com/p/DTZbFwkEcIH/"
-              className="text-gray-600 hover:text-pink-500 transition-colors p-1"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+              className="inline-flex min-h-11 items-center justify-center gap-2 border border-black/15 px-5 py-2 text-xs sm:text-sm uppercase tracking-[0.14em] text-gray-700 hover:text-sub-600 hover:border-sub-500 transition-colors"
             >
-              <Instagram size={24} />
-            </a>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-sub-700 transition-colors p-1"
-            >
-              <Facebook size={24} />
-            </a>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-black transition-colors p-1"
-            >
-              <Github size={24} />
+              <Instagram size={18} />
+              Instagram
             </a>
           </div>
 
-          {/* 3. ポリシーリンク（スマホでは下に、PCでは右寄せ） */}
-          <div className="order-3 flex justify-center md:justify-end text-sm gap-4">
-            <a href="/privacy" className="text-gray-500 hover:underline">
-              Privacy Policy
-            </a>
-            <a href="/terms" className="text-gray-500 hover:underline">
-              Terms of Service
-            </a>
-          </div>
+          <nav className="mt-6 grid grid-cols-2 gap-px border border-black/10 bg-black/10 text-[11px] sm:text-sm tracking-[0.14em] uppercase md:mt-7 md:grid-cols-4">
+            <Link
+              href="/"
+              className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
+            >
+              About
+            </Link>
+            <Link
+              href="/services"
+              className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
+            >
+              Services
+            </Link>
+            <Link
+              href="/contact"
+              className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
+            >
+              Contact
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>
