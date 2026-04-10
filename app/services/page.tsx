@@ -86,7 +86,7 @@ const page = () => {
               <Link
                 href={`/services/${item.slug}`}
                 key={item.slug}
-                className="group relative flex flex-row md:flex-col overflow-hidden rounded-none bg-white border border-slate-200 hover:border-slate-300 transition-colors duration-300"
+                className="group relative flex flex-row md:flex-col overflow-hidden rounded-none  border border-slate-500 hover:border-slate-300 transition-colors duration-300"
               >
                 {/* 画像エリア：スマホ=左側固定幅、PC=上部全幅 */}
                 <div className="w-22 h-22 shrink-0 md:w-full md:h-40 overflow-hidden">
