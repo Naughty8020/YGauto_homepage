@@ -25,7 +25,7 @@ export default function ServicesSection() {
         </div>
 
         {/* 極めてミニマルで洗練されたハイエンド・レイアウト */}
-        <div className="flex flex-col gap-20 md:gap-40  border-t border-gray-100 pt-10 ">
+        <div className="flex flex-col gap-20 md:gap-40  border-t border-gray-300 pt-10 ">
           {SERVICES.map((service: Service, index: number) => {
             const number = String(index + 1).padStart(2, "0");
             const isReverse = index % 2 === 1;
@@ -75,7 +75,7 @@ export default function ServicesSection() {
                   <div className="flex justify-start">
                     <Link
                       href={`/services/${service.slug}`}
-                      className="group/btn inline-flex items-center gap-4 text-[10px] md:text-xs font-light tracking-[0.2em] text-sub-500 uppercase pb-3 border-b border-sub-200 hover:text-sub-700 hover:border-sub-700 transition-colors"
+                      className="group/btn inline-flex items-center gap-4 text-[10px] md:text-xs font-light tracking-[0.2em] text-sub-600 uppercase pb-3 border-b border-sub-200 hover:text-sub-700 hover:border-sub-700 transition-colors"
                     >
                       <span className="tracking-[0.3em]">Explore</span>
                       <ArrowForwardIosIcon 
