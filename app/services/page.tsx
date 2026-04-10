@@ -61,7 +61,7 @@ const page = () => {
         {/* ===== SERVICE CARDS ===== */}
         <section>
           {/* セクションヘッダー */}
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 md:gap-3 mb-4 md:mb-8 pb-4 md:pb-6 border-b border-[#DDDDD8]">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 md:gap-3 mb-4 md:mb-8 pb-4 md:pb-6 border-b border-gray-400">
             <div>
               <div className="flex items-center gap-2 md:gap-3 mb-1.5 md:mb-2.5">
                 <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
@@ -86,7 +86,7 @@ const page = () => {
               <Link
                 href={`/services/${item.slug}`}
                 key={item.slug}
-                className="group relative flex flex-row md:flex-col overflow-hidden rounded-none  border border-slate-500 hover:border-slate-300 transition-colors duration-300"
+                className="group relative flex flex-row md:flex-col overflow-hidden rounded-none  border border-slate-500 hover:border-green-600 transition-colors duration-300"
               >
                 {/* 画像エリア：スマホ=左側固定幅、PC=上部全幅 */}
                 <div className="w-22 h-22 shrink-0 md:w-full md:h-40 overflow-hidden">
