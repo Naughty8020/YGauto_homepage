@@ -1,6 +1,5 @@
 import { SERVICES } from "@/constants/services";
 import Link from "next/link";
-import Image from "next/image";
 
 const page = () => {
   return (
@@ -62,15 +61,15 @@ const page = () => {
         {/* ===== SERVICE CARDS ===== */}
         <section>
           {/* セクションヘッダー */}
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 md:gap-3 mb-6 md:mb-10 pb-6 md:pb-8 border-b border-[#DDDDD8]">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 md:gap-3 mb-4 md:mb-8 pb-4 md:pb-6 border-b border-[#DDDDD8]">
             <div>
-              <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-3">
+              <div className="flex items-center gap-2 md:gap-3 mb-1.5 md:mb-2.5">
                 <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
                 <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.2em] md:tracking-[0.25em] uppercase text-sub-600">
                   Our Services
                 </span>
               </div>
-              <h2 className="text-[1.5rem] md:text-[2.4rem] font-extrabold text-gray-950 tracking-tight leading-tight">
+              <h2 className="text-[1.25rem] md:text-[2.2rem] font-extrabold text-gray-950 tracking-tight leading-tight">
                 {SERVICES.length}つのサービス
               </h2>
             </div>
@@ -82,7 +81,7 @@ const page = () => {
           </div>
 
           {/* カードグリッド */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3">
             {SERVICES.map((item, i) => (
               <Link
                 href={`/services/${item.slug}`}
@@ -90,7 +89,7 @@ const page = () => {
                 className="group relative flex flex-row md:flex-col overflow-hidden rounded-none bg-white border border-slate-200 hover:border-slate-300 transition-colors duration-300"
               >
                 {/* 画像エリア：スマホ=左側固定幅、PC=上部全幅 */}
-                <div className="w-28 h-28 shrink-0 md:w-full md:h-44 overflow-hidden">
+                <div className="w-22 h-22 shrink-0 md:w-full md:h-40 overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.title}
@@ -99,14 +98,14 @@ const page = () => {
                 </div>
 
                 {/* テキストエリア */}
-                <div className="flex flex-col flex-1 px-4 md:px-6 py-3 md:py-5 gap-1.5 md:gap-2.5 justify-center md:justify-start">
+                <div className="flex flex-col flex-1 px-2.5 md:px-5 py-2 md:py-4 gap-1 md:gap-2 justify-center md:justify-start">
                   {/* インデックス + subTitle */}
                   <div className="flex items-center gap-2">
-                    <span className="text-[0.65rem] md:text-[0.75rem] font-extrabold tracking-[0.15em] text-slate-300">
+                    <span className="text-[0.56rem] md:text-[0.75rem] font-extrabold tracking-[0.15em] text-slate-300">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     {item.subTitle && (
-                      <span className="text-[0.65rem] md:text-[0.75rem] font-bold text-slate-400 uppercase tracking-widest truncate">
+                      <span className="text-[0.56rem] md:text-[0.75rem] font-bold text-slate-400 uppercase tracking-widest truncate">
                         {item.subTitle}
                       </span>
                     )}
@@ -114,10 +113,10 @@ const page = () => {
 
                   {/* タイトル行：スマホ=縦積み、PC=横並び */}
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-3 gap-1.5">
-                    <h3 className="text-sm md:text-xl font-medium text-slate-900 leading-snug">
+                    <h3 className="text-[0.84rem] md:text-lg font-medium text-slate-900 leading-snug">
                       {item.title}
                     </h3>
-                    <span className="inline-flex items-center gap-1 md:gap-2 text-[0.65rem] md:text-[0.8rem] font-extrabold tracking-[0.1em] uppercase text-sub-600 whitespace-nowrap md:shrink-0">
+                    <span className="inline-flex items-center gap-1 md:gap-2 text-[0.56rem] md:text-[0.75rem] font-extrabold tracking-[0.1em] uppercase text-sub-600 whitespace-nowrap md:shrink-0">
                       詳しく見る
                       <svg
                         width="10"
