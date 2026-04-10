@@ -49,9 +49,17 @@ export default function Header() {
     };
   }, [isOpen]);
 
+  const isActivePath = (path: string) => {
+    if (path === "/") return pathname === "/";
+    if (path === "/services") {
+      return pathname === "/services" || pathname.startsWith("/services/");
+    }
+    return pathname === path;
+  };
+
   const linkClass = (path: string) =>
     `text-[0.88rem] lg:text-[1rem] font-semibold tracking-[0.14em] uppercase border-b pb-1 transition-all duration-300 ${
-      pathname === path
+      isActivePath(path)
         ? "text-slate-950 border-sub-500"
         : "text-slate-900 border-transparent hover:text-slate-700 hover:border-sub-300"
     }`;
@@ -141,7 +149,7 @@ export default function Header() {
                 border-b border-slate-300/80 last:border-b-0
                 transition-all duration-300
                 ${
-                  pathname === href
+                  isActivePath(href)
                     ? "text-sub-500"
                     : "text-slate-700 hover:text-sub-600"
                 }
