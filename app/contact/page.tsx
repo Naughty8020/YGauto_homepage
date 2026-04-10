@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div className="pt-28 md:pt-40 min-h-screen text-slate-800 bg-slate-50 leading-relaxed space-y-4">
+    <div className="pt-28 md:pt-40 min-h-screen text-slate-800  leading-relaxed space-y-4">
       <main className="max-w-5xl mx-auto py-12 px-6">
         <header className="mb-10">
           <div className="flex items-center gap-3 mb-6">
@@ -12,7 +12,7 @@ export default function Contact() {
             </span>
           </div>
 
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-[#DDDDD8]">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-gray-400">
             <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.05] tracking-tight">
               お問い合わせ
             </h1>
@@ -25,7 +25,7 @@ export default function Contact() {
         </header>
 
         <section className="max-w-4xl mx-auto  md:mt-20 mb-10 md:mb-32">
-          <div className="bg-white rounded-none p-8 md:p-20 border border-slate-300 text-center">
+          <div className=" rounded-none p-8 md:p-20 border border-slate-500 text-center">
             <div className="mb-10">
               <span className="text-sub-600 font-bold tracking-[0.2em] text-xs py-2 px-5 bg-sub-50 border border-sub-200 rounded-none">
                 CALL US ANYTIME
@@ -67,7 +67,7 @@ export default function Contact() {
           </div>
         </section>
 
-        <footer className="text-center pb-20">
+        {/* <footer className="text-center pb-20">
           <p className="text-gray-400 text-sm mb-4">
             メールでのお問い合わせをご希望の方はこちら
           </p>
@@ -77,7 +77,7 @@ export default function Contact() {
           >
             お問い合わせフォームへ
           </Link>{" "}
-        </footer>
+        </footer> */}
       </main>
     </div>
   );

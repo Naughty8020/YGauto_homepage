@@ -50,7 +50,7 @@ export default function Prise() {
   ];
 
   return (
-    <div className="w-full divide-y divide-slate-100">
+    <div className="w-full divide-y divide-slate-300">
       {priceCategories.map((group, idx) => (
         <div key={idx} className="p-4 sm:p-6 md:p-8 w-full overflow-hidden">
           <h4 className="text-[1.05rem] md:text-lg font-bold text-slate-900 mb-4 md:mb-5 flex items-center">
@@ -68,7 +68,7 @@ export default function Prise() {
                     </span>
                   )}
                 </div>
-                <div className="flex items-baseline justify-end gap-1 border-b border-dotted border-slate-300 sm:border-none w-full sm:w-auto pb-1.5 sm:pb-0 shrink-0">
+                <div className="flex items-baseline justify-end gap-1 border-b border-dotted border-slate-400 sm:border-none w-full sm:w-auto pb-1.5 sm:pb-0 shrink-0">
                   <span className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight">
                     {item.price}
                   </span>

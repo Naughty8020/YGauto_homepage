@@ -3,7 +3,7 @@ import Prise from "../../components/details/Prise";
 
 export default function About() {
   return (
-    <div className="pt-28 md:pt-40 min-h-screen text-slate-800 bg-slate-50 leading-relaxed space-y-4">
+    <div className="pt-28 md:pt-40 min-h-screen text-slate-800  leading-relaxed space-y-4">
       <main className="max-w-5xl mx-auto py-8 md:py-12 px-4 md:px-6">
         <header className="mb-10 md:mb-24">
           <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
@@ -13,7 +13,7 @@ export default function About() {
             </span>
           </div>
 
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3 md:gap-6 pb-8 md:pb-12 border-b border-[#DDDDD8]">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3 md:gap-6 pb-8 md:pb-12 border-b border-gray-400">
             <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight">
               会社案内
             </h1>
@@ -65,7 +65,7 @@ export default function About() {
             ].map((feature) => (
               <div
                 key={feature.id}
-                className="bg-white px-5 py-6 md:p-8 rounded-none border border-slate-200 transition-colors hover:border-slate-300 flex gap-4 md:block"
+                className=" px-5 py-6 md:p-8 rounded-none border border-slate-400 transition-colors hover:border-slate-500 flex gap-4 md:block"
               >
                 <div className="text-sub-600 text-3xl md:text-4xl font-bold shrink-0 md:mb-4 leading-none pt-0.5">
                   {feature.id}
@@ -89,14 +89,14 @@ export default function About() {
         </div>
 
         {/* 店舗情報 */}
-        <section className="bg-white p-5 md:p-12 rounded-none border border-slate-300 mt-10 md:mt-10">
+        <section className=" p-5 md:p-12 rounded-none border border-slate-500 mt-10 md:mt-10">
           <h3 className="text-lg md:text-2xl font-bold mb-6 md:mb-10 text-center text-slate-900">
             店舗情報・アクセス
           </h3>
 
           <div className="max-w-3xl mx-auto">
             <dl className="space-y-4 md:space-y-6">
-              <div className="flex flex-col md:flex-row border-b border-slate-100 pb-3 md:pb-4">
+              <div className="flex flex-col md:flex-row border-b border-slate-300 pb-3 md:pb-4">
                 <dt className="w-full md:w-32 font-bold text-slate-500 text-sm mb-0.5 md:mb-0">
                   所在地
                 </dt>
@@ -105,7 +105,7 @@ export default function About() {
                 </dd>
               </div>
 
-              <div className="flex flex-col md:flex-row border-b border-slate-100 pb-3 md:pb-4">
+              <div className="flex flex-col md:flex-row border-b border-slate-300 pb-3 md:pb-4">
                 <dt className="w-full md:w-32 font-bold text-slate-500 text-sm mb-0.5 md:mb-0">
                   電話番号
                 </dt>
@@ -119,7 +119,7 @@ export default function About() {
               <h4 className="font-bold text-slate-500 mb-4 md:mb-6 text-center text-xs md:text-sm uppercase tracking-widest">
                 営業スケジュール
               </h4>
-              <div className="bg-slate-50 rounded-none border border-slate-200 p-3 md:p-6">
+              <div className=" rounded-none border border-slate-400 p-3 md:p-6">
                 <Schedule />
               </div>
             </div>

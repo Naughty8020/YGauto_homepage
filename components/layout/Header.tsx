@@ -72,13 +72,13 @@ export default function Header() {
         
       `}
     >
-      <div className="flex items-center  pe-4 pt-6 w-auto pb-1 lg:px-6 lg:pt-6 lg:pl-7 gap-2 md:gap-3 lg:gap-4 z-40 shrink-0">
+      <div className="flex items-center  pe-4 pt-6 w-auto pb-1  lg:pt-6  gap-2 md:gap-3 lg:gap-4 z-40 shrink-0">
         <Image
           src="/Image1.png"
           alt="Sample Company"
           width={500}
-          height={125}
-          className="w-48 h-18 md:w-64 md:h-22 lg:w-80 lg:h-30 inline-block object-contain"
+          height={150}
+          className="w-48 h-18 md:w-64 md:h-22 lg:w-100 lg:h-32 inline-block object-contain"
           priority
         />
       </div>

@@ -19,15 +19,18 @@ export default async function ServiceDetailPage({
   if (!service) notFound();
 
   return (
-    <main className="pt-35 md:pt-48 pb-20 md:pb-32 min-h-screen text-gray-950 selection:bg-black selection:text-white">
+    <main className="pt-40 md:pt-48 pb-20 md:pb-32 min-h-screen text-gray-950 selection:bg-black selection:text-white">
       <article className="w-full max-w-7xl mx-auto px-5 sm:px-8 md:px-12">
         {/* ── Header ── */}
         <header className="mb-20 md:mb-32">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-8 mb-10 md:mb-16">
             <div>
-              <span className="block text-[0.6rem] sm:text-[0.65rem] font-light tracking-[0.4em] uppercase text-sub-500 mb-6 md:mb-8">
-                SERVICE DETAIL
-              </span>
+              <div className="flex items-center gap-3 mb-6 md:mb-8">
+                <span className="w-8 md:w-10 h-px bg-sub-500" />
+                <span className="block text-[0.6rem] sm:text-[0.65rem] font-light tracking-[0.4em] uppercase text-sub-500">
+                  SERVICE DETAIL
+                </span>
+              </div>
               <h1 className="text-3xl sm:text-4xl md:text-6xl font-light tracking-[0.1em] md:tracking-[0.2em] uppercase leading-tight">
                 {service?.title || "SERVICE TITLE"}
               </h1>
@@ -55,9 +58,12 @@ export default async function ServiceDetailPage({
           <section>
             <div className="flex flex-col md:flex-row gap-8 md:gap-24 mb-16 md:mb-20 border-t border-black/10 pt-10 md:pt-12">
               <div className="md:w-1/4 shrink-0">
-                <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
-                  MERIT
-                </h2>
+                <div className="flex items-center gap-3">
+                  <span className="w-8 md:w-10 h-px bg-sub-500" />
+                  <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
+                    MERIT
+                  </h2>
+                </div>
               </div>
               <div className="md:w-3/4">
                 <p className="text-lg sm:text-xl md:text-2xl leading-[2] md:leading-relaxed font-light tracking-wide text-gray-800">
@@ -92,9 +98,12 @@ export default async function ServiceDetailPage({
           {service.feathers && service.feathers.length > 0 && (
             <section>
               <div className="border-t border-black/10 pt-10 md:pt-12 mb-16 md:mb-24">
-                <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
-                  FEATURES
-                </h2>
+                <div className="flex items-center gap-3">
+                  <span className="w-8 md:w-10 h-px bg-sub-500" />
+                  <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
+                    FEATURES
+                  </h2>
+                </div>
               </div>
 
               {/* スマホでのgapを16から24に広げる */}
@@ -135,9 +144,12 @@ export default async function ServiceDetailPage({
           {service.detail && service.detail.length > 0 && (
             <section>
               <div className="border-t border-black/10 pt-10 md:pt-12 mb-8 md:mb-12">
-                <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
-                  DETAILS
-                </h2>
+                <div className="flex items-center gap-3">
+                  <span className="w-8 md:w-10 h-px bg-sub-500" />
+                  <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
+                    DETAILS
+                  </h2>
+                </div>
               </div>
 
               <div className="border-t border-black/10">
@@ -171,9 +183,12 @@ export default async function ServiceDetailPage({
           {/* ── Other Services ── */}
           <section className="pb-10">
             <div className="border-t border-black/10 pt-10 md:pt-12 mb-10 md:mb-16 flex items-center justify-between">
-              <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
-                OTHER SERVICES
-              </h2>
+              <div className="flex items-center gap-3">
+                <span className="w-8 md:w-10 h-px bg-sub-500" />
+                <h2 className="text-[0.65rem] sm:text-xs md:text-sm font-light tracking-[0.4em] uppercase text-sub-500">
+                  OTHER SERVICES
+                </h2>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-black/10 border border-black/10">

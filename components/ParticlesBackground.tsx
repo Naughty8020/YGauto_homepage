@@ -34,7 +34,7 @@ const ParticlesBackground = () => {
         },
         // ------------------
         background: {
-          color: { value: "#f9fafc" },
+          color: { value: "#e6e6ed" },
         },
         fpsLimit: 120,
         interactivity: {

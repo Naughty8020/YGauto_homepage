@@ -10,9 +10,9 @@ export default function ServicesSection() {
         {/* エレガントなタイトル領域 */}
         <div className="flex flex-col gap-4 md:gap-6 md:flex-row md:items-end justify-between mb-10 md:mb-20">
           <div>
-            <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-4">
-              <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
-              <span className="text-[10px] md:text-sm font-light tracking-[0.3em] text-sub-600 uppercase block">
+            <div className="flex items-center gap-3 mb-2 md:mb-4">
+              <span className="w-8 md:w-10 h-px bg-sub-500" />
+              <span className="text-[10px] md:text-sm font-light tracking-[0.3em] text-sub-500 uppercase block">
                 Our Services
               </span>
             </div>
@@ -29,7 +29,7 @@ export default function ServicesSection() {
 
 
         {/* 極めてミニマルで洗練されたハイエンド・レイアウト */}
-        <div className="flex flex-col gap-20 md:gap-40  border-t border-gray-300 pt-10 ">
+        <div className="flex flex-col gap-20 md:gap-40  border-t border-gray-400 pt-10 ">
           {SERVICES.map((service: Service, index: number) => {
             const number = String(index + 1).padStart(2, "0");
             const isReverse = index % 2 === 1;
