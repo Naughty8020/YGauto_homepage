@@ -101,7 +101,7 @@ const page = () => {
                 <div className="flex flex-col flex-1 px-2.5 md:px-5 py-2 md:py-4 gap-1 md:gap-2 justify-center md:justify-start">
                   {/* インデックス + subTitle */}
                   <div className="flex items-center gap-2">
-                    <span className="text-[0.56rem] md:text-[0.75rem] font-extrabold tracking-[0.15em] text-slate-300">
+                    <span className="text-[0.56rem] md:text-[0.75rem] font-extrabold tracking-[0.15em] text-sub-500">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     {item.subTitle && (
