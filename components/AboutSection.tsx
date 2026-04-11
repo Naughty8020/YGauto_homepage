@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <section className="mt-14 md:mt-22 lg:mt-25 py-10 md:py-16 px-5 sm:px-8 lg:px-12">
+    <section className="mt-10 md:mt-22 lg:mt-20 py-10 md:py-16 px-5 sm:px-8 lg:px-12">
       <div className="max-w-5xl mx-auto  pt-8 md:pt-10">
         <div className="flex items-center justify-center gap-3 mb-5 md:mb-6">
           <span className="w-8 md:w-10 h-px bg-sub-500" />
