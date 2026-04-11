@@ -1,5 +1,21 @@
 import { SERVICES } from "@/constants/services";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "サービス内容",
+  description:
+    "車両販売、買取、車検・整備、コーティング・フィルム、レッカー・ロードサービスまで、YG autoのサービス一覧をご案内します。",
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "サービス内容 | YG auto",
+    description:
+      "YG autoが提供する各サービスの内容を掲載しています。お客様のカーライフを一貫してサポートします。",
+    url: "/services",
+  },
+};
 
 const page = () => {
   return (

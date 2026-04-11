@@ -1,5 +1,21 @@
 import Schedule from "../../components/details/Schedule";
 import Prise from "../../components/details/Prise";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "会社案内",
+  description:
+    "YG autoの会社案内ページです。店舗情報、代表挨拶、当店の強み、アクセス情報をご案内します。",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "会社案内 | YG auto",
+    description:
+      "滋賀県野洲市のYG autoについて、店舗情報とサービス方針をご紹介します。",
+    url: "/about",
+  },
+};
 
 export default function About() {
   return (

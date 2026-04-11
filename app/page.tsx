@@ -28,6 +28,7 @@ export default function Home() {
 
   return (
     <>
+      <h1 className="sr-only">YG auto | 滋賀県野洲市の自動車販売・整備・車検</h1>
       <section className="relative h-screen overflow-hidden border-b border-slate-300">
         {HERO_IMAGES.map((src, index) => (
           <Image

@@ -23,6 +23,7 @@ const shipporiAntique = Shippori_Antique_B1({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://yg-auto-official.com"),
   title: {
     template: "%s | YG auto",
     default: "YG auto | 滋賀県野洲市の自動車販売・整備・車検",
@@ -33,18 +34,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: "YG auto | 滋賀県野洲市の自動車販売・整備・車検",
     description: "滋賀県野洲市の自動車販売・整備店「YG auto」。国家資格整備士が在籍し、販売から整備、車検、レッカーまで全て自社で完結。お客様のカーライフを全力でサポートします。",
-    url: "https://yg-auto.com", // ※実際のドメインに合わせて変更してください
+    url: "/",
     siteName: "YG auto",
     locale: "ja_JP",
     type: "website",
+    images: [
+      {
+        url: "/bg-imgs/erik-mclean-KoINdO0_y0o-unsplash.jpg",
+        width: 1200,
+        height: 630,
+        alt: "YG auto",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "YG auto | 滋賀県野洲市の自動車販売・整備・車検",
     description: "滋賀県野洲市の自動車販売・整備店「YG auto」。国家資格整備士が在籍し、販売から整備、車検、レッカー、板金塗装まで全て自社で完結。",
-  },
-  alternates: {
-    canonical: "https://yg-auto.com", // ※実際のドメインに合わせて変更してください
+    images: ["/bg-imgs/erik-mclean-KoINdO0_y0o-unsplash.jpg"],
   },
   robots: {
     index: true,
@@ -64,6 +71,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const localBusinessJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    name: "YG auto",
+    image: "https://yg-auto-official.com/bg-imgs/erik-mclean-KoINdO0_y0o-unsplash.jpg",
+    telephone: "077-575-4089",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "比留田134",
+      addressLocality: "野洲市",
+      addressRegion: "滋賀県",
+      postalCode: "520-2300",
+      addressCountry: "JP",
+    },
+    areaServed: "滋賀県",
+    openingHours: ["Mo-Sa 09:30-18:00"],
+    url: "https://yg-auto-official.com",
+  };
+
   return (
     <html lang="ja">
       {/* Next.jsでは <head> 内のリンクを直接書かなくても、
@@ -81,6 +107,10 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
       </body>
     </html>
   );

@@ -1,4 +1,19 @@
-import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "お問い合わせ",
+  description:
+    "YG autoへのお問い合わせページです。お電話でのご相談や各種お問い合わせに対応しています。",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "お問い合わせ | YG auto",
+    description:
+      "お車に関するご相談やお問い合わせは、YG autoまでお気軽にご連絡ください。",
+    url: "/contact",
+  },
+};
 
 export default function Contact() {
   return (

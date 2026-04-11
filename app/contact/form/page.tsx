@@ -1,4 +1,20 @@
 import Mail from "../../../components/contact/Mail";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "お問い合わせフォーム",
+  description:
+    "YG autoのお問い合わせフォームです。整備・車検・販売・買取などのご相談を受け付けています。",
+  alternates: {
+    canonical: "/contact/form",
+  },
+  openGraph: {
+    title: "お問い合わせフォーム | YG auto",
+    description:
+      "YG autoへのお問い合わせはフォームからも受け付けています。",
+    url: "/contact/form",
+  },
+};
 
 
 export default function Contact() {
