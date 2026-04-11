@@ -11,6 +11,17 @@ export default function Details() {
     { label: "電話番号", value: "077-575-4089" },
   ];
 
+  const businessContents = [
+    "新車・新古車・中古車販売",
+    "買取",
+    "一般修理・車検・カスタム",
+    "事故修理・板金・塗装",
+    "ロードサービス",
+    "コーティングフィルム",
+    "各種保険",
+    "レッカー",
+  ];
+
   return (
     <section className="bg-slate-50 border-y border-slate-200 overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-8 md:py-16">
@@ -59,9 +70,31 @@ export default function Details() {
                   </div>
                 ))}
               </dl>
+
+              <div className="mt-6 pt-5 border-t border-slate-200">
+                <div className="flex items-center gap-2 mb-3 md:mb-4">
+                  <span className="block w-4 h-px bg-sub-600 shrink-0" />
+                  <h3 className="text-[0.68rem] md:text-xs font-bold tracking-[0.2em] uppercase text-sub-600">
+                    事業内容
+                  </h3>
+                </div>
+                <ul className="space-y-2">
+                  {businessContents.map((content) => (
+                    <li
+                      key={content}
+                      className="flex items-start gap-2 text-xs md:text-sm text-slate-800 leading-relaxed"
+                    >
+                      <span className="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center border border-sub-500 text-[10px] text-sub-600">
+                        ✓
+                      </span>
+                      {content}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
-            <div className="md:col-span-3 p-4 sm:p-6 md:p-8">
+            <div className="md:col-span-3 p-4 sm:p-6 md:p-8 flex flex-col">
               <div className="flex items-center gap-2 mb-4 md:mb-6">
                 <span className="block w-4 h-px bg-sub-600 shrink-0" />
                 <h3 className="text-[0.68rem] md:text-xs font-bold tracking-[0.2em] uppercase text-sub-600">
