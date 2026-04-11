@@ -191,13 +191,13 @@ export default async function ServiceDetailPage({
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-black/10 border border-black/10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {SERVICES.filter((item) => item.slug !== service.slug).map(
                 (item) => (
                   <Link
                     href={`/services/${item.slug}`}
                     key={item.title}
-                    className="group flex flex-row items-center gap-4 md:gap-6 bg-gray-50 p-4 md:p-6 hover:bg-gray-100 transition-colors duration-500"
+                    className="group flex flex-row items-center gap-4 md:gap-6 bg-transparent border border-gray-400 p-4 md:p-6 hover:bg-black/[0.02] transition-colors duration-500"
                   >
                     <div className="w-20 h-14 md:w-28 md:h-16 shrink-0 overflow-hidden bg-black/5">
                       <img
