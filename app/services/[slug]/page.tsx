@@ -137,7 +137,7 @@ export default async function ServiceDetailPage({
                       {merit.title}
                     </h3>
                   </div>
-                  <p className="text-xs sm:text-sm text-gray-500 leading-[2.2] font-light">
+                  <p className="text-xs sm:text-sm text-gray-700 leading-[2.2] font-light">
                     {merit.description}
                   </p>
                 </div>
@@ -181,7 +181,7 @@ export default async function ServiceDetailPage({
                       <h3 className="text-2xl sm:text-3xl md:text-4xl font-light tracking-wider mb-6 md:mb-8 leading-[1.4] text-gray-900">
                         {feature.title}
                       </h3>
-                      <p className="text-sm md:text-base text-gray-500 leading-[2] font-light max-w-lg">
+                      <p className="text-sm md:text-base text-gray-700 leading-[2] font-light max-w-lg">
                         {feature.description}
                       </p>
                     </div>
@@ -251,7 +251,7 @@ export default async function ServiceDetailPage({
                     <Link
                       href={`/services/${item.slug}`}
                       key={item.title}
-                      className="group flex flex-row items-center gap-4 md:gap-6 bg-transparent border border-gray-400 p-4 md:p-6 hover:bg-black/[0.02] transition-colors duration-500"
+                      className="group flex flex-row items-center gap-4 md:gap-6 bg-transparent border border-gray-400 p-4 md:p-6 hover:bg-black/[0.02] hover:border-sub-500 transition-colors duration-500"
                     >
                       <div className="w-20 h-14 md:w-28 md:h-16 shrink-0 overflow-hidden bg-black/5">
                         <img
