@@ -61,7 +61,7 @@ export default function Prise() {
             {group.items.map((item, i) => (
               <div key={i} className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-4 w-full">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-sm md:text-base text-slate-700 font-medium">{item.label}</span>
+                  <span className="text-sm md:text-base text-gray-800 font-medium">{item.label}</span>
                   {item.note && (
                     <span className="text-[0.65rem] md:text-[0.7rem] bg-sub-50 text-sub-600 px-2 py-0.5 rounded-full font-bold whitespace-nowrap">
                       {item.note}
