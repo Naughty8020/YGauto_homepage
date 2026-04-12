@@ -35,7 +35,7 @@ export default function About() {
             <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight">
               会社案内
             </h1>
-            <p className="text-xs md:text-sm text-gray-500 leading-[1.8] md:leading-[1.9] max-w-xs font-light md:pb-1">
+            <p className="text-xs md:text-sm text-gray-700 leading-[1.8] md:leading-[1.9] max-w-xs font-light md:pb-1">
               滋賀県野洲市を拠点に、
               <br className="hidden md:block" />
               お客様のカーライフを全力でサポートします。
@@ -48,10 +48,11 @@ export default function About() {
           <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-6 text-slate-900">
             代表挨拶
           </h2>
-          <p className="text-sm md:text-lg leading-relaxed max-w-2xl mx-auto text-slate-600">
+          <p className="text-sm md:text-lg leading-relaxed max-w-2xl mx-auto text-gray-800">
             このたびはYGautoホームページをご覧いただきありがとうございます。
             <br />
-            当店ではお車を通じてお客様一人ひとりと向き合い、個人店ならではの親身なお付き合いができればと思っております。
+            当店ではお車を通じてお客様一人ひとりと向き合い
+            <br/>個人店ならではの親身なお付き合いができればと思っております。
             <br />
             初めてご来店される方、車のことがあまり詳しくない方でも丁寧にご対応させて頂きますので、
             どんな小さなことでも一度ご相談ください。
@@ -92,7 +93,7 @@ export default function About() {
                   <h4 className="text-base md:text-xl font-bold mb-1.5 md:mb-3 text-slate-800">
                     {feature.title}
                   </h4>
-                  <p className="text-slate-600 text-xs md:text-sm leading-relaxed">
+                  <p className="text-gray-800 text-xs md:text-sm leading-relaxed">
                     {feature.text}
                   </p>
                 </div>
