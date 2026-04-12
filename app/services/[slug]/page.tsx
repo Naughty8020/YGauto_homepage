@@ -67,7 +67,7 @@ export default async function ServiceDetailPage({
                   SERVICE DETAIL
                 </span>
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-6xl font-light tracking-[0.1em] md:tracking-[0.2em] uppercase leading-tight">
+              <h1 className="text-2xl sm:text-4xl md:text-4xl font-light tracking-[0.1em] md:tracking-[0.2em] uppercase leading-tight">
                 {service?.title || "SERVICE TITLE"}
               </h1>
             </div>
