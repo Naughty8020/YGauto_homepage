@@ -51,7 +51,7 @@ const page = () => {
             <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight">
               サービス内容
             </h1>
-            <p className="text-xs md:text-sm text-slate-500 leading-[1.8] md:leading-[1.9] max-w-xs font-light md:pb-1">
+            <p className="text-xs md:text-sm text-gray-700 leading-[1.8] md:leading-[1.9] max-w-xs font-light md:pb-1">
               お客様の生活スタイルに寄り添った、
               <br className="hidden md:block" />
               最適なサービスをご提供します。
@@ -79,7 +79,7 @@ const page = () => {
             <br />
             サービスの提供
           </h2>
-          <p className="text-xs md:text-base text-slate-600 leading-[1.9] md:leading-[1.95] font-light mb-3 md:mb-4">
+          <p className="text-xs md:text-base text-gray-800 leading-[1.9] md:leading-[1.95] font-light mb-3 md:mb-4">
             今の自分に合った「ちょうどいい」は、数年経つとちょうどいいと感じないのかもしれません。
             お客様各々の生活スタイルから少しだけ背伸びした状態が「ちょうどいい」だと、私たちは考えています。
           </p>
@@ -105,7 +105,7 @@ const page = () => {
                 {SERVICES.length}つのサービス
               </h2>
             </div>
-            <p className="text-[0.68rem] md:text-xs text-slate-400 font-light sm:pb-1 leading-relaxed max-w-[240px]">
+            <p className="text-[0.68rem] md:text-xs text-gray-700 font-light sm:pb-1 leading-relaxed max-w-[240px]">
               各サービスの詳細は
               <br />
               カードをクリックしてご確認ください。
@@ -140,7 +140,7 @@ const page = () => {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     {item.subTitle && (
-                      <span className="text-[0.56rem] md:text-[0.75rem] font-bold text-slate-400 uppercase tracking-widest truncate">
+                      <span className="text-[0.56rem] md:text-[0.75rem] font-bold text-gray-500 uppercase tracking-widest truncate">
                         {item.subTitle}
                       </span>
                     )}
