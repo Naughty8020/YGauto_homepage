@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/YG-icon.jpg",
-        width: 793,
-        height: 605,
+        url: "/og-image.png?v=3",
+        width: 2721,
+        height: 2721,
         alt: "YG auto",
       },
     ],
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "YG auto | 滋賀県野洲市の自動車販売・整備・車検",
     description: "滋賀県野洲市の自動車販売・整備店「YG auto」。国家資格整備士が在籍し、販売から整備、車検、レッカー、板金塗装まで全て自社で完結。",
-    images: ["/bg-imgs/erik-mclean-KoINdO0_y0o-unsplash.jpg"],
+    images: ["/og-image.png?v=3"],
   },
   icons: {
     icon: "/YG-icon.jpg?v=2",
