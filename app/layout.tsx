@@ -80,7 +80,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     name: "YG auto",
-    image: "https://yg-auto-official.com/bg-imgs/erik-mclean-KoINdO0_y0o-unsplash.jpg",
+    image: "https://yg-auto-official.com/og-image.png?v=3",
     telephone: "077-575-4089",
     address: {
       "@type": "PostalAddress",
