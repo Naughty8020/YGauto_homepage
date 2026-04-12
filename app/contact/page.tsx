@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <div className="pt-28 md:pt-40 min-h-screen text-slate-800  leading-relaxed space-y-4">
-      <main className="max-w-5xl mx-auto py-12 px-6">
+      <main className="max-w-5xl mx-auto py-8 md:py-12 px-6">
         <header className="mb-10">
           <div className="flex items-center gap-3 mb-6">
             <span className="block w-7 h-px bg-sub-600 shrink-0" />
