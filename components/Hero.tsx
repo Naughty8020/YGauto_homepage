@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 const images = [
-  "unsplash/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
-  "Gemini4.png",
-  "Gemini3.png",
+  "/unsplash/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg",
+  "/Gemini4.png",
+  "/Gemini3.png",
 ];
 
 export default function Hero() {
@@ -30,11 +31,14 @@ export default function Hero() {
       "
     >
       {images.map((image, index) => (
-        <img
+        <Image
           key={index}
-          src={image} // イメージ全部表示して
+          src={image}
           alt={`Hero Image ${index + 1}`}
-          className={`absolute inset-0 w-full h-full object-cover
+          fill
+          sizes="100vw"
+          priority={index === 0}
+          className={`absolute inset-0 object-cover
 transition-opacity duration-1000 ease-in-out
 ${index === currentImageIndex ? "opacity-100" : "opacity-0"}`}
         />

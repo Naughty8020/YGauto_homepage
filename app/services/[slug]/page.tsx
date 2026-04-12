@@ -2,6 +2,7 @@ import { SERVICES } from "@/constants/services";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import Image from "next/image";
 import HandymanIcon from "@mui/icons-material/Handyman";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import PaidIcon from "@mui/icons-material/Paid";
@@ -94,10 +95,12 @@ export default async function ServiceDetailPage({
           </div>
 
           <div className="w-full aspect-[16/9] sm:aspect-[21/9] md:aspect-[3/1] relative overflow-hidden bg-black/5 rounded-sm md:rounded-none">
-            <img
-              src={service?.image}
-              alt={service?.title || "SERVICE IMAGE"}
-              className="w-full h-full object-cover object-center"
+            <Image
+              src={service.image}
+              alt={service.title}
+              fill
+              sizes="100vw"
+              className="object-cover object-center"
             />
           </div>
         </header>
@@ -167,10 +170,12 @@ export default async function ServiceDetailPage({
                     }`}
                   >
                     <div className="flex-1 w-full relative overflow-hidden aspect-[16/9] sm:aspect-[16/9] md:aspect-[4/3] bg-black/5 group">
-                      <img
+                      <Image
                         src={feature.image}
                         alt={feature.title}
-                        className="w-full h-full object-cover object-center"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover object-center"
                       />
                     </div>
 
@@ -204,17 +209,19 @@ export default async function ServiceDetailPage({
               </div>
 
               <div className="border-t border-black/10">
-                {service.detail.map((detail, idx) => (
+                {service.detail.map((detail) => (
                   <div
                     key={detail.title}
                     className="group border-b border-black/10 py-8 md:py-10 flex flex-col sm:flex-row sm:items-start md:items-center gap-6 md:gap-10 hover:bg-black/[0.02] transition-colors duration-500"
                   >
                     {/* スマホでも縮めすぎないようにする */}
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 bg-black/5 overflow-hidden rounded-sm md:rounded-none">
-                      <img
+                    <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 bg-black/5 overflow-hidden rounded-sm md:rounded-none">
+                      <Image
                         src={detail.image}
                         alt={detail.title}
-                        className="w-full h-full object-cover"
+                        fill
+                        sizes="(max-width: 640px) 64px, 80px"
+                        className="object-cover"
                       />
                     </div>
                     <div className="flex flex-col flex-1">
@@ -253,11 +260,13 @@ export default async function ServiceDetailPage({
                       key={item.title}
                       className="group flex flex-row items-center gap-4 md:gap-6 bg-transparent border border-gray-400 p-4 md:p-6 hover:bg-black/[0.02] hover:border-sub-500 transition-colors duration-500"
                     >
-                      <div className="w-20 h-14 md:w-28 md:h-16 shrink-0 overflow-hidden bg-black/5">
-                        <img
+                      <div className="relative w-20 h-14 md:w-28 md:h-16 shrink-0 overflow-hidden bg-black/5">
+                        <Image
                           src={item.image}
                           alt={item.title}
-                          className="w-full h-full object-cover"
+                          fill
+                          sizes="(max-width: 768px) 80px, 112px"
+                          className="object-cover"
                         />
                       </div>
                       <div className="flex flex-col flex-1 pr-2">

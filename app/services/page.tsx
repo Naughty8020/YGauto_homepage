@@ -1,6 +1,7 @@
 import { SERVICES } from "@/constants/services";
 import Link from "next/link";
 import type { Metadata } from "next";
+import Image from "next/image";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import PaidIcon from "@mui/icons-material/Paid";
@@ -124,11 +125,13 @@ const page = () => {
                   className="group relative flex flex-row md:flex-col overflow-hidden rounded-none  border border-slate-500 hover:border-green-600 transition-colors duration-300"
                 >
                 {/* 画像エリア：スマホ=左側固定幅、PC=上部全幅 */}
-                <div className="w-22 h-22 shrink-0 md:w-full md:h-40 overflow-hidden">
-                  <img
+                <div className="relative w-22 h-22 shrink-0 md:w-full md:h-40 overflow-hidden">
+                  <Image
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-700 ease-in-out"
+                    fill
+                    sizes="(max-width: 768px) 88px, 40vw"
+                    className="object-cover group-hover:scale-[1.05] transition-transform duration-700 ease-in-out"
                   />
                 </div>
 
