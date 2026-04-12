@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/bg-imgs/erik-mclean-KoINdO0_y0o-unsplash.jpg",
+        url: "/YG auto（ロゴ黒）_アートボード 1.png",
         width: 1200,
         height: 630,
         alt: "YG auto",
