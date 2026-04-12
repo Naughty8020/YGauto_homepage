@@ -34,7 +34,7 @@ export default function Contact() {
             <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.05] tracking-tight">
               お問い合わせ
             </h1>
-            <p className="text-sm text-gray-500 leading-[1.9] max-w-xs font-light md:pb-1">
+            <p className="text-sm text-slate-600 leading-[1.9] max-w-xs font-light md:pb-1">
               お急ぎの方も、まずは一度お電話ください。
               <br className="hidden md:block" />
               専門スタッフが丁寧に対応させていただきます。
@@ -63,10 +63,10 @@ export default function Contact() {
             </div>
 
             <div className="space-y-4 mb-12">
-              <p className="text-gray-600 font-medium">
+              <p className="text-slate-700 font-medium">
                 受付時間：平日 9:00 〜 18:00
               </p>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-slate-500">
                 ※番号をお確かめのうえ、おかけ間違いのないようお願いいたします。
               </p>
             </div>
