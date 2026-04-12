@@ -53,6 +53,11 @@ export const metadata: Metadata = {
     description: "滋賀県野洲市の自動車販売・整備店「YG auto」。国家資格整備士が在籍し、販売から整備、車検、レッカー、板金塗装まで全て自社で完結。",
     images: ["/bg-imgs/erik-mclean-KoINdO0_y0o-unsplash.jpg"],
   },
+  icons: {
+    icon: "/YG-icon.jpg?v=2",
+    shortcut: "/YG-icon.jpg?v=2",
+    apple: "/YG-icon.jpg?v=2",
+  },
   robots: {
     index: true,
     follow: true,
