@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
 import { Service, SERVICES } from "@/constants/services";
 
 export default function ServicesSection() {
@@ -8,21 +9,22 @@ export default function ServicesSection() {
     <section className="py-10 md:py-24  text-black overflow-hidden">
       <div className="max-w-[90rem] mx-auto px-5 sm:px-6 lg:px-12">
         {/* エレガントなタイトル領域 */}
-        <div className="flex flex-col gap-4 md:gap-6 md:flex-row md:items-end justify-between mb-8 md:mb-8">
+        <div className="flex flex-col gap-4 md:gap-6 md:flex-row md:items-end justify-between mb-5 md:mb-8">
           <div>
             <div className="flex items-center gap-3 mb-2 md:mb-4">
               <span className="w-8 md:w-10 h-px bg-sub-500" />
+              <MiscellaneousServicesIcon className="text-sub-500" sx={{ fontSize: { xs: 14, md: 16 } }} />
               <span className="text-[10px] md:text-sm font-light tracking-[0.3em] text-sub-500 uppercase block">
                 Our Services
               </span>
             </div>
-  <h1 className="text-[2rem] md:text-[4rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight">
+  <h1 className="text-[2rem] md:text-[4rem] font-mono  text-gray-950 leading-[1.1] tracking-tight">
               サービス内容
             </h1>
 
           </div>
           <div className="md:max-w-md lg:max-w-lg">
-            <p className="text-[13px] md:text-sm text-gray-600 leading-relaxed font-light text-justify">
+            <p className="text-[13px] md:text-sm text-gray-700 leading-relaxed font-light text-justify">
               安心・安全なカーライフをお届けするために。販売から車検・整備、板金塗装まで、クルマに関するあらゆるサポートをハイクオリティにご提供します。
             </p>
           </div>
@@ -73,7 +75,7 @@ export default function ServicesSection() {
                     {service.title}
                   </h3>
 
-                  <p className="text-[13px] md:text-base leading-[2.2] md:leading-[2.4] text-gray-500 font-light mb-8 md:mb-12 text-justify">
+                  <p className="text-[13px] md:text-base leading-[2.2] md:leading-[2.4] text-gray-800 font-light mb-8 md:mb-12 text-justify">
                     {service.description}
                   </p>
 
