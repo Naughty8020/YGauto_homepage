@@ -1,6 +1,20 @@
 import { SERVICES } from "@/constants/services";
 import Link from "next/link";
 import type { Metadata } from "next";
+import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import PaidIcon from "@mui/icons-material/Paid";
+import BuildIcon from "@mui/icons-material/Build";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+
+const serviceIconMap = {
+  sales: DirectionsCarIcon,
+  purchase: PaidIcon,
+  inspection: BuildIcon,
+  coating: AutoAwesomeIcon,
+  roadservice: LocalShippingIcon,
+} as const;
 
 export const metadata: Metadata = {
   title: "サービス内容",
@@ -26,6 +40,7 @@ const page = () => {
           {/* ENラベル */}
           <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
             <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
+            <MiscellaneousServicesIcon className="text-sub-600" sx={{ fontSize: { xs: 14, md: 16 } }} />
             <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.2em] md:tracking-[0.25em] uppercase text-sub-600">
               Services
             </span>
@@ -81,6 +96,7 @@ const page = () => {
             <div>
               <div className="flex items-center gap-2 md:gap-3 mb-1.5 md:mb-2.5">
                 <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
+                <MiscellaneousServicesIcon className="text-sub-600" sx={{ fontSize: { xs: 14, md: 16 } }} />
                 <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.2em] md:tracking-[0.25em] uppercase text-sub-600">
                   Our Services
                 </span>
@@ -98,12 +114,15 @@ const page = () => {
 
           {/* カードグリッド */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3">
-            {SERVICES.map((item, i) => (
-              <Link
-                href={`/services/${item.slug}`}
-                key={item.slug}
-                className="group relative flex flex-row md:flex-col overflow-hidden rounded-none  border border-slate-500 hover:border-green-600 transition-colors duration-300"
-              >
+            {SERVICES.map((item, i) => {
+              const CardIcon = serviceIconMap[item.slug as keyof typeof serviceIconMap] ?? DirectionsCarIcon;
+
+              return (
+                <Link
+                  href={`/services/${item.slug}`}
+                  key={item.slug}
+                  className="group relative flex flex-row md:flex-col overflow-hidden rounded-none  border border-slate-500 hover:border-green-600 transition-colors duration-300"
+                >
                 {/* 画像エリア：スマホ=左側固定幅、PC=上部全幅 */}
                 <div className="w-22 h-22 shrink-0 md:w-full md:h-40 overflow-hidden">
                   <img
@@ -129,9 +148,12 @@ const page = () => {
 
                   {/* タイトル行：スマホ=縦積み、PC=横並び */}
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-3 gap-1.5">
-                    <h3 className="text-[0.84rem] md:text-lg font-medium text-slate-900 leading-snug">
-                      {item.title}
-                    </h3>
+                    <div className="flex items-center gap-1.5 min-w-0">
+                      <CardIcon className="text-sub-500 shrink-0" sx={{ fontSize: { xs: 14, md: 18 } }} />
+                      <h3 className="text-[0.84rem] md:text-lg font-medium text-slate-900 leading-snug">
+                        {item.title}
+                      </h3>
+                    </div>
                     <span className="inline-flex items-center gap-1 md:gap-2 text-[0.56rem] md:text-[0.75rem] font-extrabold tracking-[0.1em] uppercase text-sub-600 whitespace-nowrap md:shrink-0">
                       詳しく見る
                       <svg
@@ -152,8 +174,9 @@ const page = () => {
                     </span>
                   </div>
                 </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
         </section>
       </main>

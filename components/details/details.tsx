@@ -1,5 +1,6 @@
 import Map from '../details/Map';
 import Image from 'next/image';
+import BusinessIcon from '@mui/icons-material/Business';
 
 export default function Details() {
   const companyInfo = [
@@ -28,6 +29,7 @@ export default function Details() {
         <div className="mb-6 md:mb-12">
           <div className="flex items-center gap-2 md:gap-3 mb-4">
             <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
+            <BusinessIcon className="text-sub-600" sx={{ fontSize: { xs: 14, md: 16 } }} />
             <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.25em] uppercase text-sub-600">
               Company Details
             </span>

@@ -1,9 +1,12 @@
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+
 export default function AboutSection() {
   return (
     <section className="mt-5 md:mt-22 lg:mt-20 py-10 md:py-16 px-5 sm:px-8 lg:px-12">
       <div className="max-w-5xl mx-auto  pt-8 md:pt-10">
         <div className="flex items-center justify-center gap-3 mb-5 md:mb-6">
           <span className="w-8 md:w-10 h-px bg-sub-500" />
+          <InfoOutlinedIcon className="text-sub-500" sx={{ fontSize: { xs: 14, md: 16 } }} />
           <p className="text-[10px] sm:text-xs font-light tracking-[0.3em] uppercase text-sub-500">
             About Us
           </p>

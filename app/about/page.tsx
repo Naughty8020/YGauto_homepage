@@ -1,6 +1,7 @@
 import Schedule from "../../components/details/Schedule";
 import Prise from "../../components/details/Prise";
 import type { Metadata } from "next";
+import ApartmentIcon from "@mui/icons-material/Apartment";
 
 export const metadata: Metadata = {
   title: "会社案内",
@@ -24,6 +25,7 @@ export default function About() {
         <header className="mb-10 md:mb-24">
           <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
             <span className="block w-5 md:w-7 h-px bg-sub-600 shrink-0" />
+            <ApartmentIcon className="text-sub-600" sx={{ fontSize: { xs: 14, md: 16 } }} />
             <span className="text-[0.6rem] md:text-[0.65rem] font-extrabold tracking-[0.2em] md:tracking-[0.25em] uppercase text-sub-600">
               ABOUT
             </span>

@@ -2,6 +2,20 @@ import { SERVICES } from "@/constants/services";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import HandymanIcon from "@mui/icons-material/Handyman";
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import PaidIcon from "@mui/icons-material/Paid";
+import BuildIcon from "@mui/icons-material/Build";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+
+const serviceIconMap = {
+  sales: DirectionsCarIcon,
+  purchase: PaidIcon,
+  inspection: BuildIcon,
+  coating: AutoAwesomeIcon,
+  roadservice: LocalShippingIcon,
+} as const;
 
 export async function generateStaticParams() {
   return SERVICES.map((service) => ({
@@ -63,6 +77,7 @@ export default async function ServiceDetailPage({
             <div>
               <div className="flex items-center gap-3 mb-6 md:mb-8">
                 <span className="w-8 md:w-10 h-px bg-sub-500" />
+                <HandymanIcon className="text-sub-500" sx={{ fontSize: { xs: 14, md: 16 } }} />
                 <span className="block text-[0.6rem] sm:text-[0.65rem] font-light tracking-[0.4em] uppercase text-sub-500">
                   SERVICE DETAIL
                 </span>
@@ -229,34 +244,41 @@ export default async function ServiceDetailPage({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {SERVICES.filter((item) => item.slug !== service.slug).map(
-                (item) => (
-                  <Link
-                    href={`/services/${item.slug}`}
-                    key={item.title}
-                    className="group flex flex-row items-center gap-4 md:gap-6 bg-transparent border border-gray-400 p-4 md:p-6 hover:bg-black/[0.02] transition-colors duration-500"
-                  >
-                    <div className="w-20 h-14 md:w-28 md:h-16 shrink-0 overflow-hidden bg-black/5">
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="flex flex-col flex-1 pr-2">
-                      {item.subTitle && (
-                        <span className="text-[0.5rem] md:text-[0.6rem] font-light text-sub-500 uppercase tracking-[0.2em] mb-1 md:mb-1.5">
-                          {item.subTitle}
-                        </span>
-                      )}
-                      <div className="flex items-center justify-between">
-                        <h3 className="text-xs md:text-sm font-medium tracking-[0.1em] md:tracking-[0.15em] uppercase text-gray-900 truncate">
-                          {item.title}
-                        </h3>
-                        <span className="w-4 md:w-6 h-[1px] shrink-0 bg-sub-300 group-hover:bg-sub-500 group-hover:w-6 md:group-hover:w-8 transition-all duration-500 ml-2" />
+                (item) => {
+                  const ItemIcon = serviceIconMap[item.slug as keyof typeof serviceIconMap] ?? DirectionsCarIcon;
+
+                  return (
+                    <Link
+                      href={`/services/${item.slug}`}
+                      key={item.title}
+                      className="group flex flex-row items-center gap-4 md:gap-6 bg-transparent border border-gray-400 p-4 md:p-6 hover:bg-black/[0.02] transition-colors duration-500"
+                    >
+                      <div className="w-20 h-14 md:w-28 md:h-16 shrink-0 overflow-hidden bg-black/5">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                    </div>
-                  </Link>
-                ),
+                      <div className="flex flex-col flex-1 pr-2">
+                        {item.subTitle && (
+                          <span className="text-[0.5rem] md:text-[0.6rem] font-light text-sub-500 uppercase tracking-[0.2em] mb-1 md:mb-1.5">
+                            {item.subTitle}
+                          </span>
+                        )}
+                        <div className="flex items-center justify-between gap-2">
+                          <div className="flex items-center gap-2 min-w-0">
+                            <ItemIcon className="text-sub-500 shrink-0" sx={{ fontSize: { xs: 14, md: 16 } }} />
+                            <h3 className="text-xs md:text-sm font-medium tracking-[0.1em] md:tracking-[0.15em] uppercase text-gray-900 truncate">
+                              {item.title}
+                            </h3>
+                          </div>
+                          <span className="w-4 md:w-6 h-[1px] shrink-0 bg-sub-300 group-hover:bg-sub-500 group-hover:w-6 md:group-hover:w-8 transition-all duration-500 ml-2" />
+                        </div>
+                      </div>
+                    </Link>
+                  );
+                },
               )}
             </div>
           </section>
