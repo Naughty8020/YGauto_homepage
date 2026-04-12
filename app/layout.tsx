@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png?v=3",
-        width: 2721,
-        height: 2721,
+        width: 1200,
+        height: 630,
         alt: "YG auto",
       },
     ],
