@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/YG auto（ロゴ黒）_アートボード 1.png",
-        width: 2721,
-        height: 2721,
+        url: "/YG-icon.jpg",
+        width: 793,
+        height: 605,
         alt: "YG auto",
       },
     ],
