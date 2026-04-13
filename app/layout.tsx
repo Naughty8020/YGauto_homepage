@@ -54,12 +54,9 @@ export const metadata: Metadata = {
     images: ["/YGauto1.jpg?v=1"],
   },
   icons: {
-    icon: [
-      { url: "/favicon.png", type: "image/png", sizes: "512x512" },
-      { url: "/icon.png", type: "image/png", sizes: "512x512" },
-    ],
-    shortcut: "/favicon.png",
-    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    icon: "/YG-icon.jpg",
+    shortcut: "/YG-icon.jpg",
+    apple: "/YG-icon.jpg",
   },
   robots: {
     index: true,
