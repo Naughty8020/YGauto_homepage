@@ -7,16 +7,16 @@ export default function AboutSection() {
         <div className="flex items-center justify-center gap-3 mb-5 md:mb-6">
           <span className="w-8 md:w-10 h-px bg-sub-500" />
           <InfoOutlinedIcon className="text-sub-500" sx={{ fontSize: { xs: 14, md: 16 } }} />
-          <p className="text-[10px] sm:text-xs font-light tracking-[0.3em] uppercase text-sub-500">
+          <p className="text-[10px] sm:text-xs font-normal md:font-light tracking-[0.3em] uppercase text-sub-600 md:text-sub-500">
             About Us
           </p>
         </div>
 
-        <h2 className="text-center text-3xl sm:text-3xl md:text-4xl font-light tracking-wide mb-6 md:mb-8">
+        <h2 className="text-center text-3xl sm:text-3xl md:text-4xl font-mono md:font-light tracking-wide mb-6 md:mb-8 text-gray-900 md:text-inherit">
           私たちについて
         </h2>
 
-        <p className="text-center text-sm sm:text-base md:text-lg px-2 sm:px-4 md:px-6 text-gray-700 leading-loose font-light">
+        <p className="text-center text-sm sm:text-base md:text-lg px-2 sm:px-4 md:px-6 text-gray-800 md:text-gray-700 leading-loose font-normal md:font-light">
           滋賀県野洲市に拠点を置き、車両販売から整備、車検、レッカーなど
           全て自社で完結できる環境がございます。
           <br className="hidden sm:block" />
