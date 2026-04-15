@@ -84,7 +84,7 @@ export default function ServicesSection() {
                       href={`/services/${service.slug}`}
                       className="group/btn inline-flex items-center gap-4 text-[11px] md:text-xs font-normal md:font-light tracking-[0.2em] text-sub-700 md:text-sub-600 uppercase pb-3 border-b border-sub-300 md:border-sub-200 hover:text-sub-700 hover:border-sub-700 transition-colors"
                     >
-                      <span className="tracking-[0.3em]">Explore</span>
+                      <span className="tracking-[0.3em]">詳しく見る</span>
                       <ArrowForwardIosIcon 
                         sx={{ fontSize: 9 }} 
                         className="transition-transform duration-500 group-hover/btn:translate-x-1" 
