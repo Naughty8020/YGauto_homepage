@@ -18,7 +18,7 @@ const serviceIconMap = {
 } as const;
 
 export const metadata: Metadata = {
-  title: "サービス内容",
+  title: "サービス一覧",
   description:
     "車両販売、買取、車検・整備、コーティング・フィルム、レッカー・ロードサービスまで、YG autoのサービス一覧をご案内します。",
   alternates: {
