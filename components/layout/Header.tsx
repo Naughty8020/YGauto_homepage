@@ -89,7 +89,7 @@ export default function Header() {
           ホーム
         </Link>
         <Link href="/about" className={linkClass("/about")}>
-          会社案内
+          会社案内・料金
         </Link>
         <Link href="/services" className={linkClass("/services")}>
           サービス一覧
@@ -129,7 +129,7 @@ export default function Header() {
         >
           {[
             { href: "/", label: "ホーム" },
-            { href: "/about", label: "会社案内" },
+            { href: "/about", label: "会社案内・料金" },
             { href: "/services", label: "サービス一覧" },
             { href: "/contact", label: "ご予約・お問い合わせ" },
           ].map(({ href, label }, i) => (
