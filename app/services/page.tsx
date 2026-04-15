@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     canonical: "/services",
   },
   openGraph: {
-    title: "サービス内容 | YG auto",
+    title: "サービス一覧 | YG auto",
     description:
       "YG autoが提供する各サービスの内容を掲載しています。お客様のカーライフを一貫してサポートします。",
     url: "/services",
@@ -50,7 +50,7 @@ const page = () => {
           {/* タイトル + 説明を横並び */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3 md:gap-6 pb-8 md:pb-12 border-b border-gray-400">
             <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight">
-              サービス内容
+              サービス一覧
             </h1>
             <p className="text-xs md:text-sm text-gray-700 leading-[1.8] md:leading-[1.9] max-w-xs font-light md:pb-1">
               お客様の生活スタイルに寄り添った、
