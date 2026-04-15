@@ -86,16 +86,16 @@ export default function Header() {
       {/* PCメニュー */}
       <nav className="hidden ml-auto md:flex items-center gap-7 px-6 lg:px-8 py-3 rounded-none z-50 shrink-0">
         <Link href="/" className={linkClass("/")}>
-          Home
+          ホーム
         </Link>
         <Link href="/about" className={linkClass("/about")}>
-          About
+          会社案内
         </Link>
         <Link href="/services" className={linkClass("/services")}>
-          Services
+          サービス一覧
         </Link>
         <Link href="/contact" className={linkClass("/contact")}>
-          Contact
+          ご予約・お問い合わせ
         </Link>
       </nav>
 
@@ -128,10 +128,10 @@ export default function Header() {
           onClick={toggleMenu}
         >
           {[
-            { href: "/", label: "Home" },
-            { href: "/about", label: "About" },
-            { href: "/services", label: "Services" },
-            { href: "/contact", label: "Contact" },
+            { href: "/", label: "ホーム" },
+            { href: "/about", label: "会社案内" },
+            { href: "/services", label: "サービス一覧" },
+            { href: "/contact", label: "ご予約・お問い合わせ" },
           ].map(({ href, label }, i) => (
             <Link
               key={href}
