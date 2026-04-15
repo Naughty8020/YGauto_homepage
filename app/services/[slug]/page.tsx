@@ -126,14 +126,14 @@ export default async function ServiceDetailPage({
               </div>
             </div>
 
-            {/* スマホで縦並びのとき、gap-y-16 と広めにすることで窮屈さを解消 */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16 md:gap-y-20">
+            {/* スマホで縦並びのときの間隔を少し詰めて、要素間の距離感を調整 */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-10 md:gap-y-20">
               {service.merits.map((merit, index) => (
                 <div key={merit.title} className="flex flex-col group">
                   {/* アコーディオン風ではなく、数字とタイトルを上下でしっかり分ける */}
-                  <div className="flex flex-col mb-4 md:mb-6 border-b border-black/10 pb-6 md:pb-8 relative overflow-hidden">
+                  <div className="flex flex-col mb-3 md:mb-6 border-b border-black/10 pb-4 md:pb-8 relative overflow-hidden">
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-sub-500 group-hover:w-full transition-all duration-700 ease-out" />
-                    <span className="text-4xl sm:text-5xl font-light tracking-tighter text-sub-400 mb-4">
+                    <span className="text-4xl sm:text-5xl font-light tracking-tighter text-sub-400 mb-2">
                       0{index + 1}
                     </span>
                     <h3 className="text-sm sm:text-base font-medium tracking-widest text-gray-900 leading-relaxed">
