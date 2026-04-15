@@ -75,18 +75,21 @@ const page = () => {
 
 </div>
         {/* ===== INTRO TEXT ===== */}
-        <div className="mb-10 md:mb-20 max-w-2xl">
+        <div className="mb-10 md:mb-20 w-full max-w-none">
           <h2 className="text-lg md:text-2xl font-bold text-slate-900 leading-snug mb-3 md:mb-5">
             お客様の心に寄り添った
             サービスの提供
           </h2>
           <p className="text-xs md:text-base text-gray-900 md:text-gray-800 leading-[1.9] md:leading-[1.95] font-normal md:font-light mb-3 md:mb-4">
             今の自分に合った「ちょうどいい」は、数年経つとちょうどいいと感じないのかもしれません。
+            <br />
             お客様各々の生活スタイルから少しだけ背伸びした状態が「ちょうどいい」だと、私たちは考えています。
           </p>
           <p className="text-xs md:text-base text-slate-700 md:text-slate-600 leading-[1.9] md:leading-[1.95] font-normal md:font-light">
             寒さや暑さ、暮らしにくさに我慢を重ねるのではなく、もっとわがままに、お客様にとっての快適性を追求する。
-            無理難題にもアイデアで応える。それが、私たちのサービスです。
+            <br />
+            無理難題にもアイデアで応える。
+            それが、私たちのサービスです。
           </p>
         </div>
 
