@@ -38,7 +38,7 @@ export default function Footer() {
               href="/about"
               className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
             >
-              会社案内
+              会社案内・料金
             </Link>
             <Link
               href="/services"
