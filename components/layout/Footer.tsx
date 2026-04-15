@@ -32,25 +32,25 @@ export default function Footer() {
               href="/"
               className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
             >
-              Home
+              ホーム
             </Link>
             <Link
               href="/about"
               className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
             >
-              About
+              会社案内
             </Link>
             <Link
               href="/services"
               className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
             >
-              Services
+              サービス一覧
             </Link>
             <Link
               href="/contact"
               className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
             >
-              Contact
+              ご予約・お問い合わせ
             </Link>
           </nav>
         </div>
