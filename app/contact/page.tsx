@@ -32,7 +32,7 @@ export default function Contact() {
 
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-12 border-b border-gray-400">
             <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.05] tracking-tight">
-              お問い合わせ
+              ご予約・お問い合わせ
             </h1>
             <p className="text-sm text-gray-700 leading-[1.9] max-w-xs font-light md:pb-1">
               お急ぎの方も、まずは一度お電話ください。
