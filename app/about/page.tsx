@@ -103,7 +103,7 @@ export default function About() {
         </section>
 
         {/* 料金 */}
-        <div className="mt-6 md:mt-8">
+        <div id="price-list" className="mt-6 md:mt-8 scroll-mt-28 md:scroll-mt-40">
           <Prise />
         </div>
 
