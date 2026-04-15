@@ -98,7 +98,7 @@ export default function Details() {
                 <div className="mt-5 md:mt-6 flex justify-end">
                   <Link
                     href="/about#price-list"
-                    className="inline-flex items-center gap-2 text-[11px] md:text-xs font-bold tracking-[0.15em] uppercase text-lime-700 border-b border-lime-300 pb-1.5 hover:text-lime-800 hover:border-lime-600 transition-colors"
+                    className="inline-flex items-center gap-2 text-[11px] md:text-xs font-bold tracking-[0.15em] uppercase text-sub-700 border-b border-sub-300 pb-1.5 hover:text-sub-800 hover:border-sub-700 transition-colors"
                   >
                     価格一覧を見る
                   </Link>
