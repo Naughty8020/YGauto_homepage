@@ -1,6 +1,7 @@
 import Map from '../details/Map';
 import Image from 'next/image';
 import BusinessIcon from '@mui/icons-material/Business';
+import Link from 'next/link';
 
 export default function Details() {
   const companyInfo = [
@@ -93,6 +94,15 @@ export default function Details() {
                     </li>
                   ))}
                 </ul>
+
+                <div className="mt-5 md:mt-6 flex justify-end">
+                  <Link
+                    href="/about#price-list"
+                    className="inline-flex items-center gap-2 text-[11px] md:text-xs font-bold tracking-[0.15em] uppercase text-lime-700 border-b border-lime-300 pb-1.5 hover:text-lime-800 hover:border-lime-600 transition-colors"
+                  >
+                    価格一覧を見る
+                  </Link>
+                </div>
               </div>
             </div>
 
