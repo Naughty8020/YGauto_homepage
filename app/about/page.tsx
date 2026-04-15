@@ -4,16 +4,17 @@ import type { Metadata } from "next";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 
 export const metadata: Metadata = {
-  title: "会社案内",
+  title: "会社案内・アクセス（滋賀県野洲市）",
   description:
-    "YG autoの会社案内ページです。店舗情報、代表挨拶、当店の強み、アクセス情報をご案内します。",
+    "滋賀県野洲市のYG auto会社案内ページ。店舗情報、アクセス、整備・車検に関する強みとサービス方針をご案内します。",
+  keywords: ["野洲市 整備工場", "野洲市 車検", "野洲市 中古車", "YG auto アクセス"],
   alternates: {
     canonical: "/about",
   },
   openGraph: {
-    title: "会社案内 | YG auto",
+    title: "会社案内・アクセス | YG auto",
     description:
-      "滋賀県野洲市のYG autoについて、店舗情報とサービス方針をご紹介します。",
+      "滋賀県野洲市のYG autoについて、店舗情報・アクセスと整備サービス方針をご紹介します。",
     url: "/about",
   },
 };
@@ -120,7 +121,7 @@ export default function About() {
                   所在地
                 </dt>
                 <dd className="flex-1 text-slate-700 font-medium text-sm md:text-base">
-                  〒520-2300 滋賀県野洲市野洲市比留田134
+                  〒520-2300 滋賀県野洲市比留田134
                 </dd>
               </div>
 

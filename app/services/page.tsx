@@ -18,16 +18,17 @@ const serviceIconMap = {
 } as const;
 
 export const metadata: Metadata = {
-  title: "サービス一覧",
+  title: "サービス一覧（整備・車検・販売）",
   description:
-    "車両販売、買取、車検・整備、コーティング・フィルム、レッカー・ロードサービスまで、YG autoのサービス一覧をご案内します。",
+    "滋賀県野洲市のYG autoが提供するサービス一覧。車両販売・買取、車検・整備、コーティング、レッカー・ロードサービスまで幅広く対応します。",
+  keywords: ["野洲市 整備", "野洲市 車検", "野洲市 自動車修理", "中古車販売"],
   alternates: {
     canonical: "/services",
   },
   openGraph: {
-    title: "サービス一覧 | YG auto",
+    title: "サービス一覧（整備・車検・販売） | YG auto",
     description:
-      "YG autoが提供する各サービスの内容を掲載しています。お客様のカーライフを一貫してサポートします。",
+      "滋賀県野洲市のYG autoが提供するサービス一覧。整備・車検・修理・販売まで一貫してサポートします。",
     url: "/services",
   },
 };

@@ -25,15 +25,31 @@ const shipporiAntique = Shippori_Antique_B1({
 export const metadata: Metadata = {
   metadataBase: new URL("https://yg-auto-official.com"),
   title: {
-    template: "%s | YG auto",
+    template: "%s | 滋賀県野洲市のYG auto",
     default: "YG auto | 滋賀県野洲市の自動車販売・整備・車検",
   },
-  description: "滋賀県野洲市の自動車販売・整備店「YG auto」。国家資格整備士が在籍し、販売から整備、車検、レッカー、板金塗装まで全て自社で完結。お客様のカーライフを全力でサポートします。",
-  keywords: ["滋賀県", "野洲市", "YG auto", "自動車販売", "整備", "車検", "レッカー", "中古車", "自動車修理"],
+  description:
+    "滋賀県野洲市の自動車販売・整備店YG auto。国家資格整備士が在籍し、車検・整備・修理・板金塗装・レッカー・中古車販売まで一貫対応。野洲市周辺のカーライフをサポートします。",
+  keywords: [
+    "滋賀県",
+    "野洲市",
+    "野洲市 整備",
+    "野洲市 車検",
+    "野洲市 自動車修理",
+    "YG auto",
+    "自動車販売",
+    "整備",
+    "車検",
+    "レッカー",
+    "中古車",
+    "板金塗装",
+    "自動車修理",
+  ],
   authors: [{ name: "YG auto" }],
   openGraph: {
     title: "YG auto | 滋賀県野洲市の自動車販売・整備・車検",
-    description: "滋賀県野洲市の自動車販売・整備店「YG auto」。国家資格整備士が在籍し、販売から整備、車検、レッカーまで全て自社で完結。お客様のカーライフを全力でサポートします。",
+    description:
+      "野洲市で整備・車検・修理・中古車販売をお探しならYG autoへ。国家資格整備士が在籍し、販売から整備まで一貫対応します。",
     url: "/",
     siteName: "YG auto",
     locale: "ja_JP",
@@ -50,7 +66,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "YG auto | 滋賀県野洲市の自動車販売・整備・車検",
-    description: "滋賀県野洲市の自動車販売・整備店「YG auto」。国家資格整備士が在籍し、販売から整備、車検、レッカー、板金塗装まで全て自社で完結。",
+    description:
+      "滋賀県野洲市で整備・車検・修理・中古車販売をお探しならYG autoへ。販売から整備まで一貫対応。",
     images: ["/YGauto1.jpg?v=1"],
   },
   icons: {
@@ -69,6 +86,10 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  other: {
+    "geo.region": "JP-25",
+    "geo.placename": "滋賀県野洲市",
+  },
 };
 
 export default function RootLayout({
@@ -79,8 +100,11 @@ export default function RootLayout({
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    additionalType: "https://schema.org/AutoDealer",
     name: "YG auto",
     image: "https://yg-auto-official.com/og-image.png?v=3",
+    description:
+      "滋賀県野洲市のYG auto。車検・整備・修理・板金塗装・レッカー・中古車販売まで一貫対応。",
     telephone: "077-575-4089",
     address: {
       "@type": "PostalAddress",
@@ -91,6 +115,29 @@ export default function RootLayout({
       addressCountry: "JP",
     },
     areaServed: "滋賀県",
+    priceRange: "¥¥",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "サービス一覧",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "車検・整備" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "中古車販売・買取" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "板金塗装" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "ロードサービス・レッカー" },
+        },
+      ],
+    },
     openingHours: ["Mo-Sa 09:30-18:00"],
     url: "https://yg-auto-official.com",
   };
