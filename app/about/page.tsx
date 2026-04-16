@@ -34,7 +34,7 @@ export default function About() {
 
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3 md:gap-6 pb-8 md:pb-12 border-b border-gray-400">
             <h1 className="text-[2rem] md:text-[2.5rem] font-extrabold text-gray-950 leading-[1.1] tracking-tight">
-              会社案内
+              会社案内・料金
             </h1>
             <p className="text-xs md:text-sm text-gray-700 leading-[1.8] md:leading-[1.9] max-w-xs font-light md:pb-1">
               滋賀県野洲市を拠点に、
@@ -104,12 +104,15 @@ export default function About() {
         </section>
 
         {/* 料金 */}
-        <div id="price-list" className="mt-6 md:mt-8 scroll-mt-28 md:scroll-mt-40">
+        <div id="price-list" className="mt-6 md:mt-30 scroll-mt-28 md:scroll-mt-40">
+          <h3 className="text-lg md:text-2xl font-bold mb-6 md:mb-10 text-center text-slate-900">
+            料金一覧
+          </h3>
           <Prise />
         </div>
 
         {/* 店舗情報 */}
-        <section className=" p-5 md:p-12 rounded-none border border-slate-500 mt-10 md:mt-10">
+        <section className=" p-5 md:p-12 rounded-none border border-slate-500 mt-10 md:mt-30">
           <h3 className="text-lg md:text-2xl font-bold mb-6 md:mb-10 text-center text-slate-900">
             店舗情報・アクセス
           </h3>
@@ -121,7 +124,7 @@ export default function About() {
                   所在地
                 </dt>
                 <dd className="flex-1 text-slate-700 font-medium text-sm md:text-base">
-                  〒520-2300 滋賀県野洲市比留田134
+                  〒520-2422 滋賀県野洲市比留田134
                 </dd>
               </div>
 
