@@ -7,8 +7,8 @@ export default function Details() {
   const companyInfo = [
     { label: "会社名", value: "YGauto" },
     { label: "設立", value: "2025年10月" },
-    { label: "所在地", value: "〒141-0032 滋賀県野洲市比留田134" },
-    { label: "定休日", value: "日曜日" },
+    { label: "所在地", value: "〒520-2422 滋賀県野洲市比留田134" },
+    { label: "定休日", value: "日曜日・祝日" },
     { label: "営業時間", value: "午前9時30分〜 午後6時00分" },
     { label: "電話番号", value: "077-575-4089" },
   ];
