@@ -64,7 +64,7 @@ export default function Contact() {
 
             <div className="space-y-4 mb-12">
               <p className="text-slate-700 font-medium">
-                受付時間：平日 9:00 〜 18:00
+                受付時間：営業日 9:00 〜 18:00
               </p>
               <p className="text-sm text-slate-500">
                 ※番号をお確かめのうえ、おかけ間違いのないようお願いいたします。
