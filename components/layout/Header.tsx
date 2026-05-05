@@ -58,10 +58,9 @@ export default function Header() {
   };
 
   const linkClass = (path: string) =>
-    `text-[0.88rem] lg:text-[1rem] font-semibold tracking-[0.14em] uppercase border-b pb-1 transition-all duration-300 ${
-      isActivePath(path)
-        ? "text-slate-950 border-sub-500"
-        : "text-slate-900 border-transparent hover:text-slate-700 hover:border-sub-300"
+    `text-[0.88rem] lg:text-[1rem] font-semibold tracking-[0.14em] uppercase border-b pb-1 transition-all duration-300 ${isActivePath(path)
+      ? "text-slate-950 border-sub-500"
+      : "text-slate-900 border-transparent hover:text-slate-700 hover:border-sub-300"
     }`;
 
   return (
@@ -94,6 +93,9 @@ export default function Header() {
         <Link href="/services" className={linkClass("/services")}>
           サービス一覧
         </Link>
+        <Link href="/news" className={linkClass("/news")}>
+          お知らせ
+        </Link>
         <Link href="/contact" className={linkClass("/contact")}>
           ご予約・お問い合わせ
         </Link>
@@ -116,10 +118,9 @@ export default function Header() {
         className={`
           flex flex-col absolute top-0 right-0 w-full h-screen bg-gray-300
           transition-all duration-400 ease-out
-          ${
-            isOpen
-              ? "opacity-100 visible translate-y-0 pointer-events-auto"
-              : "opacity-0 invisible -translate-y-2 pointer-events-none"
+          ${isOpen
+            ? "opacity-100 visible translate-y-0 pointer-events-auto"
+            : "opacity-0 invisible -translate-y-2 pointer-events-none"
           }
         `}
       >
@@ -131,6 +132,7 @@ export default function Header() {
             { href: "/", label: "ホーム" },
             { href: "/about", label: "会社案内・料金" },
             { href: "/services", label: "サービス一覧" },
+            { href: "/news", label: "お知らせ" },
             { href: "/contact", label: "ご予約・お問い合わせ" },
           ].map(({ href, label }, i) => (
             <Link
@@ -141,10 +143,9 @@ export default function Header() {
                 text-base font-semibold tracking-[0.14em]
                 border-b border-black/10 first:border-t
                 transition-colors duration-300
-                ${
-                  isActivePath(href)
-                    ? "text-sub-600"
-                    : "text-slate-900 hover:text-sub-600"
+                ${isActivePath(href)
+                  ? "text-sub-600"
+                  : "text-slate-900 hover:text-sub-600"
                 }
               `}
               style={{ transitionDelay: isOpen ? `${i * 60}ms` : "0ms" }}
