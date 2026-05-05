@@ -27,7 +27,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <nav className="mt-6 grid grid-cols-2 gap-px border border-black/10 bg-black/10 text-[11px] sm:text-sm tracking-[0.14em] uppercase md:mt-7 md:grid-cols-4">
+          <nav className="mt-6 grid grid-cols-2 gap-px border border-black/10 bg-black/10 text-[11px] sm:text-sm tracking-[0.14em] uppercase md:mt-7 md:grid-cols-5">
             <Link
               href="/"
               className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
@@ -45,6 +45,12 @@ export default function Footer() {
               className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
             >
               サービス一覧
+            </Link>
+            <Link
+              href="/news"
+              className="bg-white py-3 text-center text-gray-700 transition-colors hover:text-sub-600"
+            >
+              お知らせ
             </Link>
             <Link
               href="/contact"
